@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- |
 | :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` | :question: | what are strings | :shipit: | used for making cloth |
 | :dash: __[fcc debugging](./fcc-debugging.md)__ | | | | |
-| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ | :white_check_mark: | all easy | :green_check_mark: | redo exercise 2, it was wrong - fixed |
+| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ | :white_check_mark: | all easy | :white_check_mark: | redo exercise 2, it was wrong - fixed |
 | :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | | | | |
 | :seedling: __[errors: variables](./jl-errors-variables.md)__ | | | | |
 | :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ | | | | |
