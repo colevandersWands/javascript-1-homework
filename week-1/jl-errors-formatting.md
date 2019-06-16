@@ -25,10 +25,11 @@ classification:
 * syntax or semanitc ?
 
 the fix:
-```js
+```
+let a = 1;
 ```
 your notes:
-
+*smile*
 [TOP](#formatting-errors)
 
 
