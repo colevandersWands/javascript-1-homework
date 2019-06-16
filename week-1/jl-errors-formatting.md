@@ -17,7 +17,7 @@ broken code:
 let a = 1:
 ```
 error message:
-```
+```js
 Uncaught SyntaxError: Unexpected token 
 ```
 classification:
@@ -25,7 +25,7 @@ classification:
 * syntax or semanitc ?
 
 the fix:
-```
+```js
 let a = 1;
 ```
 your notes:
