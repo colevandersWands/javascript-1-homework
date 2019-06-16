@@ -16,14 +16,15 @@ broken code:
 let a = 1:
 ```
 error message:
-```
+```SyntaxError
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
 the fix:
-```js
+```js 
+let a=1;
 ```
 your notes:
 
