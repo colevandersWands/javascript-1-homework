@@ -19,15 +19,19 @@ let a = 1:
 ```
 error message:
 ```
+Uncaught SyntaxError: Unexpected token :
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
+let a = 1;
 ```
 your notes:
+
+:smile:
 
 [TOP](#formatting-errors)
 
