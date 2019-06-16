@@ -16,7 +16,8 @@ broken code:
 let a = 1:
 ```
 error message:
-```SyntaxError
+```
+Uncaught SyntaxError: Unexpected token :
 ```
 classification:
 * creation phase or execution phase ?
