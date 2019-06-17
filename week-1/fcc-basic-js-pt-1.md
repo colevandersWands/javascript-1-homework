@@ -244,11 +244,11 @@ reusableFunction();
 ```
 ## 47. Passing Values to Functions with Arguments
 ```js
-function functionWithArgs (a , b) {
-console.log(a + b);
+function functionWithArgs(a,b){
+  console.log(a + b);
 }
-functionWithArgs (1 , 2);
-functionWithArgs (7 , 9);
+functionWithArgs(1,5);
+functionWithArgs(7,10);
 ```
 ## 48. Global Scope and Functions
 Scope refers to the visibility of variables.
@@ -275,3 +275,101 @@ function myOutfit() {
   return outerWear;
 }
 myOutfit();
+```
+## 51. Return a Value from a Function with Return
+Use a ```return``` statement to send a value back out of a function.
+```js
+function timesFive(a){
+  return a * 5;
+}
+console.log(timesFive(4));
+console.log(timesFive(9));
+```
+## 52. Understanding Undefined Value returned from a Function
+```js
+function addFive(){
+  sum += 5;
+}
+```
+## 53. Assignment with a Returned Value
+```js
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+```
+## 54. Stand in Line
+ A **queue** is an abstract Data Structure where items are kept in order.
+ New items can be added (```push```) at the back of the queue and old items are taken off (```shift```) from the front of the queue.
+
+Add the number to the end of the array = ```push```
+Remove the first element of the array = ```shift```
+Then return the element that was removed = using ```return```.
+```js
+function nextInLine(arr, item) {
+  var pushedItem = arr.push(item);
+  var removedItem = arr.shift();
+  return removedItem;
+}
+console.log(nextInLine([5,6,7,8,9], 1));
+```
+## 55. Understanding Boolean Values
+```js
+function welcomeToBooleans() {
+return true;
+}
+```
+## 56. Use Conditional Logic with If Statements
+```js
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+trueOrFalse(false);
+```
+## 57. Comparison with the Equality Operator
+```js
+function testEqual(val) {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(12);
+```
+## 58. Comparison with the Strict Equality Operator
+However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+```js
+function testStrict(val) {
+  if (val === 7) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
+```
+## 59. Practice comparing different values
+```js
+function compareEquality(a, b) {
+  if (a === b) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
+```
+## 60. Comparison with the Inequality Operator
+```js
+function testNotEqual(val) {
+  if (val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
+```
