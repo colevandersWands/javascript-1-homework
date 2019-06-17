@@ -26,7 +26,7 @@ var b = a;
 var a = 9;
 ```
 ## Understanding Uninitialized Variables
-[PYH](http://www.pythontutor.com/javascript.html#code=//%20Initialize%20these%20three%20variables%0Avar%20a%20%3D%205%3B%0Avar%20b%20%3D%2010%3B%0Avar%20c%20%3D%20%22I%20am%20a%22%3B%0A%0A//%20Do%20not%20change%20code%20below%20this%20line%0A%0Aa%20%3D%20a%20%2B%201%3B%0Ab%20%3D%20b%20%2B%205%3B%0Ac%20%3D%20c%20%2B%20%22%20String!%22%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exervice the variabels a and b store take type number and variabel c take the type string.
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Initialize%20these%20three%20variables%0Avar%20a%20%3D%205%3B%0Avar%20b%20%3D%2010%3B%0Avar%20c%20%3D%20%22I%20am%20a%22%3B%0A%0A//%20Do%20not%20change%20code%20below%20this%20line%0A%0Aa%20%3D%20a%20%2B%201%3B%0Ab%20%3D%20b%20%2B%205%3B%0Ac%20%3D%20c%20%2B%20%22%20String!%22%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exercise the variabels a and b store take type number and variabel c take the type string.
 ```js
 // Initialize these three variables
 var a = 5;
@@ -54,6 +54,23 @@ var sum = 10 + 10;
 [PYH](http://www.pythontutor.com/javascript.html#code=var%20difference%20%3D%2045%20-%2033%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) This exercise show the subtracting of two numbers and the variabel difference  store the value of 12 .
 ```js
 var difference = 45 - 33;
+```
+## Multiply Two Numbers with JavaScript
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20product%20%3D%208%20*%2010%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)  This exercise show the multipliing of two numbers and the variabel product store the value of 80 .
+```js
+var product = 8 * 10;
+```
+## Divide One Number by Another with JavaScript
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20quotient%20%3D%2066%20/%2033%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)This exercise show the dividing of two numbers and the variabel quotient store the value of 2.
+```js
+var quotient = 66 / 33;
+```
+## Increment a Number with JavaScript
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myVar%20%3D%2087%3B%0A%0A//%20Only%20change%20code%20below%20this%20line%0AmyVar%20%2B%2B%3B%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exercise the variabel myVar increment in 1 its value.
+```js
+var myVar = 87;
+// Only change code below this line
+myVar ++;
 ```
 
 
