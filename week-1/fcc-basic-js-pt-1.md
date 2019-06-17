@@ -3,12 +3,20 @@
 
 
 ## Comments 
-[PYH](http://www.pythontutor.com/javascript.html#code=//This%20is%20a%20comment%20one%20line%0A/*%20This%20is%20a%20comment%0Amulti-line*/&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Comments don't produce anyting.
- 
+[PYH](http://www.pythontutor.com/javascript.html#code=//This%20is%20a%20comment%20one%20line%0A/*%20This%20is%20a%20comment%0Amulti-line*/&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Comments don't produce anything.
 ```js
 //This is a comment one line
 /* This is a comment
 multi-line*/
 ```
 ## Declare JavaScript Variables
-[PYH](http://www.pythontutor.com/javascript.html#code=//%20Declare%20myName%20below%20this%20line%0Avar%20nelson%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Declare variables don't produce anyting.
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Declare%20myName%20below%20this%20line%0Avar%20nelson%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Declare variables don't produce anything.
+```js
+var nelson;
+```
+## Storing Values with the Assignment Operator
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20name%3B%0Aname%20%3D%20'Nelson'%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```js
+var name;
+name = 'Nelson';
+```
