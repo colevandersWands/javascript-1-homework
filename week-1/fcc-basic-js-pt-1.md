@@ -1,9 +1,277 @@
 > complete [the basic JS exercises](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript) through _Counting Cards_ & paste each of your solutions into this file.  This will allow you to use your FCC exercises as a study reference later on  
 > [completed example](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD) 
-# two types of comments in javascript
-
+# First Part Homework
+[My FreeCodeCamp Portfolio](https://www.freecodecamp.org/fccc851d03a-d789-4d59-a2af-48bf0e01a388)
+## 1.Two types of comments in javascript
 ```js
-// coment one
+// this is one line comment
 /* this is the second
 long comment */
 ```
+## 2. Declare Variables
+```js
+var myName;
+```
+## 3.Storing Values with the Assignment Operator
+```js
+a = 7;
+b = a;
+```
+## 4. Initializing Variables with the Assignment Operator
+```js
+var a = 9;
+```
+
+## 5. Understanding Uninitialized Variables
+```js
+var a = 5;
+var b = 10;
+var c = "I am a";
+```
+## 6. Understanding Case Sensitivity in Variables
+```js
+// Declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+```
+
+## 7.Add Two Numbers (+)
+```js
+var sum = 10 + 10;
+```
+## 8. Subtract One Number from Another
+```js
+var difference = 45 - 33;
+```
+## 9. Multiply Two Numbers
+```js
+var product = 8 * 10;
+```
+## 10. Divide One Number by Another (/)
+```js
+var quotient = 66 / 33;
+```
+## 11 .Increment a Number (i++)
+```js
+myVar++;
+```
+## 12. Decrement a Number (i--)
+```js
+myVar--;
+```
+## 13. Create Decimal Numbers
+```js
+var myDecimal = 5.7;
+```
+## 14. Multiply Two Decimals
+```js
+var product = 2.0 * 2.5;
+```
+## 15. Divide One Decimal by Another
+```js
+var quotient = 4.4 / 2.0;
+```
+## 16. Finding a Remainder
+```js
+var remainder;
+remainder = 11 % 3;
+```
+## 17. Compound Assignment With Augmented Addition (+=)
+```js
+a += 12;
+b += 9;
+c += 7;
+```
+## 18. Compound Assignment With Augmented Subtraction (-=)
+```js
+a -= 6;
+b -= 15;
+c -= 1;
+```
+## 19. Compound Assignment With Augmented Multiplication
+```js
+a *= 5;
+b *= 3;
+c *= 10;
+```
+## 20. Compound Assignment With Augmented Division
+```js
+a /= 12;
+b /= 4;
+c /= 11;
+```
+
+## 21. Declare String Variables
+```js
+var myFirstName="Berihu";
+var myLastName="Gebremedhin";
+```
+## 22. Escaping Literal Quotes in Strings
+Using *backlash* ```\``` in the beginning and in the end of your quotes.
+```js
+var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+```
+## 23. Quoting Strings with Single Quotes
+String values in JS may be written with single or double quotes.
+```js
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+```
+## 24. Escape Sequences in Strings
+Reasons to use escaping characters:
+- is to allow you to use characters you might not otherwise be able to type out, such as a backspace.
+- is to allow you to represent multiple quotes in a string without JS misinterpreting what you mean.
+```js
+var myStr='FirstLine\n\t\\SecondLine\nThirdLine';
+```
+## 25. Concatenating Strings with Plus Operator
+```js
+var myStr = "This is the start. " +  "This is the end.";
+```
+## 26. Concatenating Strings with the Plus Equals Operator
+```js
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+```
+## 27. Constructing Strings with Variables
+```js
+var myName='Berihu';
+var myStr='My name is ' + myName + ' and I am well!';
+```
+## 28. Appending Variables to Strings
+```js
+var someAdjective='very intersting';
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+## 29. Find the Length of a String
+```js
+lastNameLength = lastName.length;
+```
+## 30. Use Bracket Notation to Find the First Character in a String
+```js
+firstLetterOfLastName = lastName[0];
+```
+## 31. Understand String Immutability
+String values are *immutable*, means that they cannot be altered once created.
+```js
+myStr = "Hello World";
+```
+## 32. Use Bracket Notation to Find the Nth Character in a String
+```js
+var thirdLetterOfLastName = lastName[2];
+```
+## 33. Use Bracket Notation to Find the Last Character in a String
+Use  ```.length-1```
+```js
+var lastLetterOfLastName = lastName[lastName.length-1];
+```
+## 34. Use Bracket Notation to Find the Nth-to-Last Character in a String
+```js
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+```
+## 35. Word Blanks
+```js
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  // Your code below this line
+  var result = myAdjective + ' ' + myNoun + ' ' + myVerb + " " + myAdverb;
+  // Your code above this line
+  return result;
+}
+// Change the words here to test your function
+wordBlanks("dog", "big", "ran", "quickly");
+```
+## 36. Store Multiple Values in one Variable using JavaScript Arrays
+Array variables for storing several pieces of data in one place.
+```js
+var myArray = ['John', 23];
+```
+## 37. Nest one Array within Another Array
+```js
+var myArray = [['age',23],['name','age','sex']];
+```
+## 38. Access Array Data with Indexes
+```js
+var myArray = [50,60,70];
+var myData = myArray[0];
+```
+## 39. Modify Array Data With Indexes
+```js
+myArray[0] = 45;
+```
+## 40. Access Multi-Dimensional Arrays With Indexes
+```js
+var myData = myArray[2][1];
+```
+## 41. Manipulate Arrays With push()
+Adding an extra to the last array.
+```js
+myArray.push(['dog', 3]);
+```
+## 42. Manipulate Arrays With pop()
+You can pop off the last array, and store it in a variable.
+```js
+var removedFromMyArray = myArray.pop();
+```
+## 43. Manipulate Arrays With shift()
+removing the first in the array
+```js
+var removedFromMyArray = myArray.shift();
+```
+## 44. Manipulate Arrays With unshift()
+Adding an extra to the first in the array.
+```js
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+myArray.unshift(["Paul",35]);
+```
+## 45. Shopping List
+```js
+var myList = [['cat',3],['dog',12],['hen',20],['tiger',32],['others',32]];
+```
+## 46. Write Reusable JavaScript with Functions
+```js
+function reusableFunction(){
+console.log('Hi World');
+}
+reusableFunction();
+```
+## 47. Passing Values to Functions with Arguments
+```js
+function functionWithArgs (a , b) {
+console.log(a + b);
+}
+functionWithArgs (1 , 2);
+functionWithArgs (7 , 9);
+```
+## 48. Global Scope and Functions
+Scope refers to the visibility of variables.
+Variables which are defined **outside of a function block** have **Global scope**.
+Variables which are used **without the ```var```** keyword are automatically created in the ```global``` scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with ```var```.
+```js
+var myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;
+}
+```
+## 49. Local Scope and Functions
+```js
+function myLocalScope() {
+var myVar = 'use strict';
+}
+myLocalScope();
+```
+## 50. Global vs. Local Scope in Functions
+```js
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
