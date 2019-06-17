@@ -10,13 +10,25 @@
 multi-line*/
 ```
 ## Declare JavaScript Variables
-[PYH](http://www.pythontutor.com/javascript.html#code=//%20Declare%20myName%20below%20this%20line%0Avar%20nelson%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Declare variables don't produce anything.
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myName%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) Declare variables don't produce anything.
 ```js
-var nelson;
+var myName;
 ```
 ## Storing Values with the Assignment Operator
-[PYH](http://www.pythontutor.com/javascript.html#code=var%20name%3B%0Aname%20%3D%20'Nelson'%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%207%3B%0Avar%20b%20%3D%20a%3B&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exercise the variable a  store the number 7 and  the variable b store the value of variable a which contain the number 7.
 ```js
-var name;
-name = 'Nelson';
+var a = 7;
+var b = a;
+```
+## Initializing Variables with the Assignment Operator
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%209%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exercise the value of the variable a initialize with the number 9.
+```js
+var a = 9;
+```
+## Understanding Case Sensitivity in Variables
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Declarations%0Avar%20studlyCapVar%3B%0Avar%20properCamelCase%3B%0Avar%20titleCaseOver%3B%0A%0A//%20Assignments%0AstudlyCapVar%20%3D%2010%3B%0AproperCamelCase%20%3D%20%22A%20String%22%3B%0AtitleCaseOver%20%3D%209000%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D) In this exercise is applied the  camelCase to declaration of variables. 
+```js
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
 ```
