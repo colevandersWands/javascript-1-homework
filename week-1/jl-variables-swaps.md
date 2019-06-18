@@ -28,7 +28,11 @@ c = _;
 ```
 3. [the third](https://goo.gl/WXXtV7)
 ```js
-
+_ = a;
+a = b;
+b = c;
+c = d;
+d = _;
 ```
 4. [the fourth](https://goo.gl/nTA1DG)
 ```js
