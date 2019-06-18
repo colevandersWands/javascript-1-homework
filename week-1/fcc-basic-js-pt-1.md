@@ -177,79 +177,121 @@ var myStr = "<a href=\"http://www.example.com\" target=\"_blank\">Link</a>";
 var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
 ## Escape Sequences in Strings
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myStr%20%3D%22FirstLine%5Cn%5Ct%5CbSecondLine%5CnThirdLine%22%3B%20//%20Change%20this%20line&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myStr ="FirstLine\n\t\bSecondLine\nThirdLine"; // Change this line
 ```
 ## Concatenating Strings with Plus Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myStr%3D%20%20%22This%20is%20the%20start.%20%22%20%2B%20%22This%20is%20the%20end.%22%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myStr=  "This is the start. " + "This is the end.";
 ```
 ## Concatenating Strings with the Plus Equals Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=%0Avar%20myStr%20%3D%20%22This%20is%20the%20first%20sentence.%20%22%3B%0AmyStr%20%2B%3D%20%22This%20is%20the%20second%20sentence.%22%3B%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
 ```
 ## Constructing Strings with Variables
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line%0Avar%20myName%20%3D%20%22Nelson%20Najarro%22%3B%0Avar%20myStr%20%3D%20%22My%20name%20is%20%22%20%2B%20myName%20%2B%20%22%20and%20I%20am%20well!%22%3B%0A%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Only change code below this line
+var myName = "Nelson Najarro";
+var myStr = "My name is " + myName + " and I am well!";
 ```
 ## Appending Variables to Strings
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line%0Avar%20someAdjective%20%3D%22beutiful%22%3B%0Avar%20myStr%20%3D%20%22Learning%20to%20code%20is%20%22%3B%0AmyStr%20%2B%3D%20%20someAdjective%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Only change code below this line
+var someAdjective ="beutiful";
+var myStr = "Learning to code is ";
+myStr +=  someAdjective;
 ```
 ## Find the Length of a String
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Example%0Avar%20firstNameLength%20%3D%200%3B%0Avar%20firstName%20%3D%20%22Ada%22%3B%0A%0AfirstNameLength%20%3D%20firstName.length%3B%0A%0A//%20Setup%0Avar%20lastNameLength%20%3D%200%3B%0Avar%20lastName%20%3D%20%22Lovelace%22%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0A%0AlastNameLength%20%3D%20lastName.length%3B%0A%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
 
+// Only change code below this line.
+lastNameLength = lastName.length;
 ```
 ## Use Bracket Notation to Find the First Character in a String
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Example%0Avar%20firstLetterOfFirstName%20%3D%20%22%22%3B%0Avar%20firstName%20%3D%20%22Ada%22%3B%0A%0AfirstLetterOfFirstName%20%3D%20firstName%5B0%5D%3B%0A%0A//%20Setup%0Avar%20firstLetterOfLastName%20%3D%20%22%22%3B%0Avar%20lastName%20%3D%20%22Lovelace%22%3B%0A%0A//%20Only%20change%20code%20below%20this%20line%0AfirstLetterOfLastName%20%3D%20lastName%5B0%5D%3B%0A%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
 
 ```
 ## Understand String Immutability
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myStr%20%3D%20%22Jello%20World%22%3B%0A%0A//%20Only%20change%20code%20below%20this%20line%0A%0AmyStr%20%3D%20%22Hello%20World%22%3B%20//%20Fix%20Me%0A%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myStr = "Jello World";
+// Only change code below this line
+myStr = "Hello World"; // Fix Me
 ```
 ## Use Bracket Notation to Find the Nth Character in a String
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20lastName%20%3D%20%22Lovelace%22%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20thirdLetterOfLastName%20%3D%20lastName%5B2%5D%3B%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var lastName = "Lovelace";
+// Only change code below this line.
+var thirdLetterOfLastName = lastName[2];
 ```
 ## Use Bracket Notation to Find the Last Character in a String
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20lastName%20%3D%20%22Lovelace%22%3B%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20lastLetterOfLastName%20%3D%20lastName%5BlastName.length-1%5D%3B%0A%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var lastName = "Lovelace";
+// Only change code below this line.
+var lastLetterOfLastName = lastName[lastName.length-1];
 
 ```
 ## Use Bracket Notation to Find the Nth-to-Last Character in a String
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20lastName%20%3D%20%22Lovelace%22%3B%0A//%20Only%20change%20code%20below%20this%20line%0Avar%20secondToLastLetterOfLastName%20%3D%20lastName%20%5BlastName.length-2%5D%3B%0A%0A&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var lastName = "Lovelace";
 
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName [lastName.length-2];
 ```
 ## Word Blanks
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20wordBlanks%28myNoun,%20myAdjective,%20myVerb,%20myAdverb%29%20%7B%0A%20%20//%20Your%20code%20below%20this%20line%0A%20%20var%20result%20%3D%20%22My%20%22%20%2B%20myNoun%20%2B%22%20is%20%22%20%2B%20myAdjective%20%2B%20%22%20and%20%22%20%2B%20myVerb%2B%20%22%20%22%20%2B%20myAdverb%3B%0A%20%20//%20Your%20code%20above%20this%20line%0A%20%20return%20result%3B%0A%7D%0A%0A//%20Change%20the%20words%20here%20to%20test%20your%20function%0AwordBlanks%28%22dog%22,%20%22big%22,%20%22ran%22,%20%22quickly%22%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  // Your code below this line
+  var result = "My " + myNoun +" is " + myAdjective + " and " + myVerb+ " " + myAdverb;
+  // Your code above this line
+  return result;
+}
+// Change the words here to test your function
+wordBlanks("dog", "big", "ran", "quickly");
 ```
 ## Store Multiple Values in one Variable using JavaScript Arrays
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line.%0Avar%20myArray%20%3D%20%5B%22nelson%22,%2035%5D%3B%0A&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Only change code below this line.
+var myArray = ["nelson", 35];
 ```
 ## Nest one Array within Another Array
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line.%0Avar%20myArray%20%3D%20%5B%5B%22Biblioteek%22,100%5D,%5B%22Sint-truident%22,200%5D%5D%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Only change code below this line.
+var myArray = [["Biblioteek",100],["Sint-truident",200]];
 ```
 ## Access Array Data with Indexes
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B50,60,70%5D%3B%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20myData%20%3D%20myArray%5B0%5D%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [50,60,70];
+// Only change code below this line.
+var myData = myArray[0];
 ```
 ## Modify Array Data With Indexes
 [PYH]()
