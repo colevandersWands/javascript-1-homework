@@ -19,15 +19,18 @@ two lines';
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
+let a = 'this is \
+two lines';
 ```
-your notes:
+your notes:  In order to define one sentence in two lines the firs line must end with "\".
 
 [TOP](#primitive-type-errors)
 
