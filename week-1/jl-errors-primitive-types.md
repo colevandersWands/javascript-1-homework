@@ -68,7 +68,7 @@ let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
 ```
-
+SyntaxError: Unexpected string
 ```
 classification:
 * creation phase  
@@ -76,9 +76,9 @@ classification:
 
 the fix:
 ```js
-
+let nested_messages = 'remind yourself '+'i can do this!'+' at least once a day';
 ```
-your notes: 
+your notes: To join two string is necesary use the operator "+".
 
 [TOP](#primitive-type-errors)
 
