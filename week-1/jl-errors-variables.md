@@ -38,7 +38,7 @@ function getNine () {
 let result = getNine();
 ```
 your notes:
-The function requires parenthesis;
+The function definition requires parenthesis.
 
 [TOP](#function-errors)
 
