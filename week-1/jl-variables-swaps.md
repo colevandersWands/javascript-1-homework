@@ -49,7 +49,13 @@ c = _;
 ```
 5. [the fifth](https://goo.gl/gDaKNi)
 ```js
-
+// can be done in 6 lines
+_ = a;
+a = e;
+e = _;
+_ = b;
+b = d;
+d = _;
 ```
 
 ___
