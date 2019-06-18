@@ -30,7 +30,7 @@ the fix:
 let a = 'this is \
 two lines';
 ```
-your notes:  In order to define one sentence in two lines the firs line must end with "\".
+your notes:  In order to define one sentence in two lines the first line must end with "\".
 
 [TOP](#primitive-type-errors)
 
@@ -66,15 +66,17 @@ let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase  
+* syntax  
 
 the fix:
 ```js
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
 ```
-your notes:
+your notes: To define the atributes of href it is necesary use single quote simbol ('), because the straight quotes simbol (") close the parameters of innerhtml.
 
 [TOP](#primitive-type-errors)
 
