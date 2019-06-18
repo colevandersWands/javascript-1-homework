@@ -19,19 +19,23 @@ _=a;
 a=b;
 b=_;
 ```
-1. [the second](https://goo.gl/KvayUU)
+2. [the second](https://goo.gl/KvayUU)
+```js
+_ = a;
+a = b;
+b = c;
+c = _;
+// your solution here
+```
+3. [the third](https://goo.gl/WXXtV7)
 ```js
 // your solution here
 ```
-1. [the third](https://goo.gl/WXXtV7)
+4. [the fourth](https://goo.gl/nTA1DG)
 ```js
 // your solution here
 ```
-1. [the fourth](https://goo.gl/nTA1DG)
-```js
-// your solution here
-```
-1. [the fifth](https://goo.gl/gDaKNi)
+5. [the fifth](https://goo.gl/gDaKNi)
 ```js
 // your solution here
 ```
