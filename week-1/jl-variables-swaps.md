@@ -15,12 +15,14 @@ You'll be given a bunch of variables with the wrong value assigned and a tempora
 ### challenges
 1. [the first](https://goo.gl/k9jdZy)
 ```js
+// can be done in 3 line
 _=a;
 a=b;
 b=_;
 ```
 2. [the second](https://goo.gl/KvayUU)
 ```js
+// can be done in 4 lines
 _ = a;
 a = b;
 b = c;
@@ -28,6 +30,7 @@ c = _;
 ```
 3. [the third](https://goo.gl/WXXtV7)
 ```js
+// can be done in 5 lines
 _ = a;
 a = b;
 b = c;
