@@ -73,64 +73,108 @@ var myVar = 87;
 myVar ++;
 ```
 ## Decrement a Number with JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myVar%20%3D%2011%3B%0A%0A//%20Only%20change%20code%20below%20this%20line%0AmyVar--%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myVar = 11;
+// Only change code below this line
+myVar--;
 ```
 ## Create Decimal Numbers with JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line%0Avar%20myDecimal%20%3D%205.7%3B%0A&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Only change code below this line
+var myDecimal = 5.7;
 
 ```
 ## Multiply Two Decimals with JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20product%20%3D%202.0%20*%202.5%3B%0A&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var product = 2.0 * 2.5;
 ```
 ## Divide One Decimal by Another with JavaScript
-[PYH]()
+[PYH](
+http://www.pythontutor.com/javascript.html#code=var%20quotient%20%3D%2066%20/%2033%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D
+)
 ```js
-
+var quotient = 66 / 33;
 ```
 ## Finding a Remainder in JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20remainder%3B%0Aremainder%20%3D%2011%20%25%203%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var remainder;
+remainder = 11 % 3;
 ```
 ## Compound Assignment With Augmented Addition
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%203%3B%0Avar%20b%20%3D%2017%3B%0Avar%20c%20%3D%2012%3B%0A%0A//%20Only%20modify%20code%20below%20this%20line%0A%0Aa%20%2B%3D%2012%3B%0Ab%20%2B%3D%209%3B%0Ac%20%2B%3D%207%3B%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var a = 3;
+var b = 17;
+var c = 12;
+// Only modify code below this line
+a += 12;
+b += 9;
+c += 7;
 
 ```
 ## Compound Assignment With Augmented Subtraction
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%2011%3B%0Avar%20b%20%3D%209%3B%0Avar%20c%20%3D%203%3B%0A%0A//%20Only%20modify%20code%20below%20this%20line%0A%0Aa%20-%3D%20%206%3B%0Ab%20-%3D%20%2015%3B%0Ac%20-%3D%20%201%3B%0A%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var a = 11;
+var b = 9;
+var c = 3;
+
+// Only modify code below this line
+a -=  6;
+b -=  15;
+c -=  1;
+
 
 ```
 ## Compound Assignment With Augmented Multiplication
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%205%3B%0Avar%20b%20%3D%2012%3B%0Avar%20c%20%3D%204.6%3B%0A%0A//%20Only%20modify%20code%20below%20this%20line%0A%0Aa%20*%3D%205%3B%0Ab%20*%3D%203%3B%0Ac%20*%3D%2010%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var a = 5;
+var b = 12;
+var c = 4.6;
 
+// Only modify code below this line
+a *= 5;
+b *= 3;
+c *= 10;
 ```
 ## Compound Assignment With Augmented Division
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20a%20%3D%2048%3B%0Avar%20b%20%3D%20108%3B%0Avar%20c%20%3D%2033%3B%0A%0A//%20Only%20modify%20code%20below%20this%20line%0A%0Aa%20/%3D%2012%3B%0Ab%20/%3D%204%3B%0Ac%20/%3D%2011%3B%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var a = 48;
+var b = 108;
+var c = 33;
+
+// Only modify code below this line
+a /= 12;
+b /= 4;
+c /= 11;
 
 ```
 ## Declare String Variables
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Example%0Avar%20firstName%20%3D%20%22Alan%22%3B%0Avar%20lastName%20%3D%20%22Turing%22%3B%0A%0A//%20Only%20change%20code%20below%20this%20line%0Avar%20myFirstName%20%3D%20%22Nelson%22%20%3B%0Avar%20myLastName%20%20%3D%20%22Najarro%22%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Example
+var firstName = "Alan";
+var lastName = "Turing";
 
+// Only change code below this line
+var myFirstName = "Nelson" ;
+var myLastName  = "Najarro";
 ```
 ## Escaping Literal Quotes in Strings
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myStr%20%3D%20%22%3Ca%20href%3D%5C%22http%3A//www.example.com%5C%22%20target%3D%5C%22_blank%5C%22%3ELink%3C/a%3E%22%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myStr = "<a href=\"http://www.example.com\" target=\"_blank\">Link</a>";
 ```
 ## Quoting Strings with Single Quotes
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myStr%20%3D%20'%3Ca%20href%3D%22http%3A//www.example.com%22%20target%3D%22_blank%22%3ELink%3C/a%3E'%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
 ## Escape Sequences in Strings
 [PYH]()
