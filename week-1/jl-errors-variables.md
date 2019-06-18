@@ -53,17 +53,19 @@ array.length()
 ```
 error message:
 ```
+TypeError: array.length is not a function
 ```
 classification:
-* creation phase or execution phase ?
+* execution phase
 * syntax or semanitc ?
 
 the fix:
 ```js
+let array = [];
+array.length;
 ```
 your notes:
-
-
+length is a property of arrays no a function.
 
 [TOP](#function-errors)
 
