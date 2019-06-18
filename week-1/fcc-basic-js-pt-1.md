@@ -294,39 +294,60 @@ var myArray = [50,60,70];
 var myData = myArray[0];
 ```
 ## Modify Array Data With Indexes
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B18,64,99%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0AmyArray%5B0%5D%20%3D%2045%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [18,64,99];
+// Only change code below this line.
+myArray[0] = 45;
 ```
 ## Access Multi-Dimensional Arrays With Indexes
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5B1,2,3%5D,%20%5B4,5,6%5D,%20%5B7,8,9%5D,%20%5B%5B10,11,12%5D,%2013,%2014%5D%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20myData%20%3D%20myArray%5B0%5D%5B0%5D%3B%0AmyData%3DmyArray%5B2%5D%5B1%5D%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+// Only change code below this line.
+var myData = myArray[0][0];
+myData=myArray[2][1];
 ```
 ## Manipulate Arrays With push()
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5B%22John%22,%2023%5D,%20%5B%22cat%22,%202%5D%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0AmyArray.push%28%5B%22dog%22,%203%5D%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+// Only change code below this line.
+myArray.push(["dog", 3]);
 ```
 ## Manipulate Arrays With pop()
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5B%22John%22,%2023%5D,%20%5B%22cat%22,%202%5D%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20removedFromMyArray%20%3D%20myArray.pop%28%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+// Only change code below this line.
+var removedFromMyArray = myArray.pop();
 ```
 ## Manipulate Arrays With shift()
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5B%22John%22,%2023%5D,%20%5B%22dog%22,%203%5D%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20removedFromMyArray%20%3D%20myArray.shift%28%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+// Only change code below this line.
+var removedFromMyArray = myArray.shift();
 ```
 ## Manipulate Arrays With unshift()
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5B%22John%22,%2023%5D,%20%5B%22dog%22,%203%5D%5D%3B%0AmyArray.shift%28%29%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0AmyArray.unshift%28%5B%22Paul%22,35%5D%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
 
+// Only change code below this line.
+myArray.unshift(["Paul",35]);
 ```
 ## Shopping List
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myList%20%3D%20%5B%5B%22Tomatoes%22,%208%5D,%5B%22onion%22,%203%5D,%5B%22paprika%22,%208%5D,%5B%22milk%22,%202%5D,%5B%22sugar%22,%204%5D%5D%3B&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var myList = [["Tomatoes", 8],["onion", 3],["paprika", 8],["milk", 2],["sugar", 4]];
 ```
 ## Write Reusable JavaScript with Functions
 [PYH]()
