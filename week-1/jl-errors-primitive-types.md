@@ -54,7 +54,7 @@ the fix:
 ```js
 let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
 ```
-your notes: Double quote in a string require a placing a backslash (\) .
+your notes: Double quote in a string require a placing a backslash "\" .
 
 [TOP](#errors)
 
