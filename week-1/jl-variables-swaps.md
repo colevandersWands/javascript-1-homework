@@ -25,19 +25,18 @@ _ = a;
 a = b;
 b = c;
 c = _;
-// your solution here
 ```
 3. [the third](https://goo.gl/WXXtV7)
 ```js
-// your solution here
+
 ```
 4. [the fourth](https://goo.gl/nTA1DG)
 ```js
-// your solution here
+
 ```
 5. [the fifth](https://goo.gl/gDaKNi)
 ```js
-// your solution here
+
 ```
 
 ___
