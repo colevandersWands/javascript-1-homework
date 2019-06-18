@@ -44,15 +44,17 @@ let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
 ```
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase  
+* syntax  
 
 the fix:
 ```js
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
 ```
-your notes:
+your notes:To define the atributes of href it is necesary use single quote simbol ('), because the straight quotes simbol (") close the parameters of innerhtml.
 
 [TOP](#errors)
 
@@ -66,7 +68,7 @@ let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
 ```
-SyntaxError: Unexpected token ILLEGAL
+
 ```
 classification:
 * creation phase  
@@ -74,9 +76,9 @@ classification:
 
 the fix:
 ```js
-let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+
 ```
-your notes: To define the atributes of href it is necesary use single quote simbol ('), because the straight quotes simbol (") close the parameters of innerhtml.
+your notes: 
 
 [TOP](#primitive-type-errors)
 
