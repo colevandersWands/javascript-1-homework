@@ -36,7 +36,13 @@ d = _;
 ```
 4. [the fourth](https://goo.gl/nTA1DG)
 ```js
-
+// can be done in 6 lines
+_ = a;
+a = d;
+d = _;
+_ = b;
+b = c;
+c = _;
 ```
 5. [the fifth](https://goo.gl/gDaKNi)
 ```js
