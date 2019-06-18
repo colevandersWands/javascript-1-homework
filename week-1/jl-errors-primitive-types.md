@@ -52,9 +52,9 @@ classification:
 
 the fix:
 ```js
-let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+let innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
 ```
-your notes:To define the atributes of href it is necesary use single quote simbol ('), because the straight quotes simbol (") close the parameters of innerhtml.
+your notes: Double quote in a string require a placing a backslash (\) .
 
 [TOP](#errors)
 
