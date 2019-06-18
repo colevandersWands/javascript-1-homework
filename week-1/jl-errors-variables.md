@@ -57,7 +57,7 @@ TypeError: array.length is not a function
 ```
 classification:
 * execution phase
-* syntax or semanitc ?
+* semanitc
 
 the fix:
 ```js
