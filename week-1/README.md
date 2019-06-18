@@ -2,7 +2,7 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark: | | | |
+| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark: |excersice complited till **``` Multiple Identical Options in Switch Statements``` ** | | |
 | :dash: __[fcc debugging](./fcc-debugging.md)__ | | | | |
 | :seedling: __[errors: formatting](./jl-errors-formatting.md)__ | | | | |
 | :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | | | | |
