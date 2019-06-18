@@ -25,13 +25,20 @@ error message:
 SyntaxError: Unexpected token 
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+function getNine () {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+let result = getNine();
 ```
 your notes:
+The function requires parenthesis;
 
 [TOP](#function-errors)
 
