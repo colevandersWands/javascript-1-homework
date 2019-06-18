@@ -65,7 +65,7 @@ let array = [];
 array.length;
 ```
 your notes:
-length is a property of arrays no a function.
+length is a property of arrays not a function.
 
 [TOP](#function-errors)
 
