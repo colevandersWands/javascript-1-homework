@@ -49,9 +49,9 @@ broken code:
 let array = [];
 array.length()
 ```
-error message: TypeError: array.length is not a function
+error message: 
 ```
-
+TypeError: array.length is not a function
 ```
 classification:
 * creation phase
