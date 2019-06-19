@@ -53,6 +53,7 @@ the fix:
 let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
 ```
 your notes:
+
 another fix:
 ```js
 let innerHtml = '<p>Click here to <a href= "#Home">return home</a></p>';
