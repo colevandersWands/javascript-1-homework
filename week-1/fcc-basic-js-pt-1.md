@@ -764,34 +764,140 @@ function golfScore(par, strokes) {
 golfScore(5, 4);
 ```
 ## Selecting from Many Options with Switch Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20caseInSwitch%28val%29%20%7B%0A%20%20var%20answer%20%3D%20%22%22%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0Aswitch%28val%29%20%7B%0A%20%20case%20%201%3A%0A%20%20%20%20answer%20%3D%22alpha%22%3B%0A%20%20%20%20break%3B%0A%20%20case%20%202%3A%0A%20%20%20%20%20answer%20%3D%22beta%22%3B%0A%20%20%20%20break%3B%0A%20%20case%203%3A%0A%20%20%20%20%20answer%20%3D%22gamma%22%3B%0A%20%20%20%20break%3B%0A%20%20case%204%3A%0A%20%20%20%20%20answer%20%3D%22delta%22%3B%0A%20%20%20%20break%3B%0A%20%20//%20Only%20change%20code%20above%20this%20line%20%20%0A%20%20return%20answer%3B%20%20%0A%20%7D%0A%7D%0A//%20Change%20this%20value%20to%20test%0AcaseInSwitch%284%29%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function caseInSwitch(val) {
+  var answer = "";
+ // Only change code below this line
+switch(val) {
+  case  1:
+    answer ="alpha";
+    break;
+  case  2:
+     answer ="beta";
+    break;
+  case 3:
+     answer ="gamma";
+    break;
+  case 4:
+     answer ="delta";
+    break;
+  // Only change code above this line  
+  return answer;  
+ }
+}
+// Change this value to test
+caseInSwitch(5);
 ```
 ## Adding a Default Option in Switch Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20switchOfStuff%28val%29%20%7B%0A%20%20var%20answer%20%3D%20%22%22%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20switch%20%28val%29%20%7B%0A%20%20case%20%22a%22%3A%0A%20%20%20%20answer%20%3D%20%20%22apple%22%3B%0A%20%20%20%20break%3B%0A%20%20case%20%22b%22%3A%0A%20%20%20%20answer%20%3D%20%22bird%22%3B%0A%20%20%20%20break%3B%0A%20%20case%20%22c%22%3A%0A%20%20%20%20answer%20%3D%20%20%22cat%22%3B%0A%20%20%20%20break%3B%0A%20%20default%3A%0A%20%20%20%20%20answer%20%3D%20%20%22stuff%22%3B%0A%20%20%20%20break%3B%0A%7D%0A%20%20%20//%20Only%20change%20code%20above%20this%20line%20%20%0A%20%20return%20answer%3B%20%20%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AswitchOfStuff%28%22a%22%29%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function switchOfStuff(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
+  case "a":
+    answer =  "apple";
+    break;
+  case "b":
+    answer = "bird";
+    break;
+  case "c":
+    answer =  "cat";
+    break;
+  default:
+     answer =  "stuff";
+    break;
+}
+   // Only change code above this line  
+  return answer;  
+}
+// Change this value to test
+switchOfStuff("a");
 ```
 ## Multiple Identical Options in Switch Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20sequentialSizes%28val%29%20%7B%0A%20%20var%20answer%20%3D%20%22%22%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20switch%28val%29%20%7B%0A%20%20case%201%3A%0A%20%20case%202%3A%0A%20%20case%203%3A%0A%20%20%20%20answer%20%20%3D%20%22Low%22%3B%0A%20%20%20%20break%3B%0A%20%20case%204%3A%0A%20%20case%205%3A%0A%20%20case%206%3A%0A%20%20%20answer%20%20%3D%20%22Mid%22%3B%0A%20%20%20%20break%3B%0A%20%20case%207%3A%0A%20%20case%208%3A%0A%20%20case%209%3A%0A%20%20%20%20answer%20%20%3D%20%22High%22%3B%0A%20%20%20%20break%3B%0A%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%20%20%0A%20%20return%20answer%3B%20%20%0A%7D%0A//%20Change%20this%20value%20to%20test%0AsequentialSizes%285%29%3B%0A&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function sequentialSizes(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    answer  = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+   answer  = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer  = "High";
+    break;
+}
+  // Only change code above this line  
+  return answer;  
+}
+// Change this value to test
+sequentialSizes(5);
 
 ```
 ## Replacing If Else Chains with Switch
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20chainToSwitch%28val%29%20%7B%0A%20%20var%20answer%20%3D%20%22%22%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20switch%28val%29%20%7B%0A%20%20case%20%22bob%22%3A%0A%20%20%20%20answer%20%3D%20%22Marley%22%3B%0A%20%20%20%20break%3B%0A%20%20case%2042%3A%0A%20%20%20%20answer%20%3D%20%22The%20Answer%22%3B%0A%20%20%20%20break%3B%0A%20%20case%201%3A%0A%20%20%20%20answer%20%3D%20%22There%20is%20no%20%231%22%3B%0A%20%20%20%20break%3B%0A%20%20case%20%2099%3A%0A%20%20%20%20answer%20%3D%20%22Missed%20me%20by%20this%20much!%22%3B%0A%20%20%20%20break%3B%0A%20%20case%207%3A%0A%20%20%20%20answer%20%3D%20%22Ate%20Nine%22%3B%0A%20%20%20%20break%3B%0A%20%20%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%20%20%0A%20%20return%20answer%3B%20%20%0A%7D%0A//%20Change%20this%20value%20to%20test%0AchainToSwitch%287%29%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function chainToSwitch(val) {
+  var answer = "";
+  // Only change code below this line
+  switch(val) {
+  case "bob":
+    answer = "Marley";
+    break;
+  case 42:
+    answer = "The Answer";
+    break;
+  case 1:
+    answer = "There is no #1";
+    break;
+  case  99:
+    answer = "Missed me by this much!";
+    break;
+  case 7:
+    answer = "Ate Nine";
+    break;
+  }
+  // Only change code above this line  
+  return answer;  
+}
+// Change this value to test
+chainToSwitch(7);
 ```
 ## Returning Boolean Values from Functions
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20isLess%28a,%20b%29%20%7B%0A%20%20//%20Fix%20this%20code%0A%20%20%20%20return%20a%20%3C%20b%3B%0A%7D%0A//%20Change%20these%20values%20to%20test%0AisLess%2810,%2015%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function isLess(a, b) {
+  // Fix this code
+    return a < b;
+}
+// Change these values to test
+isLess(10, 15);
 ```
 ## Return Early Pattern for Functions
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20abTest%28a,%20b%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20if%28a%3C0%20%7C%7C%20b%3C0%29%0A%20%20%20return%3B%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20Math.round%28Math.pow%28Math.sqrt%28a%29%20%2B%20Math.sqrt%28b%29,%202%29%29%3B%0A%7D%0A%0A//%20Change%20values%20below%20to%20test%20your%20code%0AabTest%282,2%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+  if(a<0 || b<0)
+   return;
+  // Only change code above this line
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
 
+// Change values below to test your code
+abTest(2,2);
 ```
 ## Counting Cards
 [PYH]()
