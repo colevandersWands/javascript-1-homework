@@ -17,15 +17,13 @@ let a = 1:
 ```
 error message:
 ```
-Uncaught SyntaxError: Unexpected token :
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
 the fix:
-```js 
-let a=1;
+```js
 ```
 your notes:
 
