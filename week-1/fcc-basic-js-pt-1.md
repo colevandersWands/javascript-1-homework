@@ -450,68 +450,189 @@ sum += 5;
 var returnedValue = addFive();
 ```
 ## Assignment with a Returned Value
-[PYH]()
+[PYH]( 
+http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20processed%20%3D%200%3B%0Afunction%20processArg%28num%29%20%7B%0A%20%20return%20%28num%20%2B%203%29%20/%205%3B%0A%7D%0A//%20Only%20change%20code%20below%20this%20line%0Aprocessed%20%3D%20processArg%287%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D
+)
 ```js
-
+// Setup
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+// Only change code below this line
+processed = processArg(7);
 ```
 ## Stand in Line
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20nextInLine%28arr,%20item%29%20%7B%0A%20%20//%20Your%20code%20here%0A%20%20arr.push%28item%29%3B%0A%20%20item%20%3D%20arr%5B0%5D%3B%0A%20%20arr.shift%28%29%3B%0A%20%20return%20item%20%20//%20Change%20this%20line%0A%7D%0A//%20Test%20Setup%0Avar%20testArr%20%3D%20%5B1,2,3,4,5%5D%3B%0A%0A//%20Display%20Code%0Aconsole.log%28%22Before%3A%20%22%20%2B%20JSON.stringify%28testArr%29%29%3B%0Aconsole.log%28nextInLine%28testArr,%206%29%29%3B%20//%20Modify%20this%20line%20to%20test%0Aconsole.log%28%22After%3A%20%22%20%2B%20JSON.stringify%28testArr%29%29%3B&curInstr=10&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  item = arr[0];
+  arr.shift();
+  return item  // Change this line
+}
+// Test Setup
+var testArr = [1,2,3,4,5];
 
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
 ```
 ## Understanding Boolean Values
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20welcomeToBooleans%28%29%20%7B%0A//%20Only%20change%20code%20below%20this%20line.%0Areturn%20true%3B%20//%20Change%20this%20line%0A//%20Only%20change%20code%20above%20this%20line.%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function welcomeToBooleans() {
+// Only change code below this line.
+return true; // Change this line
+// Only change code above this line.
+}
 ```
 ## Use Conditional Logic with If Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20trueOrFalse%28wasThatTrue%29%20%7B%0A%0A%20%20//%20Only%20change%20code%20below%20this%20line.%0Aif%20%28wasThatTrue%29%20%20%0A%20%20%7B%0A%20%20%20%20%20%20return%20%22Yes,%20that%20was%20true%22%3B%0A%20%20%7D%0A%20%20%20%20return%20%22No,%20that%20was%20false%22%3B%0A%20%20//%20Only%20change%20code%20above%20this%20line.%0A%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtrueOrFalse%28false%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line.
+if (wasThatTrue)  
+  {
+      return "Yes, that was true";
+  }
+    return "No, that was false";
+  // Only change code above this line.
+}
+// Change this value to test
+trueOrFalse(false);
 ```
 ## Comparison with the Equality Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20testEqual%28val%29%20%7B%0A%20%20if%20%28val%20%3D%3D%2012%29%20%7B%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Equal%22%3B%0A%20%20%7D%0A%20%20return%20%22Not%20Equal%22%3B%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtestEqual%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+// Change this value to test
+testEqual(10);
 ```
 ## Comparison with the Strict Equality Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20testStrict%28val%29%20%7B%0A%20%20if%20%28val%20%3D%3D%3D%207%20%29%20%7B%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Equal%22%3B%0A%20%20%7D%0A%20%20return%20%22Not%20Equal%22%3B%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtestStrict%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+function testStrict(val) {
+  if (val === 7 ) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+// Change this value to test
+testStrict(10);
 ```
 ## Practice comparing different values
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20compareEquality%28a,%20b%29%20%7B%0A%20%20if%20%28a%20%3D%3D%3D%20b%29%20%7B%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Equal%22%3B%0A%20%20%7D%0A%20%20return%20%22Not%20Equal%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AcompareEquality%2810,%2010%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+// Change this value to test
+compareEquality(10, 10);
 ```
 ## Comparison with the Inequality Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20testNotEqual%28val%29%20%7B%0A%20%20if%20%28val%20!%3D%2099%29%20%7B%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Not%20Equal%22%3B%0A%20%20%7D%0A%20%20return%20%22Equal%22%3B%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtestNotEqual%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+// Change this value to test
+testNotEqual(10);
 ```
 ## Comparison with the Strict Inequality Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Afunction%20testStrictNotEqual%28val%29%20%7B%0A%20%20//%20Only%20Change%20Code%20Below%20this%20Line%0A%20%20%0A%20%20if%20%28val!%3D%3D17%29%20%7B%0A%20%20//%20Only%20Change%20Code%20Above%20this%20Line%0A%0A%20%20%20%20return%20%22Not%20Equal%22%3B%0A%20%20%7D%0A%20%20return%20%22Equal%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestStrictNotEqual%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val!==17) {
+  // Only Change Code Above this Line
 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+// Change this value to test
+testStrictNotEqual(10);
 ```
 ## Comparison with the Greater Than Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testGreaterThan%28val%29%20%7B%0A%20%20if%20%28val%20%3E%20100%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Over%20100%22%3B%0A%20%20%7D%0A%20%20%0A%20%20if%20%28val%20%3E%2010%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Over%2010%22%3B%0A%20%20%7D%0A%0A%20%20return%20%2210%20or%20Under%22%3B%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtestGreaterThan%2810%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+    if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+// Change this value to test
+testGreaterThan(10);
 ```
 ## Comparison with the Greater Than Or Equal To Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testGreaterOrEqual%28val%29%20%7B%0A%20%20if%20%28val%20%3E%3D%2020%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%2220%20or%20Over%22%3B%0A%20%20%7D%0A%20%20%0A%20%20if%20%28val%20%3E%3D%2010%20%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%2210%20or%20Over%22%3B%0A%20%20%7D%0A%0A%20%20return%20%22Less%20than%2010%22%3B%0A%7D%0A%0A//%20Change%20this%20value%20to%20test%0AtestGreaterOrEqual%2810%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+    if (val >= 10 ) {  // Change this line
+    return "10 or Over";
+  }
+  return "Less than 10";
+}
+// Change this value to test
+testGreaterOrEqual(10);
 ```
 ## Comparison with the Less Than Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testLessThan%28val%29%20%7B%0A%20%20if%20%28val%20%3C%2025%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Under%2025%22%3B%0A%20%20%7D%0A%20%20%20%20if%20%28val%20%3C%2055%20%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Under%2055%22%3B%0A%20%20%7D%0A%20%20return%20%2255%20or%20Over%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestLessThan%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+    if (val < 55 ) {  // Change this line
+    return "Under 55";
+  }
+  return "55 or Over";
+}
+// Change this value to test
+testLessThan(10);
 ```
 ## Comparison with the Less Than Or Equal To Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testLessOrEqual%28val%29%20%7B%0A%20%20if%20%28val%20%3C%3D%2012%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Smaller%20Than%20or%20Equal%20to%2012%22%3B%0A%20%20%7D%0A%20%20%0A%20%20if%20%28val%20%3C%3D%2024%29%20%7B%20%20//%20Change%20this%20line%0A%20%20%20%20return%20%22Smaller%20Than%20or%20Equal%20to%2024%22%3B%0A%20%20%7D%0A%20%20return%20%22More%20Than%2024%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestLessOrEqual%2810%29%3B%0A&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+    if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+  return "More Than 24";
+}
+// Change this value to test
+testLessOrEqual(10);
 
 ```
 ## Comparisons with the Logical And Operator
