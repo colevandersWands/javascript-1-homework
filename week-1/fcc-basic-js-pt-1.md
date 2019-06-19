@@ -636,34 +636,104 @@ testLessOrEqual(10);
 
 ```
 ## Comparisons with the Logical And Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testLogicalAnd%28val%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20if%20%28val%3C%3D50%20%26%26%20val%20%3E%3D25%29%20%7B%0A%20%20%20%20%20%20return%20%22Yes%22%3B%0A%20%20%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20%22No%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestLogicalAnd%2810%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testLogicalAnd(val) {
+  // Only change code below this line
+  if (val<=50 && val >=25) {
+      return "Yes";
+  }
+  // Only change code above this line
+  return "No";
+}
+// Change this value to test
+testLogicalAnd(10);
 ```
 ## Comparisons with the Logical Or Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testLogicalOr%28val%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20if%20%28val%20%3C%2010%20%7C%7C%20val%20%3E%2020%29%20%7B%0A%20%20%20%20return%20%22Outside%22%3B%0A%20%20%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20%22Inside%22%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestLogicalOr%2815%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testLogicalOr(val) {
+  // Only change code below this line
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+  // Only change code above this line
+  return "Inside";
+}
+// Change this value to test
+testLogicalOr(15);
 ```
 ## Introducing Else Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testElse%28val%29%20%7B%0A%20%20var%20result%20%3D%20%22%22%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20%20%20if%20%28val%20%3E%205%29%20%7B%0A%20%20%20%20result%20%3D%20%22Bigger%20than%205%22%3B%0A%20%20%7D%0A%20%20else%20%7B%0A%20%20%20%20result%20%3D%20%225%20or%20Smaller%22%3B%0A%20%20%7D%0A%20%20%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20result%3B%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestElse%284%29%3B%0A&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testElse(val) {
+  var result = "";
+  // Only change code below this line
+    if (val > 5) {
+    result = "Bigger than 5";
+  }
+  else {
+    result = "5 or Smaller";
+  }
+    // Only change code above this line
+  return result;
+}
+// Change this value to test
+testElse(4);
 ```
 ## Introducing Else If Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testElseIf%28val%29%20%7B%0A%20%20if%20%28val%20%3E%2010%29%20%7B%0A%20%20%20%20%20%20%20return%20%22Greater%20than%2010%22%3B%0A%20%20%7D%20else%20if%20%28val%20%3C%205%29%20%7B%0A%20%20%20%20%20%20%20return%20%22Smaller%20than%205%22%3B%0A%20%20%7D%0A%20%20else%7B%0A%20%20%20%20%20%20%20return%20%22Between%205%20and%2010%22%3B%0A%20%20%7D%0A%7D%0A//%20Change%20this%20value%20to%20test%0AtestElseIf%287%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testElseIf(val) {
+  if (val > 10) {
+       return "Greater than 10";
+  } else if (val < 5) {
+       return "Smaller than 5";
+  }
+  else{
+       return "Between 5 and 10";
+  }
+}
+// Change this value to test
+testElseIf(7);
 ```
 ## Logical Order in If Else Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20orderMyLogic%28val%29%20%7B%0A%20%20if%20%28val%20%3C%205%29%20%7B%0A%20%20%20%20return%20%22Less%20than%205%22%3B%0A%20%20%7D%20else%20if%20%28val%20%3C%2010%29%20%7B%0A%20%20%20%20return%20%22Less%20than%2010%22%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20return%20%22Greater%20than%20or%20equal%20to%2010%22%3B%0A%20%20%7D%0A%7D%0A//%20Change%20this%20value%20to%20test%0AorderMyLogic%287%29%3B%0A&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+// Change this value to test
+orderMyLogic(7);
 ```
 ## Chaining If Else Statements
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20testSize%28num%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20if%20%28num%20%3C%205%29%7B%0A%20%20%20%20%20return%20%22Tiny%22%3B%0A%20%20%7D%20else%20if%20%28num%20%3C%2010%29%7B%0A%20%20%20%20%20return%20%22Small%22%3B%0A%20%20%7D%20else%20if%20%28num%20%3C%2015%29%7B%0A%20%20%20%20return%20%22Medium%22%3B%0A%20%20%7D%20else%20if%20%28num%20%3C%2020%29%7B%0A%20%20%20%20%20return%20%22Large%22%3B%0A%20%20%7D%20else%20if%20%28num%20%3E%3D%2020%29%0A%20%20%7Breturn%20%22Huge%22%0A%20%20%7D%20else%7B%0A%20%20%20%20return%20%22Change%20Me%22%3B%0A%20%20%7D%0A%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20//%20Change%20this%20value%20to%20test%0AtestSize%287%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+function testSize(num) {
+  // Only change code below this line
+  if (num < 5){
+     return "Tiny";
+  } else if (num < 10){
+     return "Small";
+  } else if (num < 15){
+    return "Medium";
+  } else if (num < 20){
+     return "Large";
+  } else if (num >= 20)
+  {return "Huge"
+  } else{
+    return "Change Me";
+  }
+}
+  // Only change code above this line
+ // Change this value to test
+testSize(7);
 ```
 ## Golf Code
 [PYH]()
