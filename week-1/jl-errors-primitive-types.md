@@ -41,17 +41,22 @@ broken code:
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
-```
+```js
+SyntaxError: fields are not currently supported
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax 
 
 the fix:
 ```js
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
 ```
 your notes:
-
+another fix:
+```js
+let innerHtml = '<p>Click here to <a href= "#Home">return home</a></p>';
+```
 [TOP](#errors)
 
 ---
@@ -63,14 +68,15 @@ broken code:
 let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
-```
+```js
+SyntaxError: unexpected token: string literal
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
-
+* creation phase 
+* syntax 
 the fix:
 ```js
+let nested_messages = 'remind yourself "i can do this!" at least once a day';
 ```
 your notes:
 
