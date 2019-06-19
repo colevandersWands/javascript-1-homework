@@ -350,39 +350,104 @@ myArray.unshift(["Paul",35]);
 var myList = [["Tomatoes", 8],["onion", 3],["paprika", 8],["milk", 2],["sugar", 4]];
 ```
 ## Write Reusable JavaScript with Functions
-[PYH]()
+[PYH](ttp://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line%0Afunction%20reusableFunction%28%29%0A%7B%0A%20%20console.log%28%22Hi%20World%22%29%3B%0A%7D%0AreusableFunction%28%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Only change code below this line
+function reusableFunction()
+{
+  console.log("Hi World");
+}
+reusableFunction();
 ```
 ## Passing Values to Functions with Arguments
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Only%20change%20code%20below%20this%20line.%0Afunction%20functionWithArgs%28one,%20two%29%0A%7B%0A%20%20console.log%20%28one%20%2B%20two%29%0A%7D%0A%20functionWithArgs%287,%208%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
 
+// Only change code below this line.
+function functionWithArgs(one, two)
+{
+  console.log (one + two)
+}
+ functionWithArgs(7, 8);
 ```
 ## Global Scope and Functions
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Declare%20your%20variable%20here%0Avar%20myGlobal%20%3D10%3B%0A%0Afunction%20fun1%28%29%20%7B%0A%20%20//%20Assign%205%20to%20oopsGlobal%20Here%0A%20%20oopsGlobal%20%3D5%3B%0A%7D%0A%0A//%20Only%20change%20code%20above%20this%20line%0Afunction%20fun2%28%29%20%7B%0A%20%20var%20output%20%3D%20%22%22%3B%0A%20%20if%20%28typeof%20myGlobal%20!%3D%20%22undefined%22%29%20%7B%0A%20%20%20%20output%20%2B%3D%20%22myGlobal%3A%20%22%20%2B%20myGlobal%3B%0A%20%20%7D%0A%20%20if%20%28typeof%20oopsGlobal%20!%3D%20%22undefined%22%29%20%7B%0A%20%20%20%20output%20%2B%3D%20%22%20oopsGlobal%3A%20%22%20%2B%20oopsGlobal%3B%0A%20%20%7D%0A%20%20console.log%28output%29%3B%0A%7D&curInstr=1&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Declare your variable here
+var myGlobal =10;
 
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal =5;
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
 ```
 ## Local Scope and Functions
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20myLocalScope%28%29%20%7B%0A%20var%20myVar%20%3D%22algo%22%3B%0A%20%20%0A%20%20console.log%28myVar%29%3B%0A%7D%0AmyLocalScope%28%29%3B&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function myLocalScope() {
+ var myVar ="algo";
+ console.log(myVar);
+}
+myLocalScope();
 
 ```
 ## Global vs. Local Scope in Functions
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20outerWear%20%3D%20%22T-Shirt%22%3B%0A%0Afunction%20myOutfit%28%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20var%20outerWear%20%3D%20%22sweater%22%3B%0A%20%20%0A%20%20%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20outerWear%3B%0A%7D%0AmyOutfit%28%29%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var outerWear = "T-Shirt";
+function myOutfit() {
+  // Only change code below this line
+  var outerWear = "sweater";
+  
+  // Only change code above this line
+  return outerWear;
+}
 
+myOutfit();
 ```
 ## Return a Value from a Function with Return
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Example%0Afunction%20minusSeven%28num%29%20%7B%0A%20%20return%20num%20-%207%3B%0A%7D%0A%0A//%20Only%20change%20code%20below%20this%20line%0Afunction%20timesFive%28num%29%0A%7B%0Areturn%20num%20*%205%3B%0A%7D%0Aconsole.log%28minusSeven%2810%29%29%3B%0Aconsole.log%28timesFive%283%29%29%3B&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Example
+function minusSeven(num) {
+  return num - 7;
+}
+// Only change code below this line
+function timesFive(num)
+{
+return num * 5;
+}
+console.log(minusSeven(10));
+console.log(timesFive(3));
 ```
 ## Understanding Undefined Value returned from a Function
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Example%0Avar%20sum%20%3D%200%3B%0Afunction%20addThree%28%29%20%7B%0A%20%20sum%20%3D%20sum%20%2B%203%3B%0A%7D%0A//%20Only%20change%20code%20below%20this%20line%0Afunction%20addFive%28%29%0A%7B%0Asum%20%2B%3D%205%3B%20%0A%7D%0A//%20Only%20change%20code%20above%20this%20line%0Avar%20returnedValue%20%3D%20addFive%28%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// Example
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+// Only change code below this line
+function addFive()
+{
+sum += 5; 
+}
+// Only change code above this line
+var returnedValue = addFive();
 ```
 ## Assignment with a Returned Value
 [PYH]()
