@@ -736,9 +736,32 @@ function testSize(num) {
 testSize(7);
 ```
 ## Golf Code
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20names%20%3D%20%5B%22Hole-in-one!%22,%20%22Eagle%22,%20%22Birdie%22,%20%22Par%22,%20%22Bogey%22,%20%22Double%20Bogey%22,%20%22Go%20Home!%22%5D%3B%0Afunction%20golfScore%28par,%20strokes%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20if%20%28strokes%20%3D%3D%201%29%20%7B%20%0A%20%20%20%20return%20names%20%5B0%5D%3B%0A%20%20%7D%20else%20if%20%28strokes%20%3C%3D%20par-2%20%29%7B%0A%20%20%20%20%20return%20names%20%5B1%5D%3B%0A%20%20%7D%20else%20if%20%28strokes%20%3C%3D%20par-1%20%29%7B%0A%20%20%20%20return%20names%20%5B2%5D%3B%0A%20%20%7D%20else%20if%20%28strokes%20%3D%3D%20par%29%7B%0A%20%20%20%20return%20names%20%5B3%5D%3B%0A%20%20%7D%20else%20if%28strokes%20%3E%3D%20par%20%2B%203%29%7B%0A%20%20%20%20return%20names%20%5B6%5D%3B%0A%20%20%7D%20else%20if%28strokes%20%3D%3D%20par%20%2B%202%29%7B%0A%20%20%20%20%20return%20names%20%5B5%5D%3B%0A%20%20%7D%20else%20if%28strokes%20%3D%3D%20par%20%2B%201%29%7B%0A%20%20%20%20return%20names%20%5B4%5D%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20return%20%22Change%20Me%22%3B%0A%20%20%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%7D%0A//%20Change%20these%20values%20to%20test%0AgolfScore%285,%204%29%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1) { 
+    return names [0];
+  } else if (strokes <= par-2 ){
+     return names [1];
+  } else if (strokes <= par-1 ){
+    return names [2];
+  } else if (strokes == par){
+    return names [3];
+  } else if(strokes >= par + 3){
+    return names [6];
+  } else if(strokes == par + 2){
+     return names [5];
+  } else if(strokes == par + 1){
+    return names [4];
+  } else {
+    return "Change Me";
+  }
+  // Only change code above this line
+}
+// Change these values to test
+golfScore(5, 4);
 ```
 ## Selecting from Many Options with Switch Statements
 [PYH]()
