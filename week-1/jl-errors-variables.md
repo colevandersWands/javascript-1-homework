@@ -56,6 +56,7 @@ TypeError: array.length is not a function
 classification:
 * creation phase
 * semanitc
+
 the fix:
 ```js
 let array = [];
