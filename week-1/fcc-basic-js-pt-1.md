@@ -2,7 +2,8 @@
 > [completed example](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD) 
 # First Part Homework
 [**```Berihu's ```** FreeCodeCamp Portfolio](https://www.freecodecamp.org/fccc851d03a-d789-4d59-a2af-48bf0e01a388)
- * [number 1](## 7)
+
+ * [number 1](##8)
 ## 1.Two types of comments in javascript
 ```js
 // this is one line comment
