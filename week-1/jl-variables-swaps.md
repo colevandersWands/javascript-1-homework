@@ -31,10 +31,6 @@ c = _;
 ```
 1. [the third](https://goo.gl/WXXtV7)
 ```js
-// your solution here
-```
-1. [the fourth](https://goo.gl/nTA1DG)
-```js
 let a = "d", b = "a", c = "b", d = "c";
 let _ = ' ';
 _ = a;
@@ -42,6 +38,10 @@ a = b;
 b = c;
 c = d;
 d = _;
+```
+1. [the fourth](https://goo.gl/nTA1DG)
+```js
+
 ```
 1. [the fifth](https://goo.gl/gDaKNi)
 ```js
