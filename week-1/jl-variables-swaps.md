@@ -41,7 +41,14 @@ d = _;
 ```
 1. [the fourth](https://goo.gl/nTA1DG)
 ```js
-
+let a = "z", b = "y", c = "x", d = "w";
+let _ = ' ';
+_ = a;
+a = d;
+d = b;
+b = c;
+c = d;
+d = _;
 ```
 1. [the fifth](https://goo.gl/gDaKNi)
 ```js
