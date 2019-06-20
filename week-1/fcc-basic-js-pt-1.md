@@ -4,6 +4,7 @@
 [**```Berihu's ```** FreeCodeCamp Portfolio](https://www.freecodecamp.org/fccc851d03a-d789-4d59-a2af-48bf0e01a388)
 
 [Go middle of the page](#50. Global vs. Local Scope in Functions)
+ * [number 1](#1)
 ## 1.Two types of comments in javascript
 ```js
 // this is one line comment
