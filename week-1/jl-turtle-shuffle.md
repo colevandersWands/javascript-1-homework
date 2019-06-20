@@ -49,18 +49,18 @@ some trickier function exercises before moving on.
 
 ### 1
 
-[on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1%2C%20_2%2C%20_3%29%20%7B%0A%20%20var%20result%20%3D%20%22%22%3B%0A%20%20var%20the_start%20%3D%20%22tur%22%3B%0A%20%20result%20%3D%20the_start%20%2B%20_1%20%2B%20_2%20%2B%20_3%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val%20%3D%20turtle%28%2F*%20write%20some%20arguments%20*%2F%29%3B%0Aconsole.assert%28return_val%20%3D%3D%3D%20\'turtle\'%2C%20%222%3A%20return_val%20%3D%3D%3D%20%22%20%2B%20return_val%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[My code: on pytut](http://www.pythontutor.com/javascript.html#code=%20%20function%20turtle%28_1,%20_2,%20_3%29%20%7B%20%20%0A%20%20%20%20var%20result%20%3D%20%22%22%3B%0A%20%20%20%20var%20the_start%20%3D%20%22tur%22%3B%0A%20%20%20%20result%20%3D%20the_start%20%2B%20_1%20%2B%20_2%20%2B%20_3%3B%0A%20%20%20%20return%20result%3B%0A%20%20%7D%0A%20%20const%20return_val%20%3D%20turtle%28't','l','e'%29%3B%0A%20%20console.assert%28return_val%20%3D%3D%3D%20'turtle',%20%221%3A%20return_val%20%3D%3D%3D%20%22%20%2B%20return_val%29%3B%0A&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-{  // 1
-  function turtle(_1, _2, _3) {  
+//1
+unction turtle(_1, _2, _3) {  
     var result = "";
     var the_start = "tur";
     result = the_start + _1 + _2 + _3;
     return result;
   }
-  const return_val = turtle(/* write some arguments */);
+  const return_val = turtle('t','l','e');
   console.assert(return_val === 'turtle', "1: return_val === " + return_val);
-};
+
 ```
 
 ### 2
