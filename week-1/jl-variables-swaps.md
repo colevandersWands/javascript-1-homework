@@ -52,7 +52,14 @@ d = _;
 ```
 1. [the fifth](https://goo.gl/gDaKNi)
 ```js
-// your solution here
+let a = "z", b = "y", c = "x", d = "w", e = "v";
+let _ = ' ';
+_ = a;
+a = e;
+e = b;
+b = d;
+d = e;
+e = _;
 ```
 # Multiple Assignments
 
