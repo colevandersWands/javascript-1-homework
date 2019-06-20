@@ -10,7 +10,7 @@
 | :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ | :white_check_mark: |It's no so hard | | |
 | :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | :white_check_mark: | | | |
 | :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | I finished - For some moments it seems some confused. :smile: | | |
-| :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ |:white_check_mark:  | Only one thing to say: :turtle: :smile: | | |
+| :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ |:white_check_mark:  | Only one thing to say: :turtle: | | |
 
 ---
 
