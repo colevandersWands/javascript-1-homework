@@ -2,8 +2,16 @@
 > [completed example](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD) 
 # First Part Homework
 [**```Berihu's ```** FreeCodeCamp Portfolio](https://www.freecodecamp.org/fccc851d03a-d789-4d59-a2af-48bf0e01a388)
-
- * [number 1](#5-understanding-uninitialized-variables)
+  ### Go to
+ * [number 10](#5-understanding-uninitialized-variables)
+ * [number 10](#10-divide-one-number-by-another-/)
+ * [number 20](#20-compound-assignment-with-augmented-division)
+ * [number 30](#30-use-bracket-notation-to-find-the-first-character-in-a-string)
+ * [number 40](#40-access-multi-dimensional-arrays-with-indexes)
+ * [number 50](#50-global-vs-local-scope-in-functions)
+ * [number 60](#60-comparison-with-the-inequality-operator)
+ * [number 70](#70-logical-order-in-if-else-statements)
+ 
 ## 1.Two types of comments in javascript
 ```js
 // this is one line comment
