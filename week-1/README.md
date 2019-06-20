@@ -3,7 +3,7 @@
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
 | :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark:  |I finished, there aren't problems | | |
-| :dash: __[fcc debugging](./fcc-debugging.md)__ | | | | |
+| :dash: __[fcc debugging](./fcc-debugging.md)__ | :wavy_dash: | | | |
 | :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |:white_check_mark:  | Piece of cake | | |
 | :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | :white_check_mark:|  It's no so hard| | |
 | :seedling: __[errors: variables](./jl-errors-variables.md)__ |  :white_check_mark:| The key is understand that execution phase doesn't have sintaxis error. | | |
