@@ -3,12 +3,12 @@
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
 | :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark:  |I finished. | | |
-| :dash: __[fcc debugging](./fcc-debugging.md)__ | :wavy_dash: | | | |
+| :dash: __[fcc debugging](./fcc-debugging.md)__ | :white_check_mark:| | | |
 | :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |:white_check_mark:  | Piece of cake | | |
 | :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | :white_check_mark:|  It's no so hard| | |
 | :seedling: __[errors: variables](./jl-errors-variables.md)__ |  :white_check_mark:| The key is understand that execution phase doesn't have sintaxis error. | | |
 | :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ | :white_check_mark: |It's no so hard | | |
-| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | | | | |
+| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | :wavy_dash: | | | |
 | :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | I finished - For some moments it seems some confused. :smile: | | |
 | :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ | | | | |
 
