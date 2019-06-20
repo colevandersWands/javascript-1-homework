@@ -160,7 +160,7 @@ some exercises to help you understand functions:
    };
 
    let x = "x", y = "y", z = "z";
-   let return_val = f(y,x,z);
+   let return_val = f(z,x,y);
 
    console.assert(return_val === "xzy", "6: return_val === " + return_val);
 }
