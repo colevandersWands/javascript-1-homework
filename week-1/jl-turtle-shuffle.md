@@ -92,7 +92,7 @@ console.assert(return_val === 'turtle', "4: return_val === " + return_val)
 
 ### 4
 
-[on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1,%20_2,%20_3%29%20%7B%0A%20%20var%20result%20%3D%20%22t%22%20%2B%20_2%20%2B%20%22r%22%20%2B%20_1%20%2B%20_3%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val_1%20%3D%20turtle%28't','u','le'%29%3B%0Aconsole.assert%28return_val_1%20%3D%3D%3D%20'turtle',%20%225%3A%20return_val_1%20%3D%3D%3D%20%22%20%2B%20return_val_1%29%3B%0A%0Aconst%20return_val_2%20%3D%20turtle%28'tl','u','e'%29%3B%0Aconsole.assert%28return_val_2%20%3D%3D%3D%20'turtle',%20%225%3A%20return_val_2%20%3D%3D%3D%20%22%20%2B%20return_val_2%29%3B&curInstr=10&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[My code: on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1,%20_2,%20_3%29%20%7B%0A%20%20var%20result%20%3D%20%22t%22%20%2B%20_2%20%2B%20%22r%22%20%2B%20_1%20%2B%20_3%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val_1%20%3D%20turtle%28't','u','le'%29%3B%0Aconsole.assert%28return_val_1%20%3D%3D%3D%20'turtle',%20%225%3A%20return_val_1%20%3D%3D%3D%20%22%20%2B%20return_val_1%29%3B%0A%0Aconst%20return_val_2%20%3D%20turtle%28'tl','u','e'%29%3B%0Aconsole.assert%28return_val_2%20%3D%3D%3D%20'turtle',%20%225%3A%20return_val_2%20%3D%3D%3D%20%22%20%2B%20return_val_2%29%3B&curInstr=10&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
 function turtle(_1, _2, _3) {
   var result = "t" + _2 + "r" + _1 + _3;
