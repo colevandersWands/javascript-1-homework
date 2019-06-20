@@ -3,8 +3,8 @@
 # First Part Homework
 [**```Berihu's ```** FreeCodeCamp Portfolio](https://www.freecodecamp.org/fccc851d03a-d789-4d59-a2af-48bf0e01a388)
   ### Go to
- * [number 10](#5-understanding-uninitialized-variables)
- * [number 10](#10-divide-one-number-by-another-/)
+ * [number 5](#5-understanding-uninitialized-variables)
+ * [number 13](#13-create-decimal-numbers)
  * [number 20](#20-compound-assignment-with-augmented-division)
  * [number 30](#30-use-bracket-notation-to-find-the-first-character-in-a-string)
  * [number 40](#40-access-multi-dimensional-arrays-with-indexes)
