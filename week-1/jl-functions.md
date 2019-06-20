@@ -123,7 +123,7 @@ some exercises to help you understand functions:
   };
 
   // set values in the args to pass the assert
-  let arg_1 = "", arg_2 = "", arg_3 = "";
+  let arg_1 = "y", arg_2 = "x", arg_3 = "z";
   let return_val = f(arg_1, arg_2, arg_3);
 
   console.assert(return_val === "xyz", "4: return_val === " + return_val);
@@ -160,12 +160,11 @@ some exercises to help you understand functions:
    };
 
    let x = "x", y = "y", z = "z";
-   let return_val = f(/* pass x, y & z in the right order */);
+   let return_val = f(y,x,z);
 
    console.assert(return_val === "xzy", "6: return_val === " + return_val);
 }
 ```
-
 ### 7
 
 [on pytut](http://www.pythontutor.com/live.html#code=function%20f%28param_1,%20param_2,%20param_3%29%20%7B%0A%20var%20result%20%3D%20/*%20arrange%20the%20params%20to%20pass%20the%20assert%20*/%3B%0A%20return%20result%3B%0A%7D%3B%0A%0Alet%20arg_1%20%3D%20%22z%22,%20arg_2%20%3D%20%22y%22,%20arg_3%20%3D%20%22x%22%3B%0Alet%20return_val%20%3D%20f%28arg_1,%20arg_2,%20arg_3%29%3B%0A%0Aconsole.assert%28return_val%20%3D%3D%3D%20%22xzy%22,%20%227%3A%20return_val%20%3D%3D%3D%20%22%20%2B%20return_val%29%3B&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
@@ -173,7 +172,7 @@ some exercises to help you understand functions:
 ```js
 {  // 7
    function f(param_1, param_2, param_3) {
-    var result = /* arrange the params to pass the assert */;
+    var result = param_3 + param_1 + param_2;
     return result;
    };
 
