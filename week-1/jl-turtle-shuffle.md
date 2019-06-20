@@ -171,20 +171,18 @@ console.assert(return_val === 'turtle', "9: return_val === " + return_val);
 ```
 ### 9
 
-[on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1%2C%20_2%2C%20_3%2C%20_4%2C%20_5%29%20%7B%0A%20%20var%20_%20%3D%20_4%3B%0A%20%20_4%20%3D%20_2%3B%0A%20%20_1%20%3D%20_3%3B%0A%20%20_3%20%3D%20_%3B%0A%20%20var%20result%20%3D%20_4%20%2B%20%22u%22%20%2B%20_1%20%2B%20_4%20%2B%20_3%20%2B%20%22e%22%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val%20%3D%20turtle%28%2F*%20write%20some%20arguments%20*%2F%29%3B%0Aconsole.assert%28return_val%20%3D%3D%3D%20\'turtle\'%2C%20%229%3A%20return_val%20%3D%3D%3D%20%22%20%2B%20return_val%29%3B&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[on pytut](http://www.pythontutor.com/javascript.html#code=function%20turtle%28_1,%20_2,%20_3,%20_4,%20_5%29%20%7B%0A%20%20var%20_%20%3D%20_4%3B%0A%20%20_4%20%3D%20_2%3B%0A%20%20_1%20%3D%20_3%3B%0A%20%20_3%20%3D%20_%3B%0A%20%20var%20result%20%3D%20_4%20%2B%20%22u%22%20%2B%20_1%20%2B%20_4%20%2B%20_3%20%2B%20%22e%22%3B%0A%20%20return%20result%3B%0A%7D%0Aconst%20return_val%20%3D%20turtle%28'','t','r','l',''%29%3B%0Aconsole.assert%28return_val%20%3D%3D%3D%20'turtle',%20%229%3A%20return_val%20%3D%3D%3D%20%22%20%2B%20return_val%29%3B&curInstr=9&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-{ // 9
-  function turtle(_1, _2, _3, _4, _5) {  
-    var _ = _4;
-    _4 = _2;
-    _1 = _3;
-    _3 = _;
-    var result = _4 + "u" + _1 + _4 + _3 + "e";
-    return result;
-  }
-  const return_val = turtle(/* write some arguments */);
-  console.assert(return_val === 'turtle', "9: return_val === " + return_val);
-};
+function turtle(_1, _2, _3, _4, _5) {
+  var _ = _4;
+  _4 = _2;
+  _1 = _3;
+  _3 = _;
+  var result = _4 + "u" + _1 + _4 + _3 + "e";
+  return result;
+}
+const return_val = turtle('','t','r','l','');
+console.assert(return_val === 'turtle', "9: return_val === " + return_val);
 ```
 
 ___
