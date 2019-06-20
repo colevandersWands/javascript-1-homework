@@ -2,15 +2,15 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark:  |I finished. I dont have problems so far.  | | |
-| :dash: __[fcc debugging](./fcc-debugging.md)__ | :white_check_mark:| | | |
-| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |:white_check_mark:  | Piece of cake | | |
-| :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | :white_check_mark:|  It's no so hard| | |
-| :seedling: __[errors: variables](./jl-errors-variables.md)__ |  :white_check_mark:| The key is understand that execution phase doesn't have sintaxis error. | | |
-| :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ | :white_check_mark: |It's no so hard | | |
-| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | :white_check_mark: | | | |
-| :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | I finished - For some moments it seems some confused. :smile: | | |
-| :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ |:white_check_mark:  | Only one thing to say: :turtle: | | |
+| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` |:white_check_mark:  |I finished. I dont have problems so far.  | :white_check_mark: | |
+| :dash: __[fcc debugging](./fcc-debugging.md)__ | :white_check_mark:| | :white_check_mark: | |
+| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |:white_check_mark:  | Piece of cake | :white_check_mark: | |
+| :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ | :white_check_mark:|  It's no so hard| :white_check_mark: | another solution for _nested quotes_ would be to use ```''``` single quotes instead of escaping |
+| :seedling: __[errors: variables](./jl-errors-variables.md)__ |  :white_check_mark:| The key is understand that execution phase doesn't have sintaxis error. | :white_check_mark: | |
+| :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ | :white_check_mark: |It's no so hard | :white_check_mark: | |
+| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | :white_check_mark: | | :white_check_mark: | |
+| :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | I finished - For some moments it seems some confused. :smile: | :warning: | #7 still doesn't pass it's assertion |
+| :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ |:white_check_mark:  | Only one thing to say: :turtle: | :white_check_mark: | :turtle: |
 
 ---
 
