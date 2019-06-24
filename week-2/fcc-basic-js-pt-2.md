@@ -49,4 +49,72 @@ var myDog = {
   "friends": ["tom", "Jerry"] 
 };
 ```
-## 81. Build JavaScript Objects
+## 81. Accessing Object Properties with Dot Notation
+```js
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt; 
+```
+## 82. Accessing Object Properties with Bracket Notation
+```js
+var testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+// Only change code below this line
+var entreeValue = testObj['an entree'];   // Change this line
+var drinkValue = testObj['the drink']; 
+```
+## 83. Accessing Object Properties with Variables
+```js
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+var playerNumber = 16;       // Change this Line
+var player = testObj[playerNumber]; 
+```
+## 84. Updating Object Properties
+```js
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line.
+myDog['name'] = 'Happy Coder';
+```
+## 85. Add New Properties to a JavaScript Object
+```js
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line.
+myDog.bark = 'woof';
+```
+## 86. Delete Properties from a JavaScript Object
+```js
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line.
+delete myDog.tails;
+````
+## 87. Using Objects for Lookups
