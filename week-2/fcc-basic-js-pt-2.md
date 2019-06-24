@@ -156,4 +156,72 @@ function checkObj(checkProp) {
 // Test your code by modifying these values
 checkObj("gift");
 ```
+## 89. Manipulating Complex Objects
+```js
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [ 
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  // Add record here
+   { "artist": "'Abrham Afewerki'",
+    "title": "Singer",
+    "release_year": 2006,
+    "formats": [ 
+      "CD",
+      "DVD",
+      "CD-ROM"
+    ],
+   }
+];
+```
+## 90. Accessing Nested Objects
+```js
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+var gloveBoxContents = myStorage.car.inside['glove box']; 
+```
+## 91. Accessing Nested Arrays
+```js
+var myPlants = [
+  { 
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }  
+];
+
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; 
+```
+## 92. Record Collection
 
