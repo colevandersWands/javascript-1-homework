@@ -409,28 +409,57 @@ return msg;
 lookUpProfile("Akira", "likes");
 ```
 ## Generate Random Fractions with JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20randomFraction%28%29%20%7B%0A%0A%20%20//%20Only%20change%20code%20below%20this%20line.%0A%20%20return%20Math.random%28%29%3B%0A%0A%20%20//%20Only%20change%20code%20above%20this%20line.%0A%7D&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function randomFraction() {
+  // Only change code below this line.
+  return Math.random();
+  // Only change code above this line.
+}
 ```
 ## Generate Random Whole Numbers with JavaScript
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20randomNumberBetween0and19%20%3D%20Math.floor%28Math.random%28%29%20*%2020%29%3B%0A%0Afunction%20randomWholeNum%28%29%20%7B%0A%20%20//%20Only%20change%20code%20below%20this%20line.%0Avar%20randomNumberBetween0and9%20%3D%20Math.floor%28Math.random%28%29%20*%2010%29%3B%0A%20%20return%20randomNumberBetween0and9%3B%0A%7D%0Avar%20num%20%3D%20randomWholeNum%28%29%3B&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+function randomWholeNum() {
+  // Only change code below this line.
+var randomNumberBetween0and9 = Math.floor(Math.random() * 10);
+  return randomNumberBetween0and9;
+}
 ```
 ## Generate Random Whole Numbers within a Range
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20randomRange%28myMin,%20myMax%29%20%7B%0A%20%20return%20Math.floor%28Math.random%28%29%20*%20%28myMax-%20myMin%20%2B%201%29%29%20%2B%20myMin%3B%20%0A%7D%0A%0A//%20Change%20these%20values%20to%20test%20your%20function%0Avar%20myRandom%20%3D%20randomRange%285,%2015%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax- myMin + 1)) + myMin; 
+}
+// Change these values to test your function
+var myRandom = randomRange(5, 15);
 ```
 ## Use the parseInt Function
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20convertToInteger%28str%29%20%7B%0A%20%20return%20parseInt%28str%29%0A%7D%0A%0AconvertToInteger%28%2256%22%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function convertToInteger(str) {
+  return parseInt(str)
+}
+convertToInteger("56");
 ```
 ## Use the parseInt Function with a Radix
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20convertToInteger%28str%29%20%7B%0A%20%20var%20a%20%3D%20parseInt%28str,2%29%3B%0A%20%20return%20a%3B%0A%7D%0AconvertToInteger%28%2210011%22%29%3B&curInstr=3&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function convertToInteger(str) {
+  var a = parseInt(str,2);
+  return a;
+}
+convertToInteger("10011");
 ```
 ## Use the Conditional (Ternary) Operator
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20checkEqual%28a,%20b%29%20%7B%0A%20%20return%20a%20%3D%3D%20b%20%3F%20true%20%3A%20false%20%3B%0A%7D%0AcheckEqual%281,%202%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function checkEqual(a, b) {
+  return a == b ? true : false ;
+}
+checkEqual(1, 2);
 ```
 ## Use Multiple Conditional (Ternary) Operators
 [PYH]()
