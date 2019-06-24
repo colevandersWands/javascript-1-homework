@@ -1,5 +1,6 @@
 > complete the rest of [basic JS exercises](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript) on FCC and paste each of your solutions into this file.  This will allow you to use your FCC exercises as a study reference later on  
 > [completed example](https://github.com/AlfiYusrina/hyf-javascript1/blob/master/week1/freecode_camp_solutions.MD) 
+
 [Completed Excersise from 1 -78](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-1/fcc-basic-js-pt-1.md) 
 ## 79. Counting Cards
 ```js 
@@ -39,3 +40,13 @@ function cc(card) {
 // Note: Only the last will display
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 ```
+## 80. Build JavaScript Objects 
+```js
+var myDog = {
+  "name": "Boby",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["tom", "Jerry"] 
+};
+```
+## 81. Build JavaScript Objects
