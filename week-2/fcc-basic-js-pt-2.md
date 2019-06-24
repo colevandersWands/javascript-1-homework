@@ -307,20 +307,106 @@ for (var i = 9; i > 0; i -= 2) {
 }
 ```
 ## Iterate Through an Array with a For Loop
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArr%20%3D%20%5B%202,%203,%204,%205,%206%5D%3B%0A//%20Only%20change%20code%20below%20this%20line%0Avar%20total%20%3D%200%3B%0Afor%20%28var%20i%20%3D%200%3B%20i%20%3C%20myArr.length%3B%20i%2B%2B%29%20%7B%0A%20%20total%20%2B%3D%20myArr%5Bi%5D%3B%0A%7D%0A&curInstr=19&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+// Only change code below this line
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
 ```
 ## Nesting For Loops
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20multiplyAll%28arr%29%20%7B%0A%20%20var%20product%20%3D%201%3B%0A%20%20//%20Only%20change%20code%20below%20this%20line%0A%20%20%0Afor%20%28var%20i%3D0%3B%20i%20%3C%20arr.length%3B%20i%2B%2B%29%20%7B%0A%20%20for%20%28var%20j%3D0%3B%20j%20%3C%20arr%5Bi%5D.length%3B%20j%2B%2B%29%20%7B%0A%20%20%20%20%20%20product*%3Darr%5Bi%5D%5Bj%5D%3B%0A%20%20%20%20%20%20console.log%28arr%5Bi%5D%5Bj%5D%29%3B%0A%20%20%20%20%20%20console.log%28arr.length%29%3B%0A%20%20%20%20%20%20console.log%28arr%5Bi%5D.length%29%3B%0A%20%20%7D%0A%7D%0A%20%20//%20Only%20change%20code%20above%20this%20line%0A%20%20return%20product%3B%0A%0A%7D%0A//%20Modify%20values%20below%20to%20test%20your%20code%0AmultiplyAll%28%5B%5B1%5D,%5B2%5D,%5B3%5D%5D%29%3B&curInstr=35&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  
+for (var i=0; i < arr.length; i++) {
+  for (var j=0; j < arr[i].length; j++) {
+      product*=arr[i][j];
+      console.log(arr[i][j]);
+      console.log(arr.length);
+      console.log(arr[i].length);
+  }
+}
+  // Only change code above this line
+  return product;
+
+}
+// Modify values below to test your code
+multiplyAll([[1],[2],[3]]);
 ```
 ## Iterate with JavaScript Do...While Loops
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5D%3B%0Avar%20i%20%3D%2010%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0A%0Ado%20%7B%0A%20%20myArray.push%28i%29%3B%0A%20%20i%2B%2B%3B%0A%7Dwhile%20%28i%20%3C%205%29%0A&curInstr=4&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArray = [];
+var i = 10;
+
+// Only change code below this line.
+do {
+  myArray.push(i);
+  i++;
+}while (i < 5)
 ```
 ## Profile Lookup
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//Setup%0Avar%20contacts%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22firstName%22%3A%20%22Akira%22,%0A%20%20%20%20%20%20%20%20%22lastName%22%3A%20%22Laine%22,%0A%20%20%20%20%20%20%20%20%22number%22%3A%20%220543236543%22,%0A%20%20%20%20%20%20%20%20%22likes%22%3A%20%5B%22Pizza%22,%20%22Coding%22,%20%22Brownie%20Points%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22firstName%22%3A%20%22Harry%22,%0A%20%20%20%20%20%20%20%20%22lastName%22%3A%20%22Potter%22,%0A%20%20%20%20%20%20%20%20%22number%22%3A%20%220994372684%22,%0A%20%20%20%20%20%20%20%20%22likes%22%3A%20%5B%22Hogwarts%22,%20%22Magic%22,%20%22Hagrid%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22firstName%22%3A%20%22Sherlock%22,%0A%20%20%20%20%20%20%20%20%22lastName%22%3A%20%22Holmes%22,%0A%20%20%20%20%20%20%20%20%22number%22%3A%20%220487345643%22,%0A%20%20%20%20%20%20%20%20%22likes%22%3A%20%5B%22Intriguing%20Cases%22,%20%22Violin%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22firstName%22%3A%20%22Kristian%22,%0A%20%20%20%20%20%20%20%20%22lastName%22%3A%20%22Vos%22,%0A%20%20%20%20%20%20%20%20%22number%22%3A%20%22unknown%22,%0A%20%20%20%20%20%20%20%20%22likes%22%3A%20%5B%22JavaScript%22,%20%22Gaming%22,%20%22Foxes%22%5D%0A%20%20%20%20%7D%0A%5D%3B%0A%0A%0Afunction%20lookUpProfile%28name,%20prop%29%7B%0A//%20Only%20change%20code%20below%20this%20line%0Avar%20i%3D0%3B%0Avar%20msg%3B%0Ado%7B%0A%20%20console.log%28contacts%5Bi%5D%5B%22firstName%22%5D%29%3B%0A%20%20if%28contacts%5Bi%5D%5B%22firstName%22%5D%3D%3Dname%29%20%7B%0A%20%20%20%20if%28contacts%5Bi%5D.hasOwnProperty%28prop%29%29%7B%0A%20%20%20%20%20%20msg%3Dcontacts%5Bi%5D%5Bprop%5D%3B%0A%20%20%20%20%7Delse%7B%0A%20%20%20%20%20%20%20%20msg%3D%22No%20such%20property%22%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20i%2B%2B%3B%20%20%0A%7Dwhile%20%28i%3Ccontacts.length%20%26%26%20contacts%5B%22firstName%22%5D!%3Dname%29%0Aif%20%28!msg%29%0A%20%20%20msg%3D%22No%20such%20contact%22%3B%0Areturn%20msg%3B%0A//%20Only%20change%20code%20above%20this%20line%0A%7D%0A%0A//%20Change%20these%20values%20to%20test%20your%20function%0AlookUpProfile%28%22Akira%22,%20%22likes%22%29%3B&curInstr=24&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop){
+// Only change code below this line
+var i=0;
+var msg;
+do{
+  console.log(contacts[i]["firstName"]);
+  if(contacts[i]["firstName"]==name) {
+    if(contacts[i].hasOwnProperty(prop)){
+      msg=contacts[i][prop];
+    }else{
+        msg="No such property";
+    }
+  }
+  i++;  
+}while (i<contacts.length && contacts["firstName"]!=name)
+if (!msg)
+   msg="No such contact";
+return msg;
+// Only change code above this line
+}
+
+// Change these values to test your function
+lookUpProfile("Akira", "likes");
 ```
 ## Generate Random Fractions with JavaScript
 [PYH]()
