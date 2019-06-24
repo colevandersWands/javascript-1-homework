@@ -462,6 +462,10 @@ function checkEqual(a, b) {
 checkEqual(1, 2);
 ```
 ## Use Multiple Conditional (Ternary) Operators
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=function%20checkSign%28num%29%20%7B%0A%20%20return%20%28num%20%3E%200%29%20%3F%20%22positive%22%20%3A%20%28num%20%3C%200%29%20%3F%20%22negative%22%20%3A%20%22zero%22%3B%0A%7D%0A%0AcheckSign%2810%29%3B&curInstr=2&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+function checkSign(num) {
+  return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero";
+}
+checkSign(10);
 ```
