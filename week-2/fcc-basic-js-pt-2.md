@@ -264,20 +264,47 @@ function updateRecords(id, prop, value) {
 updateRecords(5439, "artist", "ABBA");
 ```
 ## Iterate with JavaScript While Loops
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20i%20%3D%200%3B%0Awhile%28i%20%3C%205%29%20%7B%0A%20%20myArray.push%28i%29%3B%0A%20%20i%2B%2B%3B%0A%7D%0A&curInstr=18&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArray = [];
+// Only change code below this line.
+var i = 0;
+while(i < 5) {
+  myArray.push(i);
+  i++;
+}
 ```
 ## Iterate with JavaScript For Loops
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=var%20myArray%20%3D%20%5B%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Avar%20myArray%20%3D%20%5B%5D%3B%0Afor%20%28var%20i%20%3D%201%3B%20i%20%3C%206%3B%20i%2B%2B%29%20%7B%0A%20%20myArray.push%28i%29%3B%0A%7D%0A&curInstr=19&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+var myArray = [];
+// Only change code below this line.
+var myArray = [];
+for (var i = 1; i < 6; i++) {
+  myArray.push(i);
+}
 ```
 ## Iterate Odd Numbers With a For Loop
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0Afor%20%28var%20i%20%3D%201%3B%20i%20%3C%2010%3B%20i%20%2B%3D%202%29%20%7B%0A%20%20myArray.push%28i%29%3B%0A%7D%0A&curInstr=18&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArray = [];
+
+// Only change code below this line.
+for (var i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
 ```
 ## Count Backwards With a For Loop
-[PYH]()
+[PYH](http://www.pythontutor.com/javascript.html#code=//%20Setup%0Avar%20myArray%20%3D%20%5B%5D%3B%0A%0A//%20Only%20change%20code%20below%20this%20line.%0A%0Afor%20%28var%20i%20%3D%209%3B%20i%20%3E%200%3B%20i%20-%3D%202%29%20%7B%0A%20%20%20myArray.push%28i%29%3B%0A%7D&curInstr=18&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// Setup
+var myArray = [];
+// Only change code below this line.
+for (var i = 9; i > 0; i -= 2) {
+   myArray.push(i);
+}
 ```
 ## Iterate Through an Array with a For Loop
 [PYH]()
