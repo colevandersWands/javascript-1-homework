@@ -33,3 +33,115 @@ function cc(card) {
 }
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 ```
+##  Build JavaScript Objects
+[PYH]()
+```js
+```
+## Accessing Object Properties with Dot Notation
+[PYH]()
+```js
+```
+## Accessing Object Properties with Bracket Notation
+[PYH]()
+```js
+```
+## Accessing Object Properties with Variables
+[PYH]()
+```js
+```
+## Updating Object Properties
+[PYH]()
+```js
+```
+## Add New Properties to a JavaScript Object
+[PYH]()
+```js
+```
+## Delete Properties from a JavaScript Object
+[PYH]()
+```js
+```
+## Using Objects for Lookups
+[PYH]()
+```js
+```
+## Testing Objects for Properties
+[PYH]()
+```js
+```
+## Manipulating Complex Objects
+[PYH]()
+```js
+```
+## Accessing Nested Objects
+[PYH]()
+```js
+```
+## Accessing Nested Arrays
+[PYH]()
+```js
+```
+## Record Collection
+[PYH]()
+```js
+```
+## Iterate with JavaScript While Loops
+[PYH]()
+```js
+```
+## Iterate with JavaScript For Loops
+[PYH]()
+```js
+```
+## Iterate Odd Numbers With a For Loop
+[PYH]()
+```js
+```
+## Count Backwards With a For Loop
+[PYH]()
+```js
+```
+## Iterate Through an Array with a For Loop
+[PYH]()
+```js
+```
+## Nesting For Loops
+[PYH]()
+```js
+```
+## Iterate with JavaScript Do...While Loops
+[PYH]()
+```js
+```
+## Profile Lookup
+[PYH]()
+```js
+```
+## Generate Random Fractions with JavaScript
+[PYH]()
+```js
+```
+## Generate Random Whole Numbers with JavaScript
+[PYH]()
+```js
+```
+## Generate Random Whole Numbers within a Range
+[PYH]()
+```js
+```
+## Use the parseInt Function
+[PYH]()
+```js
+```
+## Use the parseInt Function with a Radix
+[PYH]()
+```js
+```
+## Use the Conditional (Ternary) Operator
+[PYH]()
+```js
+```
+## Use Multiple Conditional (Ternary) Operators
+[PYH]()
+```js
+```
