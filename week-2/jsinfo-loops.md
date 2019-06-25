@@ -64,5 +64,26 @@ let i=0;
 ```
 ##  Repeat until the input is correct
 ```js
-   
+  <script>
+      let number;
+  do {
+      bnumber = prompt("Please enter a number less than 100",0);
+     }while(number>=100)
+  </script>
+```
+
+##  Output prime numbers
+```js
+var n = 25;
+for (var i= 2; i < n ; i++){
+  var prime= true;
+    for (var j =2; j<i; j++){
+        if (i%j== 0){
+        prime = false; 
+        break;
+        }
+    }
+   if (prime) alert( i ); 
+}
+ 
 ```
