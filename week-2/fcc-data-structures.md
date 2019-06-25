@@ -70,6 +70,7 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 ```
 ## Copy an Array with the Spread Operator
 ```js
+
 ```
 ## Combine Arrays with the Spread Operator
 ```js
