@@ -275,5 +275,31 @@ updateRecords(5439, "artist", "ABBA");
 ```
 ## 93.  Iterate with JavaScript While Loops
 ```js
+var myArray = [];
+// Only change code below this line.
+var i = 0;
+while( i <= 4 ){
+  myArray.push(i);
+  i ++;
+}
+```
+## 94.  Iterate with JavaScript For Loops
+```js
+var myArray = [];
 
+// Only change code below this line.
+for(i = 1; i < 6; i ++ ){
+    myArray.push(i);
+}
+```
+## 95. Iterate Odd Numbers With a For Loop
+```js
+// Setup
+var myArray = [];
+// Only change code below this line.
+for(var i = 1; i < 10; i += 2 ){
+  myArray.push(i);
+}
+```
+## 96. 
 
