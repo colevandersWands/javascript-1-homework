@@ -429,4 +429,41 @@ function convertToInteger(str) {
 
 convertToInteger("56");
 ```
+## 105. Use the parseInt Function with a Radix
+
+parseInt(string, radix);
+And here's an example:
+var a = parseInt("11", 2);
+The radix variable says that "11" is in the binary system, or base 2. This example converts the string "11" to an integer 3.
+
+```js
+function convertToInteger(str) {
+  return parseInt(str, 2 );
+}
+
+convertToInteger("10011");
+```
+## 106. Use the Conditional (Ternary) Operator
+
+The conditional operator, also called the ternary operator, can be used as a one line if-else expression.
+The syntax is:
+```js
+condition ? statement-if-true : statement-if-false;
+```
+```js
+function checkEqual(a, b) {
+ return a ===b ? true : false; 
+}
+
+checkEqual(1, 2);
+```
+## 107. Use Multiple Conditional (Ternary) Operators
+```js
+function checkSign(num) {
+ return (num === 0)? "zero" : (num > 0)? "positive": "negative"
+}
+
+checkSign(10);
+```
+
 
