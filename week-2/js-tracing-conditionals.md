@@ -453,15 +453,44 @@ __original code__
 __refactored and traced__
 ```js
 {
+const x = 1 , y = 1; // test out a bunch of values
 
+  const expression_1 = x;
+  const truthiness_1 = Boolean(expression_1);
+
+  const expression_2 = y;
+  const truthiness_2 = Boolean(expression_2);
+  let path;
+if (x) {
+  if (y) {
+    path = 'if if';
+  } else {
+    path = 'if elase';
+  }
+} else {
+  if (y) {
+path = 'else if';
+  } else {
+    path = 'else else';
+  }
+}
+ console.log("x: " + typeof x + ", " + x);
+  console.log("y: " + typeof y + ", " + y);
+  console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+  console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+  console.log("PATH: ", path);
 }
 ```
 
 __some tracings__
 ```js
 // find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: null, y: null, path: "else else"
+x: true, y: true, path: "if if"
+x: true, y: false, path: "if else"
+x: NaN, y: 1, path: "else if"
+x: Infinity, y: "", path: "else if"
+x: 1, y: "", path: "if else"
 ```
 
 
