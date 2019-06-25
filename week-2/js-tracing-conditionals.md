@@ -631,15 +631,13 @@ path = 'else if';
 __some tracings__
 ```js
 // find 6+ tracing values
-// find 6+ tracing values
 x: null, y: null, path: "else else"
 x: true, y: true, path: "if if "
 x: true, y: false, path: "if else"
 x: NaN, y: 1, path: "else else"
 x: Infinity, y:true, path: "if if "
 x: 1, y: 0 path: "if else"
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+
 ```
 
 
@@ -678,13 +676,49 @@ __original code__
 __refactored and traced__
 ```js
 {
+const x = , y = ; // test out a bunch of values
 
+  const expression_1 = x || y;
+  const truthiness_1 = Boolean(expression_1);
+
+  const expression_2 = x !== y;
+  const truthiness_2 = Boolean(expression_2);
+
+  const expression_3 = x && y;
+  const truthiness_3 = Boolean(expression_3);
+
+  let path;
+  if (truthiness_1) {
+    if (truthiness_2) {
+       path = 'if if';
+    }
+  } else if (truthiness_3) {
+    if (truthiness_2) {
+      path = 'else if if';
+    }
+  } else {
+    if (truthiness_2) {
+    path = 'else if else';  
+    }
+  }
+ console.log("x: " + typeof x + ", " + x);
+  console.log("y: " + typeof y + ", " + y);
+  console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+  console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+  console.log("THIRD EXP: ", typeof expression_3+", "+expression_3+", "+truthiness_3+"y");
+  console.log("PATH: ", path);
 }
 ```
 
 __some tracings__
 ```js
 // find 6+ tracing values
+x: 0, y: '', path: "else if else"
+x: true, y: true, path: "undefined"
+x: true, y: false, path: "if if"
+x: NaN, y: 1, path: "if if "
+x: Infinity, y:true, path: "if if "
+x: 1, y: 0 path: "if if"
 // try to find at least 1 set for each path
 // or can you? some paths are unreachable!
 ```
