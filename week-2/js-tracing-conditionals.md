@@ -257,7 +257,7 @@ __refactored and traced__
 ```js
 {
 const x = ; // try a bunch of values!
-const expression_1 = x === +x || x === !x
+const expression_1 = x === +x || x === !x;
 const truthiness_1 = Boolean(expression_1);
 let path;
 if (truthiness_1) {
@@ -310,6 +310,28 @@ __original code__
 __refactored and traced__
 ```js
 {
+ const x = ; // test out a bunch of values
+
+  const expression_1 = x === +x;
+  const truthiness_1 = Boolean(expression_1);
+
+  const expression_2 = x === !x;
+  const truthiness_2 = Boolean(expression_2);
+
+  let path;
+
+  if ( truthiness_1 ) {
+    path = "first if";
+  } else if ( truthiness_2 ) {
+    path = "second if";
+  } else {
+    path = "else";
+  }
+
+  console.log("x: " + typeof x + ", " + x);
+  console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+  console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+  console.log("PATH: ", path);
 
 }
 ```
@@ -317,10 +339,14 @@ __refactored and traced__
 __some tracings__
 ```js
 // find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: null,  path: "else"
+x: false,  path: "else"
+x: true, path: "else"
+x: 0, path: "first if"
+x: Infinity, path: "first if"
+x: 1, path: "first if"
+// I think "second if" id unreachable!
 ```
-
 
 [TOP](#tracing-paths)
 
