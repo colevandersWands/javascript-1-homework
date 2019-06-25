@@ -595,12 +595,49 @@ __refactored and traced__
 ```js
 {
   // can you remove on conditional statement without changing the bahavior?
+  const x = , y = ; // tray here
+ const expression_1 =  x;
+  const truthiness_1 = Boolean(expression_1);
+
+  const expression_2 = y;
+  const truthiness_2 = Boolean(expression_2);
+  let path;
+  if (x) {
+    if (y) {
+path = 'if if';
+    } else {
+     path = 'if else'; 
+    }
+  } 
+  // yes we can remove this part 
+  /*
+ else {
+    if (x) {
+path = 'else if';
+    } */
+    else {
+   path = 'else else';   
+    }
+  }  
+
+  console.log("x: " + typeof x + ", " + x);
+  console.log("y: " + typeof y + ", " + y);
+  console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+  console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+  console.log("PATH: ", path);
 }
 ```
 
 __some tracings__
 ```js
 // find 6+ tracing values
+// find 6+ tracing values
+x: null, y: null, path: "else else"
+x: true, y: true, path: "if if "
+x: true, y: false, path: "if else"
+x: NaN, y: 1, path: "else else"
+x: Infinity, y:true, path: "if if "
+x: 1, y: 0 path: "if else"
 // try to find at least 1 set for each path
 // or can you? some paths are unreachable!
 ```
