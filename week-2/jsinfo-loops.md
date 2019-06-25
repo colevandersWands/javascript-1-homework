@@ -8,6 +8,6 @@ let i = 3;
 while (i) {
   alert( i-- );
 }
-
-### R\ The last value is i=0, because while() make an boolean evalution and in this case 0 is like false. 
 ```
+### R\ The last value is i=0, because while() make an boolean evalution and in this case 0 is like false. 
+
