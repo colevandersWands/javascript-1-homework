@@ -85,9 +85,23 @@ console.log(copyMachine([true, false, true], 2));
 ```
 ## Combine Arrays with the Spread Operator
 ```js
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', fragment,'is','fun'];
+  return sentence;
+}
+// do not change code below this line
+console.log(spreadOut());
 ```
 ## Check For The Presence of an Element With indexOf()
 ```js
+function quickCheck(arr, elem) {
+  // change code below this line
+ return (arr.indexOf(elem))>0?true:false;
+  // change code above this line
+}
+// change code here to test different cases:
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 ```
 ## Iterate Through All an Array's Items Using For Loops
 ```js
