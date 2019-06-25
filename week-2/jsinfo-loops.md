@@ -50,6 +50,19 @@ for (let i = 0; i < 5; ++i) alert( i );
 Use the for loop to output even numbers from 2 to 10.
 
 ```js
-for (let i = 0; i < 5; ++i) alert( i );
-``
+for (let i = 2; i < 11; i+=2) alert( i );
+```
 
+##  Replace "for" with "while"
+Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
+```js
+let i=0;
+ while (i < 3) {
+   alert( `number ${i}!` );
+   i++
+ }
+```
+##  Repeat until the input is correct
+```js
+   
+```
