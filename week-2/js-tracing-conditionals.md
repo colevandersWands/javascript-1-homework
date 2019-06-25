@@ -522,15 +522,38 @@ __original code__
 __refactored and traced__
 ```js
 {
+const x = , y = ; // tray here
+ const expression_1 =  !x || !y;
+  const truthiness_1 = Boolean(expression_1);
 
+  const expression_2 = !(x && y);
+  const truthiness_2 = Boolean(expression_2);
+  let path;
+  if ( truthiness_1 ) {
+    path = 'if ';
+  } else if ( truthiness_2 ) {
+    path = 'else if';
+  } else { 
+  path = 'else';
+  }
+  console.log("x: " + typeof x + ", " + x);
+  console.log("y: " + typeof y + ", " + y);
+  console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+  console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+  console.log("PATH: ", path);
 }
 ```
 
 __some tracings__
 ```js
 // find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: null, y: null, path: "if"
+x: true, y: true, path: "else"
+x: true, y: false, path: "if"
+x: NaN, y: 1, path: "if"
+x: Infinity, y:true, path: "else"
+x: 1, y: 1, path: "else"
+// I think 'else if' is unreachable!
 ```
 
 > [De Morgan's Law](https://www.youtube.com/watch?v=tKnS3s8fOu4)
