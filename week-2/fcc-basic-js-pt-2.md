@@ -392,4 +392,41 @@ return 'No such contact'
 // Change these values to test your function
 lookUpProfile("Akira", "likes");
 ```
+## 101. Generate Random Fractions with JavaScript
+```js
+function randomFraction() {
+
+  // Only change code below this line.
+  return Math.random();
+  // Only change code above this line.
+}
+```
+## 102. Generate Random Whole Numbers with JavaScript
+```js
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+function randomWholeNum() {
+  // Only change code below this line.
+  return Math.floor(Math.random()*10);
+}
+```
+## 103. Generate Random Whole Numbers within a Range
+```js
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin; // Change this line
+}
+// Change these values to test your function
+var myRandom = randomRange(5, 15);
+```
+## 104. Use the parseInt Function
+
+The parseInt() function parses a string and returns an integer. Here's an example:
+
+```js
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
+```
 
