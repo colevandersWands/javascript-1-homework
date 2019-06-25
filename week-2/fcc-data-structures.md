@@ -2,24 +2,71 @@
 
 ## Use an Array to Store a Collection of Data
 ```js
+let yourArray = [1,true,"hello","mame", null];
 ```
 ## Access an Array's Contents Using Bracket Notation
 ```js
+let myArray = ["a", "b", "c", "d"];
+// change code below this line
+myArray[1]="n";
+//change code above this line
+console.log(myArray);
 ```
 ## Add Items to an Array with push() and unshift()
 ```js
+function mixedNumbers(arr) {
+  // change code below this line
+   arr.unshift('I', 2, 'three');
+   arr.push(7, 'VIII', 9);
+  // change code above this line
+  return arr;
+}
+// do not change code below this line
+console.log(mixedNumbers(['IV', 5, 'six']));
 ```
 ## Remove Items from an Array with pop() and shift()
 ```js
+function popShift(arr) {
+  let popped= arr.pop(); // change this line
+  let shifted = arr.shift(); // change this line
+   return [shifted, popped];
+}
+// do not change code below this line
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
 ```
 ## Remove Items Using splice()
 ```js
+function sumOfTen(arr) {
+  // change code below this line
+  arr.splice(0, 1);
+  arr.splice(1, 1);
+  arr.splice(2, 2); 
+  // change code above this line
+  return arr.reduce((a, b) => a + b);
+}
+// do not change code below this line
+console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
 ```
 ## Add Items Using splice()
 ```js
+function htmlColorNames(arr) {
+  // change code below this line
+  arr.splice(0,1,'DarkSalmon');
+  arr.splice(1,1,'BlanchedAlmond');
+  // change code above this line
+  return arr;
+} 
+// do not change code below this line
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurqoise', 'FireBrick']));
 ```
 ## Copy Array Items Using slice()
 ```js
+function forecast(arr) {
+  // change code below this line
+ return  arr.slice(2,4);
+}
+// do not change code below this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 ```
 ## Copy an Array with the Spread Operator
 ```js
