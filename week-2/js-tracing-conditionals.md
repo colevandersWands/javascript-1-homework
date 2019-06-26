@@ -772,9 +772,9 @@ const x = , y = ; // test out a bunch of values
     if (truthiness_2) {
         path = 'if if';
     } else if (truthiness_3) {
-        path = 'else if';
+        path = 'if else if';
     } else {
-        path = 'else';
+        path = 'if else';
     }
   }
   console.log("x: " + typeof x + ", " + x);
@@ -789,8 +789,14 @@ const x = , y = ; // test out a bunch of values
 __some tracings__
 ```js
 // find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: 0, y: '', path: "if else"
+x: true, y: true, path: "undefined"
+x: true, y: false, path: "if if"
+x: NaN, y: 0, path: "if else "
+x: Infinity, y:true, path: "if if "
+x: 1, y: 0 path: "if if"
+// if truthiness_1 is false the path is undifined 
+// I think 'if else if' is  unreachable!
 ```
 
 
