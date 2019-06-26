@@ -29,7 +29,7 @@ the fix:
 ```js
 let myArray = [1, 2, 3];
 ```
-your notes: Array declaration begin with '\['  and end with '\]'
+your notes: Array declaration must begined with '\['  and ended with '\]'.
 
 [TOP](#array-errors)
 
@@ -43,15 +43,17 @@ let myArray = [1, 2 3];
 ```
 error message:
 ```
+SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase  
+* syntax  
 
 the fix:
 ```js
+let myArray = [1, 2 , 3];
 ```
-your notes:
+your notes: The elements in array declaration must be separated with ','.
 
 [TOP](#array-errors)
 
@@ -71,13 +73,19 @@ error message:
 ```
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax  
 
 the fix:
 ```js
+let myArray = [
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]
+              ];
+
 ```
-your notes:
+your notes: The nested elements in array declaration must be separated with ','.
 
 [TOP](#array-errors)
 
