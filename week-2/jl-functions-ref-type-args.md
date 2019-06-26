@@ -197,13 +197,15 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### start a new array
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_array%28arr%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20array%20from%20scratch%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_new_start%20%3D%20start_new_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_new_start%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_new_start%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[My code: on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_array%28arr%29%20%7B%0A%20%20var%20new_arr%20%3D%20%5B%5D%3B%0A%20%20%20%20for%20%28let%20i%20%3D%20arr.length%20-%201%3B%20i%20%3E%3D%200%3B%20i--%29%20%7B%0A%20%20%20%20%20%20new_arr.unshift%28arr%5Bi%5D%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20new_arr%3B%20%20%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_new_start%20%3D%20start_new_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_new_start%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_new_start%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=16&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
+
   function start_new_array(arr) {
-    // write this by building a new array from scratch
-    // the paramenter should only be used on the right side of =
-    // the new one should only be used on the left side of =
+  var new_arr = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+      new_arr.unshift(arr[i]);
+    }
+    return new_arr;  
   }
 
   const array = ['a', 'b'];
@@ -212,14 +214,14 @@ not the best choice, it can be much more difficult to think about and debug.
   console.assert(array[0] === by_new_start[0]);
   console.assert(array[1] === by_new_start[1]);
   console.assert(array !== by_new_start);
-}
+
 ```
 
 ### copy an object
 
 [on pytut](http://www.pythontutor.com/live.html#code=function%20copy_object%28obj%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_copy%20%3D%20copy_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_copy.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_copy%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-{
+
   function copy_object(obj) {
     // write this using JSON.stringify & .parse
   }
@@ -230,7 +232,7 @@ not the best choice, it can be much more difficult to think about and debug.
   console.assert(object.a === by_copy.a);
   console.assert(object['b'] === by_copy['b']);
   console.assert(object !== by_copy);
-}
+
 ```
 
 
