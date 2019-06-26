@@ -41,15 +41,18 @@ let y = b.e;
 ```
 error message:
 ```
+ReferenceError: b is not defined.
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* execution phase 
+* semanitc 
 
 the fix:
 ```js
+let x = {b:'e'};
+let y = x.b;
 ```
-your notes:
+your notes: The way to access to the property b in object x it was incorrect.
 
 [TOP](#object-errors)
 
