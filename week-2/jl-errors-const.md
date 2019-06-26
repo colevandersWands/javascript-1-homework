@@ -45,15 +45,17 @@ a = 0;
 ```
 error message:
 ```
+TypeError: Assignment to constant variable.
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* execution phase 
+* semanitc 
 
 the fix:
 ```js
+const a = 9;
 ```
-your notes:
+your notes: The constant cann't change of value.
 
 [TOP](#variable-errors)
 
