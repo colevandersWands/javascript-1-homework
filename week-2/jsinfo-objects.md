@@ -79,19 +79,19 @@ Create a function multiplyNumeric(obj) that multiplies all numeric properties of
 For instance:
 
 ```js
-1	// before the call
-2	let menu = {
-3	  width: 200,
-4	  height: 300,
-5	  title: "My menu"
-6	};
-7	function multiplyNumeric(obj){
-9	 for (let key in obj){
-10	   if (typeof(menu[key])=="number" )
-11	    menu[key]*=2;
-12	  }
-13	}
-14 multiplyNumeric(menu)
+	// before the call
+	let menu = {
+	  width: 200,
+	  height: 300,
+	  title: "My menu"
+	};
+	function multiplyNumeric(obj){
+	 for (let key in obj){
+	   if (typeof(menu[key])=="number" )
+	    menu[key]*=2;
+	  }
+	}
+ multiplyNumeric(menu)
 ```
 ```
 // after the call
