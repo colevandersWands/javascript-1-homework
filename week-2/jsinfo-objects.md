@@ -48,6 +48,8 @@ const user = {
 // does it work?
 user.name = "Pete";
 ```
+### Yes, Its possible because the "user" ist constan no their properties. 
+
 
 ## Sum object properties
 importance: 5<br>
