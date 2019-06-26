@@ -17,15 +17,17 @@ let b = a.b.3
 ```
 error message:
 ```
+SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+SyntaxError: Unexpected number
 ```
-your notes:
+your notes: The number 3 is the value of the property b which belong to the object a. 
 
 [TOP](#object-errors)
 
