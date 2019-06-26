@@ -48,7 +48,7 @@ const user = {
 // does it work?
 user.name = "Pete";
 ```
-### Yes, Its possible because the "user" ist constan no their properties. 
+### Yes, Its possible because the "user" is constant no their properties. 
 
 
 ## Sum object properties
@@ -79,13 +79,21 @@ Create a function multiplyNumeric(obj) that multiplies all numeric properties of
 For instance:
 
 ```js
-// before the call
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
-};
-multiplyNumeric(menu);
+1	// before the call
+2	let menu = {
+3	  width: 200,
+4	  height: 300,
+5	  title: "My menu"
+6	};
+7	8	function multiplyNumeric(obj){
+9	 for (let key in obj){
+10	   if (typeof(menu[key])=="number" )
+11	    menu[key]*=2;
+12	  }
+13	}
+14	15	multiplyNumeric(menu)
+```
+```
 // after the call
 menu = {
   width: 400,
