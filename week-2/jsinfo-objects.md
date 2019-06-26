@@ -25,10 +25,18 @@ Write the function isEmpty(obj) which returns true if the object has no properti
 Should work like that:
 
 ```js
+function isEmpty(obj)
+{
+  var property=0;
+  for (let key in obj) {
+     if (key) property++;
+  }
+   return property? true:false;
+}
 let schedule = {};
-alert( isEmpty(schedule) ); // true
+isEmpty(schedule); // true
 schedule["8:30"] = "get up";
-alert( isEmpty(schedule) ); // false
+isEmpty(schedule); // false
 ```
 ## Constant objects?
 importance: 5
