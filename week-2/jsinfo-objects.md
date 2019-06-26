@@ -2,7 +2,7 @@
 > Don't be afraid of peeking at the solutions!  Just be sure you study them well
 
 ## Hello, object
-importance: 5
+importance: 5 <br>
 Write the code, one line for each action:
 
 1. Create an empty object user.
@@ -19,7 +19,7 @@ user.name = 'Peter';
 delete user.name;
 ```
 ## Check for emptiness
-importance: 5
+importance: 5<br>
 Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
 
 Should work like that:
@@ -39,7 +39,7 @@ schedule["8:30"] = "get up";
 isEmpty(schedule); // false
 ```
 ## Constant objects?
-importance: 5
+importance: 5<br>
 Is it possible to change an object declared with const? What do you think?
 ```js
 const user = {
@@ -50,7 +50,7 @@ user.name = "Pete";
 ```
 
 ## Sum object properties
-importance: 5
+importance: 5<br>
 We have an object storing salaries of our team:
 ```js
 let salaries = {
@@ -63,7 +63,7 @@ Write the code to sum all salaries and store in the variable sum. Should be 390 
 If salaries is empty, then the result must be 0.
 
 ## Multiply numeric properties by 2
-importance: 3
+importance: 3<br>
 Create a function multiplyNumeric(obj) that multiplies all numeric properties of obj by 2.
 For instance:
 
