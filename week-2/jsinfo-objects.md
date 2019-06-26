@@ -12,6 +12,11 @@ Write the code, one line for each action:
 5. Remove the property name from the object.
 
 ```js
+let user = {};
+user.name='Jhon';
+user.surname = 'Smith';
+user.name = 'Peter';
+delete user.name;
 ```
 ## Check for emptiness
 importance: 5
