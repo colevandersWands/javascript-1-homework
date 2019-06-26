@@ -176,11 +176,13 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### copy an array
 
-[on pytut](http://www.pythontutor.com/live.html#code=function%20copy_array%28arr%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_copy%20%3D%20copy_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_copy%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_copy%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[My code: on pytut](http://www.pythontutor.com/live.html#code=function%20copy_array%28arr%29%20%7B%0A%20var%20arr_strified%20%3D%20JSON.stringify%28arr%29%3B%0A%20var%20copy%20%3D%20JSON.parse%28arr_strified%29%3B%0Areturn%20copy%3B%0A%7D%0A%0Aconst%20array%20%3D%20%5B'a',%20'b'%5D%3B%0Aconst%20by_copy%20%3D%20copy_array%28array%29%3B%0A%0Aconsole.assert%28array%5B0%5D%20%3D%3D%3D%20by_copy%5B0%5D%29%3B%0Aconsole.assert%28array%5B1%5D%20%3D%3D%3D%20by_copy%5B1%5D%29%3B%0Aconsole.assert%28array%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=8&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
   function copy_array(arr) {
-    // write this using JSON.stringify & .parse
+    var arr_strified = JSON.stringify(arr);
+    var copy = JSON.parse(arr_strified);
+    return copy;
   }
 
   const array = ['a', 'b'];
