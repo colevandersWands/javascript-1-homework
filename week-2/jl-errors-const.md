@@ -19,15 +19,17 @@ const = 5;
 ```
 error message:
 ```js
+Unexpected token =
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+const five = 5;
 ```
-your notes:
+your notes: The constant must be declared.
 
 [TOP](#variable-errors)
 
