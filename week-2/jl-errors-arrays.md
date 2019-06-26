@@ -19,15 +19,17 @@ let myArray = [1, 2, 3;
 ```
 error message:
 ```
+SyntaxError: Unexpected token ;
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
-your notes:
+your notes: Array declaration begin with '\['  and end with '\]'
 
 [TOP](#array-errors)
 
