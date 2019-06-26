@@ -105,30 +105,216 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 ```
 ## Iterate Through All an Array's Items Using For Loops
 ```js
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // change code below this line
+  let tryElem;
+
+  for (let i=0 ; i<arr.length; i++){
+      tryElem = true;     
+    for (let j=0;j<arr[i].length;j++){
+      console.log(arr[i][j]);
+      console.log(elem);   
+      if (arr[i][j] == elem){
+       tryElem =false;
+      }
+     if(tryElem && (j == arr[i].length-1))
+      newArr.push(arr[i]);
+    }
+  }
+  // change code above this line
+  return newArr;
+}
+// change code here to test different cases:
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 6));
 ```
 ## Create complex multi-dimensional arrays
 ```js
+let myNestedArray = [
+  // change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  [ 
+    ['loop','shift', 6, 7, 1000, 'method']
+   ],
+  ['concat', 
+    [
+     'spread', 'array'
+    ],
+    [
+     false, true,'deep'
+    ]
+  ],
+  [
+   [
+    [
+     'mutate', 1327.98, 'splice', 'slice', 'push','deeper'
+    ] 
+   ] 
+  ],
+  [
+   [
+    [
+     [
+      'iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth','deepest'
+     ]
+    ]
+   ]
+  ]
+  // change code above this line
+];
 ```
 ## Add Key-Value Pairs to JavaScript Objects
 ```js
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+// change code below this line
+foods.bananas=13;
+foods.grapes = 35;
+foods.strawberries=27;
+// change code above this line
+
+console.log(foods);
 ```
 ## Modify an Object Nested Within an Object
 ```js
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// change code below this line
+userActivity.data.online=45;
+// change code above this line
+console.log(userActivity);
 ```
 ## Access Property Names with Bracket Notation
 ```js
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+// do not change code above this line
+function checkInventory(scannedItem) {
+  // change code below this line
+return foods[scannedItem];
+}
+// change code below this line to test different cases:
+console.log(checkInventory("apples"));
 ```
 ## Use the delete Keyword to Remove Object Properties
 ```js
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+// change code below this line
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+// change code above this line
+console.log(foods);
 ```
 ## Check if an Object has a Property
 ```js
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(obj) {
+  // change code below this line
+
+return (obj.hasOwnProperty('Alan') && obj.hasOwnProperty('Jeff') && obj.hasOwnProperty('Sarah') && obj.hasOwnProperty('Ryan'));
+  // change code above this line
+}
+console.log(isEveryoneHere(users));
 ```
 ## Iterate Through the Keys of an Object with a for...in Statement
 ```js
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+function countOnline(obj) {
+  // change code below this line
+  let online = 0;
+  for (let user in obj) {
+      if (obj[user].online) online++;  
+  };
+  return online;
+  // change code above this line
+}
+console.log(countOnline(users));
 ```
 ## Generate an Array of All Object Keys with Object.keys()
 ```js
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+function getArrayOfUsers(obj) {
+  // change code below this line
+  return Object.keys(obj);
+  // change code above this line
+}
+console.log(getArrayOfUsers(users));
 ```
 ## Modify an Array Stored in an Object
 ```js
