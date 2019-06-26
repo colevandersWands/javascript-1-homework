@@ -240,18 +240,17 @@ not the best choice, it can be much more difficult to think about and debug.
 
 ### start a new object
 
-[My code: on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_object%28obj%29%20%7B%0A%20%20//%20write%20this%20by%20building%20a%20new%20object%20from%20scratch%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_new_start%20%3D%20start_new_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_new_start.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_new_start%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[My code: on pytut](http://www.pythontutor.com/live.html#code=function%20start_new_object%28obj%29%20%7B%0A%20%20let%20newObj%20%3D%20%7B%7D%3B%0A%20%20for%20%28let%20key%20in%20obj%29%7B%0A%20%20%20%20newObj%5Bkey%5D%3Dobj%5Bkey%5D%3B%0A%20%7D%0A%20return%20newObj%3B%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_new_start%20%3D%20start_new_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_new_start.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_new_start%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_new_start%29%3B&cumulative=false&curInstr=14&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
-
   function start_new_object(obj) {
-    // write this by building a new object from scratch
-    // the paramenter should only be used on the right side of =
-    // the new one should only be used on the left side of =
+    let newObj = {};
+  for (let key in obj){
+    newObj[key]=obj[key];
+ }
+ return newObj;
   }
-
   const object = {a: 1, b: 2};
   const by_new_start = start_new_object(object);
-
   console.assert(object.a === by_new_start.a);
   console.assert(object['b'] === by_new_start['b']);
   console.assert(object !== by_new_start);
