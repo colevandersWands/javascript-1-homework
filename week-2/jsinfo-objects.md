@@ -85,13 +85,13 @@ For instance:
 4	  height: 300,
 5	  title: "My menu"
 6	};
-7	8	function multiplyNumeric(obj){
+7	function multiplyNumeric(obj){
 9	 for (let key in obj){
 10	   if (typeof(menu[key])=="number" )
 11	    menu[key]*=2;
 12	  }
 13	}
-14	15	multiplyNumeric(menu)
+14 multiplyNumeric(menu)
 ```
 ```
 // after the call
