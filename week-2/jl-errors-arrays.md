@@ -17,14 +17,16 @@ broken code:
 let myArray = [1, 2, 3;
 ```
 error message:
-```
+```js
+Uncaught SyntaxError: Unexpected token ;
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
 your notes:
 
@@ -39,14 +41,16 @@ broken code:
 let myArray = [1, 2 3];
 ```
 error message:
-```
+```js
+Uncaught SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+let myArray = [1, 2 ,3];
 ```
 your notes:
 
@@ -65,14 +69,20 @@ let myArray = [
               ];
 ```
 error message:
-```
+```js
+TypeError: Cannot read property '9' of undefined
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation 
+* syntax
 
 the fix:
 ```js
+let myArray = [
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]
+              ];
 ```
 your notes:
 
