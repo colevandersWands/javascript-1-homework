@@ -20,7 +20,7 @@ See how few reassignments you can use per step!
 
 ### challenges: 
 1. [the toad reads me](https://goo.gl/4eqhLb) <br>
-[My code](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20you%20write%20this%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A//%20toad%0Ax%20%3D%20_3%3B%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20x,%20_5%20%3D%20%22s%22%3B%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[My code pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20you%20write%20this%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A//%20toad%0Ax%20%3D%20_3%3B%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20x,%20_5%20%3D%20%22s%22%3B%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ```js
 // the toad reads me
@@ -37,9 +37,9 @@ _1="r",_2=x,_5="s";
 // me
 _1="m",_3=_4=_5=x=" ";
 ```
-1. [eating meat every meal](https://goo.gl/F9Njwp)  <br> [My code] ()
-1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
-1. [if fir trees ever fall](https://goo.gl/BCC6pz)
+1. [eating meat every meal](https://goo.gl/F9Njwp)  <br> [My code pytut]()
+1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)   <br> [My code pytut]()
+1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut]()
 
 
 ___
