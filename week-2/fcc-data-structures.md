@@ -69,5 +69,47 @@ console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
 ```
 ## 8. Copy an Array with the Spread Operator
 ```js
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    // change code below this line
+newArr.push([...arr]);
+    // change code above this line
+    num--;
+  }
+  return newArr;
+}
+
+// change code here to test different cases:
+console.log(copyMachine([true, false, true], 2));
+```
+## 9. Combine Arrays with the Spread Operator
+```js
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // change this line
+  return sentence;
+}
+
+// do not change code below this line
+console.log(spreadOut());
+```
+## 10. Check For The Presence of an Element With indexOf()
+```js
+function quickCheck(arr, elem) {
+  // change code below this line
+  let newArry = [...arr];
+  let result = newArry.indexOf(elem);
+if(result === -1){
+  return false;
+} else return true;
+  // change code above this line
+}
+
+// change code here to test different cases:
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'onions'));
+```
+## 11. Iterate Through All an Array's Items Using For Loops
+```js
 
 
