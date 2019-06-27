@@ -35,9 +35,20 @@ _1="r",_2="e",_5="s";
 _1="m",_3 = _4 = _5 = " ";
 ```  
 1. [eating meat every meal](https://goo.gl/cwZijk)
-<br> [my code]()
+<br> [my code](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A_1%20%3D%20'e',%20_2%20%3D%20'a',%20_3%20%3D%20't',%20_4%20%3D%20'i',%20_5%20%3D%20'n',%20_6%3D%20'g'%3B%0A//%20meat%0A_2%20%3D%20_1,%20_4%20%3D%20_3,_1%20%3D%20'm',%20_3%20%3D'a',%20_5%20%3D%20_6%20%3D%20'%20'%3B%0A//%20every%0A_1%20%3D%20_3%20%3D%20_2,%20_2%20%3D%20'v',%20_4%20%3D%20'r',%20_5%20%3D%20'y'%3B%0A//%20meal%0A_1%20%3D%20'm',%20_2%20%3D%20_3,%20_3%20%3D%20'a',%20_4%20%3D%20'l',_5%20%3D%20'%20'%3B%20&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// eating meat every meal
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
+// -- you write this --
+// eating
+_1 = 'e', _2 = 'a', _3 = 't', _4 = 'i', _5 = 'n', _6= 'g';
+// meat
+_2 = _1, _4 = _3,_1 = 'm', _3 ='a', _5 = _6 = ' ';
+// every
+_1 = _3 = _2, _2 = 'v', _4 = 'r', _5 = 'y';
+// meal
+_1 = 'm', _2 = _3, _3 = 'a', _4 = 'l',_5 = ' '; 
 ```  
 1. [many men may melt my mind](https://goo.gl/16C62t)
 <br> [my code]()
