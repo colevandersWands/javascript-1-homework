@@ -405,7 +405,8 @@ _original while loop_
   }
 }
 ```
-
+_refactor to for_
+```js
 _refactor to for_
 {
   for ( let x = 9; x++ < 20 ; x) {
@@ -472,7 +473,7 @@ _refactor to for_
   }
 }
 ```
-[My solution}(http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28%2B%2Bx%20%3C%2020%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28let%20x%20%3D%209%20%3B%20%2B%2Bx%20%3C%2020%3B%20x%20%20%20%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D&curInstr=55&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28%2B%2Bx%20%3C%2020%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28let%20x%20%3D%209%20%3B%20%2B%2Bx%20%3C%2020%3B%20x%20%20%20%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D&curInstr=55&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 [TOP](#loop-refactors)
 
