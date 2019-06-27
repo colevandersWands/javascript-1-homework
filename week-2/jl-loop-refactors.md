@@ -256,7 +256,7 @@ let i = 1;
 }
 ```
 
-[parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20result%20%3D%200%3B%0Alet%20i%20%3D%201%3B%0Awhile%20%28%20i%20%3C%2010%20%29%20%7B%0A%20%20result%20%2B%3D%20i%3B%0A%20%20console.log%28i%29%3B%0A%20%20i%20%2B%3D%20result%3B%0A%7D)
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20result%20%3D%200%3B%0A%20%20for%20%28let%20i%20%3D%201%3B%20i%20%3C%2010%3B%20i%20%2B%3D%20result%29%20%7B%0A%20%20%20%20result%20%2B%3D%20i%3B%0A%20%20%20%20console.log%28i%29%3B%0A%20%20%7D%0A%7D%0A%20%20%20%20console.log%28%22**********************************%22%20%29%3B%0A%0A//%20refactor%20to%20while%20loop%0Alet%20result%20%3D%200%3B%0Alet%20i%20%3D%201%3B%0A%20while%28%20i%20%3C%2010%29%20%7B%0A%20%20%20result%20%2B%3D%20i%3B%0A%20%20%20%20console.log%28i%29%3B%0A%20%20%20%20i%20%2B%3D%20result%3B%0A%7D&curInstr=31&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ---
 
@@ -283,7 +283,7 @@ while (i === 10 || i < 20) {
 }
 ```
 
-[parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20i%20%3D%20-3%3B%0Awhile%20%28i%20%3D%3D%3D%2010%20%7C%7C%20i%20%3C%2020%29%20%7B%0A%20%20console.log%28i%29%3B%0A%20%20i%20*%3D%20-1.5%3B%0A%7D)
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20for%20%28let%20i%20%3D%20-3%3B%20i%20%3D%3D%3D%2010%20%7C%7C%20i%20%3C%2020%3B%20i%20*%3D%20-1.5%29%20%7B%0A%20%20%20%20console.log%28i%29%3B%0A%20%20%7D%0A%7D%0A%20%20%20%20console.log%28%22**********************************%22%20%29%3B%0A%0A//%20refactor%20to%20while%20loop%0Alet%20i%20%3D%20-3%3B%0Awhile%20%28i%20%3D%3D%3D%2010%20%7C%7C%20i%20%3C%2020%29%20%7B%0A%20%20console.log%28i%29%3B%0A%20%20i%20*%3D%20-1.5%0A%7D&curInstr=35&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ---
 
@@ -314,7 +314,7 @@ while (i !== j) {
 }
 ```
 
-[parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20i%20%3D%200%2C%20j%20%3D%2010%3B%0Awhile%20%28%20i%20!%3D%3D%20j%20%29%20%7B%0A%20%20console.log%28%22i%3A%20%22%2C%20i%29%3B%0A%20%20console.log%28%22j%3A%20%22%2C%20j%29%3B%0A%20%20console.log%28%22i%20%2B%20j%3A%20%22%2C%20i%20%2B%20j%29%3B%0A%20%20i%2B%2B%2C%20j--%3B%0A%7D)
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20for%20%28let%20i%20%3D%200,%20j%20%3D%2010%3B%20i%20!%3D%3D%20j%3B%20i%2B%2B,%20j--%29%20%7B%0A%20%20%20%20console.log%28%22i%3A%20%22,%20i%29%3B%0A%20%20%20%20console.log%28%22j%3A%20%22,%20j%29%3B%0A%20%20%20%20console.log%28%22i%20%2B%20j%3A%20%22,%20i%20%2B%20j%29%3B%0A%20%20%7D%0A%7D%0A%20%20%20%20console.log%28%22**********************************%22%20%29%3B%0A%0A//%20refactor%20to%20while%20loop%0Alet%20%20i%20%3D%200,%20j%20%3D%2010%3B%0Awhile%20%28i%20!%3D%3D%20j%29%20%7B%0A%20%20%20%20console.log%28%22i%3A%20%22,%20i%29%3B%0A%20%20%20%20console.log%28%22j%3A%20%22,%20j%29%3B%0A%20%20%20%20console.log%28%22i%20%2B%20j%3A%20%22,%20i%20%2B%20j%29%3B%0A%20%20%20%20i%2B%2B%3B%0A%20%20%20%20j--%3B%0A%7D&curInstr=60&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ---
 
@@ -350,7 +350,7 @@ i = +val
 }
 ```
 
-[parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=const%20mixitup%20%3D%20false%3B%0Alet%20val%3B%0Alet%20i%20%3D%20''%3B%0Awhile%20%28%20!!i%20!%3D%3D%20true%20%29%20%7B%0A%20%20val%20%3D%20!i%20%7C%7C%20mixitup%20*%20i%3B%0A%20%20console.log%28!!val%29%3B%0A%20%20i%20%3D%20%2Bval%3B%0A%7D)
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20const%20mixitup%20%3D%20false%3B%0A%20%20let%20val%3B%0A%20%20for%20%28let%20i%20%3D%20''%3B%20!!i%20!%3D%3D%20true%20%3B%20i%20%3D%20%2Bval%29%20%7B%0A%20%20%20%20val%20%3D%20!i%20%7C%7C%20mixitup%20*%20i%3B%0A%20%20%20%20console.log%28!!val%29%3B%0A%20%20%7D%0A%7D%0A%20%20%20%20console.log%28%22**********************************%22%20%29%3B%0A%0A//%20refactor%20to%20while%20loop%0Aconst%20mixitup%20%3D%20false%3B%0Alet%20val%3B%0Alet%20i%20%3D%20''%3B%0Awhile%20%28!!i%20!%3D%3D%20true%20%29%20%7B%0A%20%20%20%20val%20%3D%20!i%20%7C%7C%20mixitup%20*%20i%3B%0A%20%20%20%20console.log%28!!val%29%3B%0Ai%20%3D%20%2Bval%0A%7D&curInstr=17&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 
 
