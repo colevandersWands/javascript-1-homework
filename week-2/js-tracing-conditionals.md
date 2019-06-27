@@ -688,8 +688,12 @@ __some tracings__
 ```js
 x: number, 0, y: number, 1,FIRST EXP:  number, 1, truey,SECOND EXP:  boolean, true, truey,THIRD EXP:  number, 0, falsey,FOURTH EXP:  boolean, true, truey,FIFTH EXP:  boolean, true, truey,PATH:  if if
 x: number, 0, y: number, 1,FIRST EXP:  number, 1, truey,SECOND EXP:  boolean, true, truey,THIRD EXP:  number, 0, falsey,FOURTH EXP:  boolean, true, truey,FIFTH EXP:  boolean, true, truey,PATH:  if if
-
-
+x: number, 1, y: number, 1,FIRST EXP:  number, 1, truey,SECOND EXP:  boolean, false, falsey,THIRD EXP:  number, 1, truey,FOURTH EXP:  boolean, false, falsey,FIFTH EXP:  boolean, false, falsey,PATH:  undefined
+x: number, 0,y: number, 0,FIRST EXP:  number, 0, falsey,SECOND EXP:  boolean, false, falsey,THIRD EXP:  number, 0, falsey
+FOURTH EXP:  boolean, false, falsey,FIFTH EXP:  boolean, false, falsey,PATH:  undefined
+x: boolean, true, y: boolean, false,FIRST EXP:  boolean, true, truey,SECOND EXP:  boolean, true, truey,THIRD EXP:  boolean, false, falsey,FOURTH EXP:  boolean, true, truey,FIFTH EXP:  boolean, true, truey,PATH:  if if
+x: number, NaN,y: object, null,FIRST EXP:  object, null, falsey,SECOND EXP:  boolean, true, truey,THIRD EXP:  number, NaN, falsey
+FOURTH EXP:  boolean, true, truey, FIFTH EXP:  boolean, true, truey, PATH:  else else if
 ```
 
 
