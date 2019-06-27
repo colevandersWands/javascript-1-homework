@@ -277,6 +277,7 @@ x: boolean, false, EXP:  boolean, false, falsey, PATH:  else
 x: undefined, undefined, EXP:  boolean, false, falsey, PATH:  else
 x: number, NaN, EXP:  boolean, false, falsey, PATH:  else
 x: number, 1, EXP:  boolean, true, truey, PATH:  if
+x: number, 0, EXP:  boolean, true, truey, PATH:  if
 ```
 
 
@@ -337,6 +338,7 @@ __some tracings__
  x: boolean, false, FIRST EXP:  boolean, false, falsey, SECOND EXP:  boolean, false, falsey, PATH:  else else
  x: number, 1, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, false, truey, PATH:  if
  x: number, 0, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, false, truey, PATH:  if
+
 ```
 
 
@@ -398,6 +400,7 @@ __some tracings__
  x: boolean, true, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, true, truey, PATH:  if if
  x: number, 1, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, true, truey, PATH:  if if
  x: number, 0, FIRST EXP:  boolean, true, truey,SECOND EXP:  boolean, true, truey, PATH:  if if
+ x: number, NaN, FIRST EXP:  boolean, false, falsey, SECOND EXP:  boolean, false, falsey, PATH:  else
 ```
 
 
