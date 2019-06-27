@@ -20,7 +20,7 @@ See how few reassignments you can use per step!
 
 ### challenges: 
 1. [the toad reads me](https://goo.gl/4eqhLb) <br>
-[My code pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20you%20write%20this%0A%0A//%20the%0A_1%20%3D%20%22t%22,%20_2%20%3D%20%22h%22,%20_3%20%3D%20%22e%22%3B%0A//%20toad%0Ax%20%3D%20_3%3B%0A_2%20%3D%20%22o%22,%20_3%20%3D%20%22a%22,%20_4%20%3D%20%22d%22%3B%0A//%20reads%0A_1%20%3D%20%22r%22,%20_2%20%3D%20x,%20_5%20%3D%20%22s%22%3B%0A//%20me%0A_1%20%3D%20%22m%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[My code pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A//%20--%20you%20write%20this%20--%0A//%20the%0A_1%3D%22t%22,%20_2%3D%22h%22,%20_3%3D%22e%22%3B%0A//%20toad%0A_1%3D%22t%22,%20_2%3D%22o%22,%20x%3D_3,_3%3D%22a%22,_4%3D%22d%22%3B%0A//%20reads%0A_1%3D%22r%22,_2%3Dx,_5%3D%22s%22%3B%0A//%20me%0A_1%3D%22m%22,_3%3D_4%3D_5%3Dx%3D%22%20%22%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ```js
 // the toad reads me
