@@ -72,9 +72,22 @@ _2 = 'y', _3 = _4 = ' ';
 _2 = 'i', _3 = 'n', _4 = 'd';
 ```  
 1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
-<br> [my code]()
+<br> [my code](http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A_1%20%3D%20'i',%20_2%20%3D%20'f'%3B%0A//%20fir%0A_1%20%3D%20_2,%20_2%3D'i',%20_3%20%3D%20'r'%3B%0A//%20trees%0A_1%20%3D%20't',%20_2%20%3D%20'r',%20_3%20%3D%20_4%20%3D%20'e',%20_5%20%3D%20's'%3B%0A//%20ever%0A_1%20%3D%20_3,%20_4%20%3D%20_2,%20_2%20%3D%20'v',%20_5%3D'%20'%3B%0A//%20fall%0A_1%20%3D'f',%20_2%20%3D%20'a',%20_3%20%3D%20_4%20%3D%20'l'%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
-
+// if fir trees ever fall
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+// -- you write this --
+// if
+_1 = 'i', _2 = 'f';
+// fir
+_1 = _2, _2='i', _3 = 'r';
+// trees
+_1 = 't', _2 = 'r', _3 = _4 = 'e', _5 = 's';
+// ever
+_1 = _3, _4 = _2, _2 = 'v', _5=' ';
+// fall
+_1 ='f', _2 = 'a', _3 = _4 = 'l';
 ```  
 
 
