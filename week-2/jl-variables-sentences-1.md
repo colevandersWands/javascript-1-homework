@@ -51,9 +51,25 @@ _1 = _3 = _2, _2 = 'v', _4 = 'r', _5 = 'y';
 _1 = 'm', _2 = _3, _3 = 'a', _4 = 'l',_5 = ' '; 
 ```  
 1. [many men may melt my mind](https://goo.gl/16C62t)
-<br> [my code]()
+<br> [my code](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A_1%20%3D%20'm',%20_2%20%3D%20'a',%20_3%20%3D%20'n',%20_4%20%3D%20'y'%3B%20%0A//%20men%0A_2%20%3D%20'e',%20_3%20%3D%20'n',%20_4%20%3D%20'%20'%3B%0A//%20may%0A_2%20%3D%20'a',%20_3%20%3D%20'y',%20_4%20%3D%20'%20'%3B%0A//%20melt%0A_2%20%3D%20'e',%20_3%20%3D'l',%20_4%20%3D%20't'%3B%0A//%20my%0A_2%20%3D%20'y',%20_3%20%3D%20_4%20%3D%20'%20'%3B%0A//%20mind%0A_2%20%3D%20'i',%20_3%20%3D%20'n',%20_4%20%3D%20'd'%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
+// many men may melt my mind
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
 
+// -- you write this --
+// many
+_1 = 'm', _2 = 'a', _3 = 'n', _4 = 'y'; 
+// men
+_2 = 'e', _3 = 'n', _4 = ' ';
+// may
+_2 = 'a', _3 = 'y', _4 = ' ';
+// melt
+_2 = 'e', _3 ='l', _4 = 't';
+// my
+_2 = 'y', _3 = _4 = ' ';
+// mind
+_2 = 'i', _3 = 'n', _4 = 'd';
 ```  
 1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
 <br> [my code]()
