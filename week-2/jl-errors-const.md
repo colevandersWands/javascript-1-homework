@@ -18,13 +18,15 @@ const = 5;
 ```
 error message:
 ```js
+SyntaxError: Unexpected number
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase
+* syntax
 
 the fix:
 ```js
+const x = 5;
 ```
 your notes:
 
@@ -41,17 +43,20 @@ const a = 9;
 a = 0;
 ```
 error message:
-```
+```js
+TypeError: Assignment to constant variable.
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax 
 
 the fix:
 ```js
+let a = 9;
+a = 0;
 ```
 your notes:
-
+`const` is a signal that the identifier won't be reassigned. `let`, is a signal that the variable may be reassigned,
 [TOP](#variable-errors)
 
 ---
@@ -65,14 +70,16 @@ const a;
 a = 0;
 ```
 error message:
-```
+```js
+SyntaxError: Missing initializer in const declaration
 ```
 classification:
-* creation phase or execution phase ?
-* syntax or semanitc ?
+* creation phase 
+* syntax or
 
 the fix:
 ```js
+const a = 0;
 ```
 your notes:
 
