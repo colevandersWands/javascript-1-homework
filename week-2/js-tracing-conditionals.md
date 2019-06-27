@@ -434,16 +434,42 @@ __original code__
 
 __refactored and traced__
 ```js
-{
+const x = 1;
+const y = 1; 
+const expression_1 = x;
+const expression_2 = y;
+const truthiness_1 = Boolean(x);
+const truthiness_2 = Boolean(y);
+var path;
 
-}
+  if (truthiness_1) {
+    if (truthiness_2) {
+    path = "if if";
+    } else {
+    path = "if else";      
+    }
+  } else {
+    if (truthiness_2) {
+    path ="else if";
+    } else {
+    path ="else else";  
+    }
+  }
+console.log("x: " + typeof x + ", " + x);
+console.log("y: " + typeof y + ", " + y);
+console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+console.log("PATH: ", path);
 ```
 
 __some tracings__
 ```js
-// find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: number, 1, y: number, 1, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 1, truey, PATH:  if if
+x: number, 1, y: number, 0, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 0, falsey, PATH:  if else
+x: number, 0, y: number, 1, FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 1, truey, PATH:  else if
+x: number, 0, y: number, 0, FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 0, falsey PATH:  else else
+x: boolean, true, y: number, NaN, FIRST EXP:  boolean, true, truey, SECOND EXP:  number, NaN, falsey,PATH:  if else
+x: undefined, undefined, y: object, null, FIRST EXP:  undefined, undefined, falsey, SECOND EXP:  object, null, falsey,PATH:  else else
 ```
 
 
