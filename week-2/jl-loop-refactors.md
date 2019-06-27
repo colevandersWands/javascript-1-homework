@@ -379,11 +379,13 @@ _original while loop_
 _refactor to for_
 ```js
 {
-  for ( ; ; ) {
-
+  for ( let x = 9 ;x > 2 ; x--) {
+    console.log(x * 3)
   }
 }
 ```
+
+[My Solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28x%20%3E%202%29%20%7B%0A%20%20%20%20console.log%28x%20*%203%29%3B%0A%20%20%20%20x--%3B%0A%20%20%7D%0A%7D%0A%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28%20let%20x%20%3D%209%20%3Bx%20%3E%202%20%3B%20x--%29%20%7B%0A%20%20%20%20console.log%28x%20*%203%29%0A%20%20%7D%0A%7D&curInstr=47&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 ---
 
@@ -405,15 +407,14 @@ _original while loop_
 ```
 
 _refactor to for_
-```js
 {
-  for ( ; ; /* nothing goes here */ ) {
-
+  for ( let x = 9; x++ < 20 ; x) {
+    console.log(x);
   }
 }
 ```
 
-
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28x%2B%2B%20%3C%2020%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28%20let%20x%20%3D%209%3B%20x%2B%2B%20%3C%2020%20%3B%20x%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D&curInstr=60&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ---
 
 ### while -> for 3
@@ -436,12 +437,14 @@ _original while loop_
 _refactor to for_
 ```js
 {
-  for ( ; x <  ; x += 1 ) {
-
+  for (let x = 9 ; x < 20 ; x += 1 ) {
+       x++;
+       console.log(x);
+       x--;
   }
 }
 ```
-
+[My solution](http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28x%2B%2B%20%3C%2020%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28let%20x%20%3D%209%20%3B%20x%20%3C%2020%20%3B%20x%20%2B%3D%201%20%29%20%7B%0A%20%20%20%20%20%20%20x%2B%2B%3B%0A%20%20%20%20%20%20%20console.log%28x%29%3B%0A%20%20%20%20%20%20%20x--%3B%0A%20%20%7D%0A%7D&curInstr=82&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ---
 
 ### while -> for 4
@@ -464,11 +467,12 @@ _original while loop_
 _refactor to for_
 ```js
 {
-  for ( ;  ;  ) {
-
+  for (let x = 9 ; ++x < 20; x   ) {
+    console.log(x);
   }
 }
 ```
+[My solution}(http://www.pythontutor.com/javascript.html#code=%7B%0A%20%20let%20x%20%3D%209%3B%0A%20%20while%20%28%2B%2Bx%20%3C%2020%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D%0Aconsole.log%28%22**********************************%22%20%29%3B%0A%0A%7B%0A%20%20for%20%28let%20x%20%3D%209%20%3B%20%2B%2Bx%20%3C%2020%3B%20x%20%20%20%29%20%7B%0A%20%20%20%20console.log%28x%29%3B%0A%20%20%7D%0A%7D&curInstr=55&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 [TOP](#loop-refactors)
 
