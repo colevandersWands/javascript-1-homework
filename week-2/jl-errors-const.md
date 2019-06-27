@@ -57,6 +57,7 @@ a = 0;
 ```
 your notes:
 `const` is a signal that the identifier won't be reassigned. `let`, is a signal that the variable may be reassigned,
+
 [TOP](#variable-errors)
 
 ---
