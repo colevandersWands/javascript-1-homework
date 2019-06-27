@@ -77,9 +77,25 @@ _2 = x, _3 = _4 = ' ';
 _2 = 'i', _3 = 'n', _4 = 'd', x = y =' ';
 ```
 
-1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut]()
+1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%20//%20to%20save%20extra%20values%20for%20later%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A_1%20%3D%20'i',%20_2%20%3D%20'f'%3B%0A//%20fir%0Ax%20%3D%20_1,%20_1%20%3D%20_2,%20_2%20%3D%20x,%20_3%3D'r'%3B%0A//%20trees%0Ay%20%3D%20_1,_1%3D't',%20_2%20%3D%20_3,%20_3%20%3D%20_4%20%3D%20'e',_5%3D's'%3B%0A//%20ever%0A_1%20%3D%20_3,_4%20%3D%20_2,_2%20%3D%20'v',_5%3D'%20'%3B%0A//%20fall%0A_1%20%3D%20y,_2%20%3D%20'a',_3%20%3D%20_4%20%3D%20'l',x%20%3D%20y%20%3D%20'%20'%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```js
+// if fir trees ever fall
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+let x = ' ', y = ' '; // to save extra values for later
 
-
+// -- you write this --
+// if
+_1 = 'i', _2 = 'f';
+// fir
+x = _1, _1 = _2, _2 = x, _3='r';
+// trees
+y = _1,_1='t', _2 = _3, _3 = _4 = 'e',_5='s';
+// ever
+_1 = _3,_4 = _2,_2 = 'v',_5=' ';
+// fall
+_1 = y,_2 = 'a',_3 = _4 = 'l',x = y = ' ';
+```
 ___
 ___
 ### <a href="http://janke-learning.org" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/50098409-22575780-021c-11e9-99e1-962787adaded.png" width="40" height="40"></img> Janke Learning</a>
