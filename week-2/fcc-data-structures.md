@@ -282,5 +282,66 @@ console.log(countOnline(users));
 ```
 ## 19. Generate an Array of All Object Keys with Object.keys()
 ```js 
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
 
+function getArrayOfUsers(obj) {
+  // change code below this line
+let newArry=[];
+for(let i in obj){
+newArry.push(i);
+newArry.push(Object.keys(obj[i]));
+}
+return newArry;
+  // change code above this line
+}
+
+console.log(getArrayOfUsers(users));
+```
+## 20. Modify an Array Stored in an Object
+```js
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // change code below this line  
+userObj.data.friends.push(friend);
+return userObj.data.friends;
+  // change code above this line
+}
+console.log(addFriend(user, 'Pete'));
+```
 
