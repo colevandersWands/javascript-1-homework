@@ -37,7 +37,25 @@ _1="r",_2=x,_5="s";
 // me
 _1="m",_3=_4=_5=x=" ";
 ```
-1. [eating meat every meal](https://goo.gl/F9Njwp)  <br> [My code pytut]()
+1. [eating meat every meal](https://goo.gl/F9Njwp)  <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A%20_1%20%3D%20'e',%20_2%20%3D%20'a',%20_3%20%3D%20't',%20_4%20%3D%20'i',%20_5%20%3D%20'n',%20_6%3D%20'g'%3B%0A//%20meat%0A_4%20%3D%20_3,_3%20%3D%20_2,_2%20%3D%20_1,_1%20%3D%20'm',%20_5%20%3D%20_6%3D'%20'%3B%0A//%20every%0Ax%3D_1,y%3D_3,_1%20%3D%20_3%20%3D%20_2,%20_2%20%3D%20'v',%20_4%20%3D%20'r',%20_5%20%3D%20'y'%3B%20%0A//%20meal%0A_2%20%3D%20_1,%20_1%20%3Dx,%20_3%20%3D%20y,_4%20%3D'l',%20_5%3D'%20',x%20%3D%20y%20%3D%20''%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+
+```js
+// eating meat every meal
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
+let x = ' ', y = ' ';
+
+// -- you write this --
+// eating
+ _1 = 'e', _2 = 'a', _3 = 't', _4 = 'i', _5 = 'n', _6= 'g';
+// meat
+_4 = _3,_3 = _2,_2 = _1,_1 = 'm', _5 = _6=' ';
+// every
+x=_1,y=_3,_1 = _3 = _2, _2 = 'v', _4 = 'r', _5 = 'y'; 
+// meal
+_2 = _1, _1 =x, _3 = y,_4 ='l', _5=' ',x = y = '';
+```
+
 1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)   <br> [My code pytut]()
 1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut]()
 
