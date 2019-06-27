@@ -573,15 +573,43 @@ __original code__
 __refactored and traced__
 ```js
 {
-  // can you remove on conditional statement without changing the bahavior?
+const x = , y = ; 
+const expression_1 = x;
+const truthiness_1 = Boolean(expression_1);
+const expression_2 = y ;
+const truthiness_2 = Boolean(expression_1);
+var path;
+
+if (truthiness_1) {
+    if (truthiness_2) {
+    path = "if if";
+    } else {
+     path = "if else";  
+    }
+  } else {
+    if (truthiness_1) {
+      path = "else if";
+    } else {
+      path = "else else"; 
+    }
+  }  
+
+console.log("x: " + typeof x + ", " + x);
+console.log("y: " + typeof y + ", " + y);
+console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+console.log("PATH: ", path);
 }
 ```
 
 __some tracings__
 ```js
-// find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: number, 1, y: number, 1, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 1, truey, PATH:  if if
+x: number, 0, y: number, 0, FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 0, falsey, PATH:  else else
+x: number, 1, y: number, 0, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 0, truey, PATH:  if if
+x: number, 0, y: number, 1 ,FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 1, falsey, PATH:  else else
+x: object, null, y: number, 0, FIRST EXP:  object, null, falsey, SECOND EXP:  number, 0, falsey,PATH:  else else
+x: string, a, y: number, 0, FIRST EXP:  string, a, truey, SECOND EXP:  number, 0, truey, PATH:  if if
 ```
 
 
