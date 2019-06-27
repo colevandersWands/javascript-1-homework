@@ -254,16 +254,29 @@ __original code__
 
 __refactored and traced__
 ```js
-{
+const x = ; // try a bunch of values!
+const expression_1 = x === +x || x === !x;
+const truthiness_1 = Boolean(expression_1);
+var path;
 
-}
+if (truthiness_1) {
+    path = "if";
+ } else {
+    path = "else";
+ }
+console.log("x: " + typeof x + ", " + x);
+console.log("EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+console.log("PATH: ", path);
 ```
 
 __some tracings__
 ```js
-// find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: object, null, EXP:  boolean, false, falsey, PATH:  else
+x: boolean, true, EXP:  boolean, false, falsey, PATH:  else
+x: boolean, false, EXP:  boolean, false, falsey, PATH:  else
+x: undefined, undefined, EXP:  boolean, false, falsey, PATH:  else
+x: number, NaN, EXP:  boolean, false, falsey, PATH:  else
+x: number, 1, EXP:  boolean, true, truey, PATH:  if
 ```
 
 
