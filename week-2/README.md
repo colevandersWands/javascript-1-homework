@@ -3,9 +3,9 @@
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
 | :seedling: __[fcc: finish js basics](./fcc-basic-js-pt-2.md) | :white_check_mark: | | | |
-| :dash: __[janke: tracing conditionals](./js-tracing-conditionals.md) | :wavy_dash:| | | |
+| :dash: __[janke: tracing conditionals](./js-tracing-conditionals.md) | :white_check_mark:| | | |
 | :seedling: __[javascript.info: loops](./jsinfo-loops.md) |   :white_check_mark: | | | |
-| :dash: __[janke: loop refactors](./jl-loop-refactors.md) | | | | |
+| :dash: __[janke: loop refactors](./jl-loop-refactors.md) | :wavy_dash:| | | |
 | :seedling: __[fcc: data structures](./fcc-data-structures.md) | :white_check_mark:| | | |
 | :seedling: __[janke: errors const](./jl-errors-const.md) | :white_check_mark: | | | |
 | :seedling: __[janke: errors arrays](./jl-errors-arrays.md) | :white_check_mark:| | | |
