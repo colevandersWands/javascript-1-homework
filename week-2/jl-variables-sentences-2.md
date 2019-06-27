@@ -56,7 +56,27 @@ x=_1,y=_3,_1 = _3 = _2, _2 = 'v', _4 = 'r', _5 = 'y';
 _2 = _1, _1 =x, _3 = y,_4 ='l', _5=' ',x = y = '';
 ```
 
-1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)   <br> [My code pytut]()
+1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)   <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x%20%3D'%20',%20y%20%3D%20'%20'%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%20_1%20%3D%20'm',%20_2%20%3D%20'a',%20_3%20%3D%20'n',%20_4%20%3D%20'y'%3B%0A//%20men%0Ax%20%3D%20_2,%20y%20%3D%20_4,_2%20%3D%20'e',_4%20%3D%20'%20'%3B%0A//%20may%0A_3%20%3D%20y,%20y%20%3D%20_2,_2%20%3D%20x%3B%0A//%20melt%0Ax%20%3D%20_3,%20_2%20%3D%20y,%20_3%20%3D%20'l',%20_4%20%3D%20't'%3B%0A//%20my%0A_2%20%3D%20x,%20_3%20%3D%20_4%20%3D%20'%20'%3B%0A//%20mind%0A_2%20%3D%20'i',%20_3%20%3D%20'n',%20_4%20%3D%20'd',%20x%20%3D%20y%20%3D'%20'%3B&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```js
+// many men may melt my mind
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
+let x =' ', y = ' ';
+// -- you write this --
+// many
+ _1 = 'm', _2 = 'a', _3 = 'n', _4 = 'y';
+// men
+x = _2, y = _4,_2 = 'e',_4 = ' ';
+// may
+_3 = y, y = _2,_2 = x;
+// melt
+x = _3, _2 = y, _3 = 'l', _4 = 't';
+// my
+_2 = x, _3 = _4 = ' ';
+// mind
+_2 = 'i', _3 = 'n', _4 = 'd', x = y =' ';
+```
+
 1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut]()
 
 
