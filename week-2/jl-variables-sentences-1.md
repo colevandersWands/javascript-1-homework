@@ -16,84 +16,24 @@ You'll have to practice looking ahead of and behind the line you are writing to 
 
 
 ### challenges: 
-1. [the toad reads me](https://goo.gl/4eqhLb) <br>
-[My code pytut](http://www.pythontutor.com/javascript.html#code=//%20the%20toad%20reads%20me%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20%22%20%22,%20_2%20%3D%20%22%20%22,%20_3%20%3D%20%22%20%22,%20_4%20%3D%20%22%20%22,%20_5%20%3D%20%22%20%22%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A//%20--%20you%20write%20this%20--%0A//%20the%0A_1%3D%22t%22,%20_2%3D%22h%22,%20_3%3D%22e%22%3B%0A//%20toad%0A_1%3D%22t%22,%20_2%3D%22o%22,%20x%3D_3,_3%3D%22a%22,_4%3D%22d%22%3B%0A//%20reads%0A_1%3D%22r%22,_2%3Dx,_5%3D%22s%22%3B%0A//%20me%0A_1%3D%22m%22,_3%3D_4%3D_5%3Dx%3D%22%20%22%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
-
+1. [the toad reads me](https://goo.gl/imKwgj)  
 ```js
-// the toad reads me
-// we give you this
-let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
-let x = ' ', y = ' ';
-// -- you write this --
-// the
-_1="t", _2="h", _3="e";
-// toad
-_1="t", _2="o", x=_3,_3="a",_4="d";
-// reads
-_1="r",_2=x,_5="s";
-// me
-_1="m",_3=_4=_5=x=" ";
-```
-1. [eating meat every meal](https://goo.gl/F9Njwp)  <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20eating%20meat%20every%20meal%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20',%20_6%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20eating%0A%20_1%20%3D%20'e',%20_2%20%3D%20'a',%20_3%20%3D%20't',%20_4%20%3D%20'i',%20_5%20%3D%20'n',%20_6%3D%20'g'%3B%0A//%20meat%0A_4%20%3D%20_3,_3%20%3D%20_2,_2%20%3D%20_1,_1%20%3D%20'm',%20_5%20%3D%20_6%3D'%20'%3B%0A//%20every%0Ax%3D_1,y%3D_3,_1%20%3D%20_3%20%3D%20_2,%20_2%20%3D%20'v',%20_4%20%3D%20'r',%20_5%20%3D%20'y'%3B%20%0A//%20meal%0A_2%20%3D%20_1,%20_1%20%3Dx,%20_3%20%3D%20y,_4%20%3D'l',%20_5%3D'%20',x%20%3D%20y%20%3D%20''%3B&curInstr=6&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
+```  
+1. [eating meat every meal](https://goo.gl/cwZijk)
 ```js
-// eating meat every meal
-// we give you this
-let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
-let x = ' ', y = ' ';
 
-// -- you write this --
-// eating
- _1 = 'e', _2 = 'a', _3 = 't', _4 = 'i', _5 = 'n', _6= 'g';
-// meat
-_4 = _3,_3 = _2,_2 = _1,_1 = 'm', _5 = _6=' ';
-// every
-x=_1,y=_3,_1 = _3 = _2, _2 = 'v', _4 = 'r', _5 = 'y'; 
-// meal
-_2 = _1, _1 =x, _3 = y,_4 ='l', _5=' ',x = y = '';
-```
-
-1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)   <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x%20%3D'%20',%20y%20%3D%20'%20'%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%20_1%20%3D%20'm',%20_2%20%3D%20'a',%20_3%20%3D%20'n',%20_4%20%3D%20'y'%3B%0A//%20men%0Ax%20%3D%20_2,%20y%20%3D%20_4,_2%20%3D%20'e',_4%20%3D%20'%20'%3B%0A//%20may%0A_3%20%3D%20y,%20y%20%3D%20_2,_2%20%3D%20x%3B%0A//%20melt%0Ax%20%3D%20_3,%20_2%20%3D%20y,%20_3%20%3D%20'l',%20_4%20%3D%20't'%3B%0A//%20my%0A_2%20%3D%20x,%20_3%20%3D%20_4%20%3D%20'%20'%3B%0A//%20mind%0A_2%20%3D%20'i',%20_3%20%3D%20'n',%20_4%20%3D%20'd',%20x%20%3D%20y%20%3D'%20'%3B&curInstr=8&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```  
+1. [many men may melt my mind](https://goo.gl/16C62t)
 ```js
-// many men may melt my mind
-// we give you this
-let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
-let x =' ', y = ' ';
-// -- you write this --
-// many
- _1 = 'm', _2 = 'a', _3 = 'n', _4 = 'y';
-// men
-x = _2, y = _4,_2 = 'e',_4 = ' ';
-// may
-_3 = y, y = _2,_2 = x;
-// melt
-x = _3, _2 = y, _3 = 'l', _4 = 't';
-// my
-_2 = x, _3 = _4 = ' ';
-// mind
-_2 = 'i', _3 = 'n', _4 = 'd', x = y =' ';
-```
 
-1. [if fir trees ever fall](https://goo.gl/BCC6pz)  <br> [My code pytut](http://www.pythontutor.com/javascript.html#code=//%20if%20fir%20trees%20ever%20fall%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20',%20_5%20%3D%20'%20'%3B%0Alet%20x%20%3D%20'%20',%20y%20%3D%20'%20'%3B%20//%20to%20save%20extra%20values%20for%20later%0A%0A//%20--%20you%20write%20this%20--%0A%0A//%20if%0A_1%20%3D%20'i',%20_2%20%3D%20'f'%3B%0A//%20fir%0Ax%20%3D%20_1,%20_1%20%3D%20_2,%20_2%20%3D%20x,%20_3%3D'r'%3B%0A//%20trees%0Ay%20%3D%20_1,_1%3D't',%20_2%20%3D%20_3,%20_3%20%3D%20_4%20%3D%20'e',_5%3D's'%3B%0A//%20ever%0A_1%20%3D%20_3,_4%20%3D%20_2,_2%20%3D%20'v',_5%3D'%20'%3B%0A//%20fall%0A_1%20%3D%20y,_2%20%3D%20'a',_3%20%3D%20_4%20%3D%20'l',x%20%3D%20y%20%3D%20'%20'%3B&curInstr=7&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```  
+1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
 ```js
-// if fir trees ever fall
-// we give you this
-let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
-let x = ' ', y = ' '; // to save extra values for later
 
-// -- you write this --
-// if
-_1 = 'i', _2 = 'f';
-// fir
-x = _1, _1 = _2, _2 = x, _3='r';
-// trees
-y = _1,_1='t', _2 = _3, _3 = _4 = 'e',_5='s';
-// ever
-_1 = _3,_4 = _2,_2 = 'v',_5=' ';
-// fall
-_1 = y,_2 = 'a',_3 = _4 = 'l',x = y = ' ';
-```
+```  
+
+
 ___
 ___
 ### <a href="http://janke-learning.org" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/50098409-22575780-021c-11e9-99e1-962787adaded.png" width="40" height="40"></img> Janke Learning</a>
-
