@@ -312,7 +312,7 @@ const x = null; //
 const expression_1 = x === +x;
 const truthiness_1 = Boolean(expression_1);
 const expression_2 = x === !x ;
-const truthiness_2 = Boolean(expression_1);
+const truthiness_2 = Boolean(expression_2);
 var path;
 
   if (truthiness_1) {
@@ -374,7 +374,7 @@ const x = null; //
 const expression_1 = x == +x;
 const truthiness_1 = Boolean(expression_1);
 const expression_2 = x == !!x ;
-const truthiness_2 = Boolean(expression_1);
+const truthiness_2 = Boolean(expression_2);
 var path;
 
 if (truthiness_1 ) {
@@ -506,8 +506,8 @@ __refactored and traced__
 const x = , y = ; // try a bunch of values!
 const expression_1 = !x || !y ;
 const expression_2 = !(x && y);
-const truthiness_1 = Boolean(x);
-const truthiness_2 = Boolean(y);
+const truthiness_1 = Boolean(expression_1);
+const truthiness_2 = Boolean(expression_2);
 var path;
 
 if (truthiness_1) {
@@ -527,12 +527,12 @@ console.log("PATH: ", path);
 
 __some tracings__
 ```js
- x: number, 1, y: number, 1, FIRST EXP:  boolean, false, truey, SECOND EXP:  boolean, false, truey, PATH:  if
- x: number, 0, y: number, 0, FIRST EXP:  boolean, true, falsey, SECOND EXP:  boolean, true, falsey PATH:   else if else
- x: number, 1, y: number, 0, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, true, falsey, PATH:  if
- x: number, 0, y: number, 1, FIRST EXP:  boolean, true, falsey, SECOND EXP:  boolean, true, truey, PATH:  else if
- x: object, null, y: number, 1, FIRST EXP:  boolean, true, falsey, SECOND EXP:  boolean, true, truey, PATH:  else if
- x: number, 0, y: number, NaN, FIRST EXP:  boolean, true, falsey,SECOND EXP:  boolean, true, falsey,PATH:   else if else
+x: number, 1, y: number, 1FIRST EXP:,  x: number, 0, y: number, 0, FIRST EXP:  boolean, true, falsey, SECOND EXP:  boolean, true, falsey PATH:   else if else
+x: number, 1, y: number, 0, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, true, truey, PATH:  if
+x: number, 0, y: number, 1,FIRST EXP:  boolean, true, truey,SECOND EXP:  boolean, true, truey, PATH:  if
+x: number, 0, y: number, 0, FIRST EXP:  boolean, true, truey, SECOND EXP:  boolean, true, truey, PATH:  if
+x: object, null, y: number, 1,FIRST EXP:  boolean, true, truey,SECOND EXP:  boolean, true, truey,PATH:  if
+x: number, 0, y: number, NaN,FIRST EXP:  boolean, true, truey,SECOND EXP:  boolean, true, truey,PATH:  if
 ```
 
 > [De Morgan's Law](https://www.youtube.com/watch?v=tKnS3s8fOu4)
@@ -572,12 +572,11 @@ __original code__
 
 __refactored and traced__
 ```js
-{
 const x = , y = ; 
 const expression_1 = x;
 const truthiness_1 = Boolean(expression_1);
 const expression_2 = y ;
-const truthiness_2 = Boolean(expression_1);
+const truthiness_2 = Boolean(expression_2);
 var path;
 
 if (truthiness_1) {
@@ -606,10 +605,10 @@ __some tracings__
 ```js
 x: number, 1, y: number, 1, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 1, truey, PATH:  if if
 x: number, 0, y: number, 0, FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 0, falsey, PATH:  else else
-x: number, 1, y: number, 0, FIRST EXP:  number, 1, truey, SECOND EXP:  number, 0, truey, PATH:  if if
+x: number, 1, y: number, 0,FIRST EXP:  number, 1, truey,SECOND EXP:  number, 0, falsey,PATH:  if else
 x: number, 0, y: number, 1 ,FIRST EXP:  number, 0, falsey, SECOND EXP:  number, 1, falsey, PATH:  else else
 x: object, null, y: number, 0, FIRST EXP:  object, null, falsey, SECOND EXP:  number, 0, falsey,PATH:  else else
-x: string, a, y: number, 0, FIRST EXP:  string, a, truey, SECOND EXP:  number, 0, truey, PATH:  if if
+x: string, a, y: number, 0,FIRST EXP:  string, a, truey,SECOND EXP:  number, 0, falsey,PATH:  if else
 ```
 
 
@@ -647,16 +646,50 @@ __original code__
 
 __refactored and traced__
 ```js
-{
+const x = 0, y = 1; 
+const expression_1 = x || y;
+const truthiness_1 = Boolean(expression_1);
+const expression_2 = x !== y;
+const truthiness_2 = Boolean(expression_2);
+const expression_3 = x && y;
+const truthiness_3 = Boolean(expression_3);
+const expression_4 = x !== y ;
+const truthiness_4 = Boolean(expression_4);
+const expression_5 = x !== y;
+const truthiness_5 = Boolean(expression_5);
+var path;
 
-}
+ if (truthiness_1) {
+    if (truthiness_2) {
+    path= "if if";
+    }
+  } else if (truthiness_3) {
+    if (truthiness_4) {
+     path= "if else if"; 
+    }
+  } else {
+    if (truthiness_5) {
+       path= "else else if"; 
+    }
+  }
+
+
+console.log("x: " + typeof x + ", " + x);
+console.log("y: " + typeof y + ", " + y);
+console.log("FIRST EXP: ", typeof expression_1+", "+expression_1+", "+truthiness_1+"y");
+console.log("SECOND EXP: ", typeof expression_2+", "+expression_2+", "+truthiness_2+"y");
+console.log("THIRD EXP: ", typeof expression_3+", "+expression_3+", "+truthiness_3+"y");
+console.log("FOURTH EXP: ", typeof expression_4+", "+expression_4+", "+truthiness_4+"y");
+console.log("FIFTH EXP: ", typeof expression_5+", "+expression_5+", "+truthiness_5+"y");
+console.log("PATH: ", path);
 ```
 
 __some tracings__
 ```js
-// find 6+ tracing values
-// try to find at least 1 set for each path
-// or can you? some paths are unreachable!
+x: number, 0, y: number, 1,FIRST EXP:  number, 1, truey,SECOND EXP:  boolean, true, truey,THIRD EXP:  number, 0, falsey,FOURTH EXP:  boolean, true, truey,FIFTH EXP:  boolean, true, truey,PATH:  if if
+x: number, 0, y: number, 1,FIRST EXP:  number, 1, truey,SECOND EXP:  boolean, true, truey,THIRD EXP:  number, 0, falsey,FOURTH EXP:  boolean, true, truey,FIFTH EXP:  boolean, true, truey,PATH:  if if
+
+
 ```
 
 
