@@ -82,6 +82,7 @@ _2 = y, _3 = ' ', _4 = ' ';
  _2 = ' i', _3 = ' n', _4 = 'd ';
  ```
 1. [if fir trees ever fall](https://goo.gl/BCC6pz)
+```js
 // if fir trees ever fall
 
 // we give you this
@@ -102,7 +103,7 @@ _1 = ' t', _2 = y, _3 = 'e', _4 = 'e ', _5 = 's ';
 _1 = ' e', _2 = 'v ', _3 = 'e ', _4 = y, _5 = ' ';
 // fall
 _1 = x, _2 = ' a', _3 = 'l ', _4 = 'l ';
-
+```
 ___
 ___
 ### <a href="http://janke-learning.org" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/50098409-22575780-021c-11e9-99e1-962787adaded.png" width="40" height="40"></img> Janke Learning</a>
