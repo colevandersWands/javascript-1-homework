@@ -361,6 +361,11 @@ __Swap 'em__
   // swap the values stored in each structure
   //  using dot notation for the object
   //  using direct access for the array
+  
+  _ = obj.prop;
+  obj.prop = arr[0];
+  arr[0]= _;
+  console.log (_);
 }
 ```
 
