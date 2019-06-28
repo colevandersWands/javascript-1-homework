@@ -464,22 +464,22 @@ __fill in the blanks__
 
   arr_1.push(arr_2);
   arr_2.push(arr_1);
-  console.assert(arr_1[0] /* === or !== */ arr_2);
-  console.assert(arr_2[0] /* === or !== */ arr_1);
+  console.assert(arr_1[0]  ===   arr_2);
+  console.assert(arr_2[0]  ===   arr_1);
 
   arr_1.push([]);
   arr_2.push([]);
-  console.assert(arr_1[1] /* === or !== */ arr_2[1]);
+  console.assert(arr_1[1]  !==  arr_2[1]);
 
   arr_1[0].push('A');
-  console.assert(arr_1[0][2] /* === or !== */ arr_2[2]);
+  console.assert(arr_1[0][2]  ===  arr_2[2]);
   
   arr_2[0].push('B');
-  console.assert(arr_2[0][2] /* === or !== */ arr_1[2]);
+  console.assert(arr_2[0][2]  ===  arr_1[2]);
 
   arr_1[1].push('X');
   arr_2[1].push('X');
-  console.assert(arr_1[1][0] /* === or !== */ arr_2[1][0])
+  console.assert(arr_1[1][0] === arr_2[1][0])
 }
 ```
 
