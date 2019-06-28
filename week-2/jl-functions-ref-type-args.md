@@ -203,17 +203,18 @@ console.assert(array !== by_copy);
 ```js
 {
   function start_new_array(arr) {
-    // write this by building a new array from scratch
-    // the paramenter should only be used on the right side of =
-    // the new one should only be used on the left side of =
-  }
+  // write this by building a new array from scratch
+  let new_arr = [];
+  new_arr.push('a','b');
+  return new_arr;
+}
 
-  const array = ['a', 'b'];
-  const by_new_start = start_new_array(array);
+const array = ['a', 'b'];
+const by_new_start = start_new_array(array);
 
-  console.assert(array[0] === by_new_start[0]);
-  console.assert(array[1] === by_new_start[1]);
-  console.assert(array !== by_new_start);
+console.assert(array[0] === by_new_start[0]);
+console.assert(array[1] === by_new_start[1]);
+console.assert(array !== by_new_start);
 }
 ```
 
@@ -222,16 +223,19 @@ console.assert(array !== by_copy);
 [on pytut](http://www.pythontutor.com/live.html#code=function%20copy_object%28obj%29%20%7B%0A%20%20//%20write%20this%20using%20JSON.stringify%20%26%20.parse%0A%7D%0A%0Aconst%20object%20%3D%20%7Ba%3A%201,%20b%3A%202%7D%3B%0Aconst%20by_copy%20%3D%20copy_object%28object%29%3B%0A%0Aconsole.assert%28object.a%20%3D%3D%3D%20by_copy.a%29%3B%0Aconsole.assert%28object%5B'b'%5D%20%3D%3D%3D%20by_copy%5B'b'%5D%29%3B%0Aconsole.assert%28object%20!%3D%3D%20by_copy%29%3B&cumulative=false&curInstr=4&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
-  function copy_object(obj) {
-    // write this using JSON.stringify & .parse
-  }
+ function copy_object(obj) {
+  // write this using JSON.stringify & .parse
+  let obj_strified  = JSON.stringify(obj);
+  let copy = JSON.parse(obj_strified);
+  return copy;
+}
 
-  const object = {a: 1, b: 2};
-  const by_copy = copy_object(object);
+const object = {a: 1, b: 2};
+const by_copy = copy_object(object);
 
-  console.assert(object.a === by_copy.a);
-  console.assert(object['b'] === by_copy['b']);
-  console.assert(object !== by_copy);
+console.assert(object.a === by_copy.a);
+console.assert(object['b'] === by_copy['b']);
+console.assert(object !== by_copy);
 }
 ```
 
@@ -242,17 +246,18 @@ console.assert(array !== by_copy);
 ```js
 {
   function start_new_object(obj) {
-    // write this by building a new object from scratch
-    // the paramenter should only be used on the right side of =
-    // the new one should only be used on the left side of =
-  }
+  // write this by building a new object from scratch
+  let new_obj = {};
+  Object.assign (new_obj,obj);
+  return new_obj;
+  
+}
 
-  const object = {a: 1, b: 2};
-  const by_new_start = start_new_object(object);
-
-  console.assert(object.a === by_new_start.a);
-  console.assert(object['b'] === by_new_start['b']);
-  console.assert(object !== by_new_start);
+const object = {a: 1, b: 2};
+const by_new_start = start_new_object(object);
+console.assert(object.a === by_new_start.a);
+console.assert(object['b'] === by_new_start['b']);
+console.assert(object !== by_new_start);
 }
 ```
 
