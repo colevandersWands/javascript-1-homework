@@ -11,7 +11,7 @@
 | :seedling: __[janke: errors arrays](./jl-errors-arrays.md) | :white_check_mark:| | | |
 | :seedling: __[janke: errors objects](./jl-errors-objects.md) | :white_check_mark:| | | |
 | :seedling: __[javascript.info: objects](./jsinfo-objects.md) |:white_check_mark:| | | |
-| :dash: __[janke: reference types](./jl-reference-types.md) | :wavy_dash:| | | |
+| :dash: __[janke: reference types](./jl-reference-types.md) | :white_check_mark:|In Comparison Exercises > Swap 'em.. Maybe I didn't understand the exercise but a swap must be arr[arr_index] === "array" and obj[obj_key] ==="object".. Because the original situation is arr[arr_index] === "object" and obj[obj_key] === "array". Is no logical make a swap to finish the same  way.   Or maybe the logical is other and I didnt understand. | | |
 | :fire: __[janke: ref-type arguments](./jl-functions-ref-type-args.md) | :white_check_mark: | | | |
 | :dash: __[janke: sentences w/o temps](./jl-variables-sentences-1.md) |:white_check_mark: | | | |
 | :fire: __[janke: sentences w/ temps](./jl-variables-sentences-2.md) |:white_check_mark: | | | |
