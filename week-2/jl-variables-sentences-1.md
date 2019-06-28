@@ -54,10 +54,46 @@ _2 = _1,_1 = 'm', _3 = 'a', _4 = 'l', _5 = ' ';
 ```  
 1. [many men may melt my mind](https://goo.gl/16C62t)
 ```js
+// many men may melt my mind
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
+
+// -- you write this --
+
+// many
+ _1 = 'm', _2 = 'a ', _3 = 'n', _4 = 'y ';
+// men
+ _2 = 'e',  _4 = ' ';
+// may
+_2 = 'a ', _3 ='y';
+// melt
+_2 = 'e', _3 = 'l ', _4 = 't';
+// my
+_2 = 'y ', _3 = ' ', _4 = ' ';
+// mind
+_2 = 'i ', _3 = 'n ', _4 = 'd ';
 
 ```  
 1. [if fir trees ever fall](https://goo.gl/8y5Lh2)
 ```js
+// if fir trees ever fall
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+
+// -- you write this --
+
+// if
+_1 = 'i', _2 = 'f ';
+// fir
+_1 = _2, _2= 'i', _3 ='r';
+// trees
+_2 = _3, _1 = 't', _3 = _4 = 'e';
+// ever
+_1 = _3 = _3, _2 = 'v', _4 = 'r'; 
+// fall
+_1 = 'f ', _2 = 'a', _3 =_4 = 'l';
 
 ```  
 
