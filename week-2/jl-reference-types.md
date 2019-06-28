@@ -374,15 +374,23 @@ __Swap 'em__
   let _ = null;
 
   // fill in these blanks
-  const obj_key = ;
-  const arr_index = ;
+  const obj_key = "prop";
+  const arr_index = 0  ;
   
   _ = arr[arr_index];
   arr[arr_index] = obj[obj_key];
   obj[obj_key] = _;
   
+  /*This lineas are error because when swap the values the logical is the
+  value "array" will be in the array and the same case with the property 
+  "object" will be in the object.
+    
   console.assert(arr[arr_index] === "object", "first assert");
   console.assert(obj[obj_key] === "array", "second assert");
+   */
+  
+  console.assert(arr[arr_index] === "array", "first assert");
+  console.assert(obj[obj_key] === "object" , "second assert");
 }
 ```
 
