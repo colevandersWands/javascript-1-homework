@@ -406,7 +406,7 @@ __Relative vs Absolute__
   arr.shift(); // removes the first item
   const read_arr_2 = arr[index];
 
-  console.assert(read_arr_1 /* === or !== ? */ read_arr_2);
+  console.assert(read_arr_1 !==  read_arr_2);
 
   // object keys are absolute
   const obj = {x: "a", y: "b"};
@@ -416,7 +416,7 @@ __Relative vs Absolute__
   delete obj.x;
   const read_obj_2 = obj[key];
 
-  console.assert(read_obj_1 /* === or !== ? */ read_obj_2);
+  console.assert(read_obj_1  ===   read_obj_2);
 }
 ```
 
