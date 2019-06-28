@@ -20,10 +20,88 @@ See how few reassignments you can use per step!
 
 ### challenges: 
 1. [the toad reads me](https://goo.gl/4eqhLb)
-1. [eating meat every meal](https://goo.gl/F9Njwp)
-1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
-1. [if fir trees ever fall](https://goo.gl/BCC6pz)
+```js
+// the toad reads me
 
+// we give you this
+let _1 = " ", _2 = " ", _3 = " ", _4 = " ", _5 = " ";
+let x = ' ', y = ' ';
+
+// -- you write this --
+
+// the
+_1 = "t ", _2 = "h", _3 = "e"
+// toad
+x = _3;
+ _2 = "o ", _3 = "a ",_4 = "d";
+// reads
+_1 = "r ", _2 = x, _5= "s ";
+// me
+_1 = "m ", _3 = " ", _4 = " ", _5 = " ";
+```
+1. [eating meat every meal](https://goo.gl/F9Njwp)
+```js
+// eating meat every meal
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ', _6= ' ';
+let x = ' ', y = ' ';
+
+// -- you write this --
+
+// eating
+_1 = 'e ', _2 = ' a', _3 = 't ', _4 = 'i ', _5 = 'n ', _6= 'g ';
+// meat
+x = _1, y = _2;
+ _1 = 'm', _2 = x, _3 = y, _4 = 't', _5 = ' ', _6= ' ';
+// every
+_1 = x, _2 = 'v ', _3 = x, _4 = 'r ',_5 = 'y ';
+// meal
+ _1 = 'm ', _2 = x, _3 = y, _4 = 'l ', _5 = ' ';
+ ```
+1. [many men may melt my mind](http://www.pythontutor.com/javascript.html#code=//%20many%20men%20may%20melt%20my%20mind%0A%0A//%20we%20give%20you%20this%0Alet%20_1%20%3D%20'%20',%20_2%20%3D%20'%20',%20_3%20%3D%20'%20',%20_4%20%3D%20'%20'%3B%0Alet%20x,%20y%3B%0A//%20--%20you%20write%20this%20--%0A%0A//%20many%0A%0A//%20men%0A%0A//%20may%0A%0A//%20melt%0A%0A//%20my%0A%0A//%20mind&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+```js
+// many men may melt my mind
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ';
+let x, y;
+// -- you write this --
+
+// many
+_1 = ' m', _2 = ' a', _3 = 'n ', _4 = 'y ';
+// men
+x =_2, y = _4;
+// may
+ _2 = x, _3 = y, _4 = ' ';
+// melt
+ _3 = ' l', _4 = 't ';
+// my
+_2 = y, _3 = ' ', _4 = ' ';
+// mind
+ _2 = ' i', _3 = ' n', _4 = 'd ';
+ ```
+1. [if fir trees ever fall](https://goo.gl/BCC6pz)
+// if fir trees ever fall
+
+// we give you this
+let _1 = ' ', _2 = ' ', _3 = ' ', _4 = ' ', _5 = ' ';
+let x = ' ', y = ' '; // to save extra values for later
+
+// -- you write this --
+
+// if
+_1 = 'i ', _2 = 'f ';
+// fir
+x = _2;
+_1 = x, _2 = 'i',_3 = 'r ';
+// trees
+y = _3;
+_1 = ' t', _2 = y, _3 = 'e', _4 = 'e ', _5 = 's ';
+// ever
+_1 = ' e', _2 = 'v ', _3 = 'e ', _4 = y, _5 = ' ';
+// fall
+_1 = x, _2 = ' a', _3 = 'l ', _4 = 'l ';
 
 ___
 ___
