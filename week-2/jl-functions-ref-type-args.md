@@ -205,7 +205,9 @@ console.assert(array !== by_copy);
   function start_new_array(arr) {
   // write this by building a new array from scratch
   let new_arr = [];
-  new_arr.push('a','b');
+  for(let i = 0; i < arr.length; i++){
+  new_arr.push(arr[i]);
+  }
   return new_arr;
 }
 
