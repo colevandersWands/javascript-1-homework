@@ -7,7 +7,7 @@
 | :seedling: [javascript.info: loops](./jsinfo-loops.md) | :white_check_mark:| | :white_check_mark: | |
 | :dash: [janke: loop refactors](./jl-loop-refactors.md) |:white_check_mark: | | :white_check_mark: | |
 | :seedling: [fcc: data structures](./fcc-data-structures.md) | :white_check_mark: | | :white_check_mark: | |
-| :seedling: [janke: errors const](./jl-errors-const.md) | :white_check_mark:| | :white_check_mark: | the first one is execution phase |
+| :seedling: [janke: errors const](./jl-errors-const.md) | :white_check_mark:|```const 5;``` i think it is syntax error. how it is excution phase? can u explain me in details? | :white_check_mark: | the first one is execution phase |
 | :seedling: [janke: errors arrays](./jl-errors-arrays.md) | :white_check_mark:| | :white_check_mark: | |
 | :seedling: [janke: errors objects](./jl-errors-objects.md) | :white_check_mark: | | :white_check_mark: | |
 | :seedling: [javascript.info: objects](./jsinfo-objects.md) |:white_check_mark: | | :white_check_mark: | |
