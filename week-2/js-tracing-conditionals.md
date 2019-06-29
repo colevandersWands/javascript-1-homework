@@ -382,7 +382,7 @@ __refactored and traced__
   const expression_1 = x === +x;
   const truthiness_1 = Boolean(expression_1);
 
-  const expression_2 = x === !x;
+  const expression_2 = x == !!x;
   const truthiness_2 = Boolean(expression_2);
 
   let path;
@@ -390,10 +390,10 @@ __refactored and traced__
    if (truthiness_1) {
 path = 'if';
   } 
-  if (truthiness_2) {
-path = ' if if';
+ else if (truthiness_2) {
+path = 'else if';
   } else {
-path = 'if else';
+path = 'else';
   }
 
 
@@ -408,14 +408,13 @@ path = 'if else';
 __some tracings__
 ```js
 // find 6+ tracing values
-x: null,  path: "if else"
-x: false,  path: "if else"
-x: true, path: "if else"
-x: 0, path: "if else"
-x: Infinity, path: "if else"
-x: 1, path: "if else"
-x: NaN, path : "if else"
-//I think "if" and "if if" are unreachable!
+x: null,  path: "else"
+x: false,  path: "else if"
+x: true, path: "else if"
+x: 0, path: "if"
+x: Infinity, path: "if"
+x: 1, path: "if"
+x: NaN, path : "else"
 ```
 
 
