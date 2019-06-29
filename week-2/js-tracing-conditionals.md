@@ -608,12 +608,10 @@ path = 'if if';
      path = 'if else'; 
     }
   } 
-  // yes we can remove this part 
-  /*
  else {
     if (x) {
 path = 'else if';
-    } */
+    } 
     else {
    path = 'else else';   
     }
