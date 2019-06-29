@@ -14,7 +14,7 @@
 | :dash: [janke: reference types](./jl-reference-types.md) | :white_check_mark:| till Comparison Exercises| :white_check_mark: | |
 | :fire: [janke: ref-type arguments](./jl-functions-ref-type-args.md) |:white_check_mark: | fixed!| :white_check_mark: | "start a new array" works, but isn't general-purpose.  how could you write it to copy any array into any array? |
 | :dash: [janke: sentences w/o temps](./jl-variables-sentences-1.md) | :white_check_mark:| | :white_check_mark: | |
-| :fire: [janke: sentences w/ temps](./jl-variables-sentences-2.md) | :white_check_mark:| | :white_check_mark: | the second to last doesn't work.  the last works, but could be done with fewer "e"s |
+| :fire: [janke: sentences w/ temps](./jl-variables-sentences-2.md) | :white_check_mark:|fixed! | :white_check_mark: | the second to last doesn't work.  the last works, but could be done with fewer "e"s |
 
 
 
