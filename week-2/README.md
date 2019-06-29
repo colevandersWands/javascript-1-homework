@@ -2,19 +2,19 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: __[fcc: finish js basics](./fcc-basic-js-pt-2.md) | :white_check_mark: | | | |
-| :dash: __[janke: tracing conditionals](./js-tracing-conditionals.md) | :white_check_mark:| | | |
-| :seedling: __[javascript.info: loops](./jsinfo-loops.md) | :white_check_mark:| | | |
-| :dash: __[janke: loop refactors](./jl-loop-refactors.md) |:white_check_mark: | | | |
-| :seedling: __[fcc: data structures](./fcc-data-structures.md) | :white_check_mark: | | | |
-| :seedling: __[janke: errors const](./jl-errors-const.md) | :white_check_mark:| | | |
-| :seedling: __[janke: errors arrays](./jl-errors-arrays.md) | :white_check_mark:| | | |
-| :seedling: __[janke: errors objects](./jl-errors-objects.md) | :white_check_mark: | | | |
-| :seedling: __[javascript.info: objects](./jsinfo-objects.md) |:white_check_mark: | | | |
-| :dash: __[janke: reference types](./jl-reference-types.md) | :white_check_mark:| till Comparison Exercises| | |
-| :fire: __[janke: ref-type arguments](./jl-functions-ref-type-args.md) |:white_check_mark: | | | |
-| :dash: __[janke: sentences w/o temps](./jl-variables-sentences-1.md) | :white_check_mark:| | | |
-| :fire: __[janke: sentences w/ temps](./jl-variables-sentences-2.md) | :white_check_mark:| | | |
+| :seedling: [fcc: finish js basics](./fcc-basic-js-pt-2.md) | :white_check_mark: | | :white_check_mark: | |
+| :dash: [janke: tracing conditionals](./js-tracing-conditionals.md) | :white_check_mark:| | :star2: | #2's second if is unreachable, :star2:. #3 "if" is reachable (1===+1 -> true), it's just that you overwrite ```path```: see what happens if you replace ```=``` with ```+=```. #5's second if is unreachable, :star2: - follow the "de morgan's law" link below your solution and figure out why. #6 throws an error, double check your commenting. #8 :star2:, but can you explain why? what happens if you switch exp_2 & exp_3? |
+| :seedling: [javascript.info: loops](./jsinfo-loops.md) | :white_check_mark:| | :white_check_mark: | |
+| :dash: [janke: loop refactors](./jl-loop-refactors.md) |:white_check_mark: | | :white_check_mark: | |
+| :seedling: [fcc: data structures](./fcc-data-structures.md) | :white_check_mark: | | :white_check_mark: | |
+| :seedling: [janke: errors const](./jl-errors-const.md) | :white_check_mark:| | :white_check_mark: | the first one is execution phase |
+| :seedling: [janke: errors arrays](./jl-errors-arrays.md) | :white_check_mark:| | :white_check_mark: | |
+| :seedling: [janke: errors objects](./jl-errors-objects.md) | :white_check_mark: | | :white_check_mark: | |
+| :seedling: [javascript.info: objects](./jsinfo-objects.md) |:white_check_mark: | | :white_check_mark: | |
+| :dash: [janke: reference types](./jl-reference-types.md) | :white_check_mark:| till Comparison Exercises| :white_check_mark: | |
+| :fire: [janke: ref-type arguments](./jl-functions-ref-type-args.md) |:white_check_mark: | | :white_check_mark: | "start a new array" works, but isn't general-purpose.  how could you write it to copy any array into any array? |
+| :dash: [janke: sentences w/o temps](./jl-variables-sentences-1.md) | :white_check_mark:| | :white_check_mark: | |
+| :fire: [janke: sentences w/ temps](./jl-variables-sentences-2.md) | :white_check_mark:| | :white_check_mark: | the second to last doesn't work.  the last works, but could be done with fewer "e"s |
 
 
 
