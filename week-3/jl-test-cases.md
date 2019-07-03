@@ -201,6 +201,16 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: '3, 3', args: [3, 3], expected: true},
       {name: '3, "3"', args: [3, "3"], expected: false},
       /* write 8 more passing test cases */
+
+{name: 'null, 0', args: [null, 0], expected: false},
+{name: 'true, true', args: [true, true], expected: true},
+{name: 'null, false', args: [null, false], expected: false},
+{name: 'undefined, undefined', args: [undefined, undefined], expected: true},
+{name: 'true, 1 ', args: [true, 1], expected: false},
+{name: 'false, 0', args: [false, 0], expected: false},
+{name: 'false, false', args: [false, false], expected: true},
+{name: '0, 0', args: [0, 0], expected: true},
+{name: 'NaN, NaN', args: [NaN, NaN], expected: false},
     ];
   function strict_equality(a, b) {
     return a === b;
@@ -219,6 +229,12 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: 'null', args: [null], expected: 'object'},
       {name: 'undefined', args: [undefined], expected: 'undefined'},
       /* write 6 more passing test cases */
+      {name: 'true', args: [true], expected: 'boolean'},
+      {name: 'Infinity', args: [Infinity], expected: 'number'},
+      {name: '0', args: [0], expected: 'number'},
+      {name: 'Berihu', args: ['Berihu'], expected: 'string'},
+      {name: 'NaN', args: [NaN], expected: 'number'},
+      {name: '[1]', args: [[1]], expected: 'object'},
     ];
   function _typeof(a) {
     return typeof a;
@@ -237,6 +253,16 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: 'null', args: [null], expected: false},
       {name: 'undefined', args: [undefined], expected: false},
       /* write 10 more passing test cases */
+      {name: 'Infinity', args: [Infinity], expected: true},
+{name: '0', args: [0], expected: false},
+{name: '2', args: [2], expected: true},
+{name: 'NaN', args: [NaN], expected: false},
+{name: 'undefined', args: [undefined], expected: false},
+{name: 'true', args: [true], expected: true},
+{name: 'false', args: [false], expected: false},
+{name: '1', args: [1], expected: true},
+{name: '""', args: [""], expected: false},
+{name: 'hi', args: ['hi'], expected: true},
     ];
   function to_boolean(a) {
     return Boolean(a);
@@ -255,6 +281,15 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: 'null', args: [null], expected: 0},
       {name: 'undefined', args: [undefined], expected: NaN},
       /* write 10 more passing test cases */
+      {name: 'true', args: [true], expected: 1},
+      {name: 'false', args: [false], expected: 0}, 
+      {name: 'Infinity', args: [Infinity], expected: Infinity},
+      {name: '3', args: [3], expected: 3},
+      {name: '"3"', args: ["3"], expected: 3},
+      {name: '"hi"', args: ["hi"], expected: NaN},    
+      {name: 'NaN', args: [NaN], expected: NaN},
+      {name: '0', args: [0], expected: 0},
+      {name: '""', args: [""], expected: 0},
     ];
   function to_number(a) {
     return Number(a);
@@ -276,6 +311,16 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: '1, 0', args: [1, 0], expected: 1},
       {name: '0, 0', args: [0, 0], expected: 0},
       /* write 10 more passing test cases */
+      {name: 'true, true', args: [true, true], expected: true},
+      {name: 'false, true', args: [false, true], expected: true},
+      {name: 'true, false', args: [true, false], expected: true},
+      {name: 'false, false', args: [false, false], expected: false},
+      {name: 'false, false', args: [false, false], expected: false},
+      {name: 'null, Infinity', args: [null, Infinity], expected: Infinity},
+      {name: 'null, undefined', args: [null, undefined], expected: undefined},
+      {name: 'null, 1', args: [null, 1], expected: 1},
+      {name: 'null, null', args: [null, null], expected: null},
+      {name: 'Nan, 0', args: [NaN, 0], expected: 0},
     ];
   function or(a, b) {
     return a || b;
