@@ -368,6 +368,17 @@ console.assert(step_5 === expected, "step_5");
   const expected = a || b && c || a;
 
   // break down this expression
+  const op_1 = b && c;
+  const step_1 = a ||op_1 || a;
+  console.assert(step_1 === expected, "step_1");
+
+  const op_2 = a ||op_1;
+  const step_2 = op_2 || a;
+  console.assert(step_2 === expected, "step_2");
+
+  const op_3 = op_2 || a;
+  const step_3 = op_3;
+  console.assert(step_3 === expected, "step_3");
 }
 ```
 [ast explorer](https://astexplorer.net/#/gist/bc0bac0e8559bf97071c9129a05a28f9/e5fcaa5df8317fb1a45ba1a7866733d96768c463)
@@ -393,17 +404,17 @@ const a = , b = , c = ;
 
 const expected = -(a + b) * c;
 
-let op_1;
-let step_1;
+const op_1 = a + b ;
+const step_1 = -op_1 * c;
 console.assert(step_1 === expected, "step_1");
 
-let op_2;
-let step_2;
+const op_2 = -op_1;
+const step_2 = op_2 * c;
 console.assert(step_2 === expected, "step_2");
 
-let op_3;
-let step_3;
-console.assert(step_3 === expected, "step_3"); 
+const op_3 = op_2 * c;
+const step_3 = op_3 ;
+console.assert(step_3 === expected, "step_3");
 }
 ```
 [scientific notation](http://www.java2s.com/Tutorials/Javascript/Javascript_Tutorial/Data_Type/How_to_write_Scientific_notation_literal_in_Javascript.htm)
@@ -423,6 +434,17 @@ console.assert(step_3 === expected, "step_3");
   const expected = a ** b / +c;
 
   // break down this expression 
+let op_1 = +c;
+let step_1 = a ** b / op_1;
+console.assert(step_1 === expected, "step_1");
+
+let op_2 = a ** b;
+let step_2 = op_2 / op_1;
+console.assert(step_2 === expected, "step_2");
+
+let op_3 = op_2 / op_1;
+let step_3 = op_3;
+console.assert(step_3 === expected, "step_3"); 
 }
 ```
 
@@ -441,6 +463,20 @@ console.assert(step_3 === expected, "step_3");
   const expected = b % c - a ** c / b;
 
   // break down this expression
+ let op_1 = a ** c;
+let step_1 = b % c - op_1 / b;
+console.assert(step_1 === expected, "step_1");
+
+let op_2 = op_1 / b;
+let step_2 = b % c - op_2;
+console.assert(step_2 === expected, "step_2");
+
+let op_3 = b % c;
+let step_3 = op_3 - op_2 ;
+console.assert(step_3 === expected, "step_3"); 
+let op_4 = op_3 - op_2 ;
+let step_4 = op_4;
+console.assert(step_4 === expected, "step_4"); 
 }
 ```
 
@@ -470,6 +506,20 @@ console.assert(step_3 === expected, "step_3");
   const expected = a % b || !!a;
 
   // break down this expression
+let op_1 = !a;
+let step_1 = a % b || !op_1;
+console.assert(step_1 === expected, "step_1");
+
+let op_2 = !op_1;
+let step_2 = a % b || op_2;
+console.assert(step_2 === expected, "step_2");
+
+let op_3 = a % b;
+let step_3 = op_3 || op_2;
+console.assert(step_3 === expected, "step_3"); 
+let op_4 = op_3 || op_2;
+let step_4 = op_4;
+console.assert(step_4 === expected, "step_4"); 
 }
 ```
 
@@ -489,6 +539,18 @@ console.assert(step_3 === expected, "step_3");
   const expected = typeof a === 'number' + a;
 
   // break down this expression
+  let op_1 = typeof a;
+let step_1 = op_1 === 'number' + a;
+console.assert(step_1 === expected, "step_1");
+
+let op_2 = 'number' + a;
+let step_2 = op_1 === op_2;
+console.assert(step_2 === expected, "step_2");
+
+let op_3 = op_1 === op_2;
+let step_3 = op_3;
+console.assert(step_3 === expected, "step_3"); 
+
 }
 ```
 
@@ -507,6 +569,23 @@ console.assert(step_3 === expected, "step_3");
   const expected = !!+a === Boolean(a);
 
   // break down this expression
+  let op_1 = +a;
+let step_1 = !!op_1 === Boolean(a);
+console.assert(step_1 === expected, "step_1");
+
+let op_2 = !op_1;
+let step_2 = !op_2 === Boolean(a);
+console.assert(step_2 === expected, "step_2");
+
+let op_3 = !op_2;
+let step_3 = op_3 === Boolean(a) ;
+console.assert(step_3 === expected, "step_3"); 
+let op_4 = Boolean(a) ;
+let step_4 = op_3 === op_4;
+console.assert(step_4 === expected, "step_4"); 
+let op_5 = op_3 === op_4 ;
+let step_5 = op_5;
+console.assert(step_5 === expected, "step_5"); 
 }
 ```
 
