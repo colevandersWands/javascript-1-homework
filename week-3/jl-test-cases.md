@@ -433,16 +433,14 @@ rules for implicit coercion:
       {name: 'true, 1', args: [true, 1], expected: false},
       {name: 'false, 0', args: [false, 0], expected: false},
       {name: 'false, 1', args: [false, 1], expected: false},
-     {name: 'Hi, hi', args: ["Hi", "hi"], expected: false},
+      {name: 'Hi, hi', args: ["Hi", "hi"], expected: false},
       {name: 'Hello, He', args: ["Hello", "He"], expected: true},
       {name: 'How are you, How are you', args: ['How are you', 'How are you'], expected: false},
       {name: 'hii, hi', args: ['hii', 'hi'], expected: true},
-      /* write 6 more passing test cases without NaN values */
       {name: '10, 0', args: [10, 0], expected: true},
       {name: '1, 1', args: [1, 1], expected: false},
       {name: '5, true', args: [5, true], expected: true},
       {name: '10, 50', args: [10, 50], expected: false},
-      /* write 4 more passing test cases with NaN values */
       {name: '0, NaN', args: [2, NaN], expected: false},
       {name: 'Infinity, 100', args: [Infinity, 100], expected: true},
       {name: 'null, undefined', args: [null, undefined], expected: false},
@@ -478,12 +476,10 @@ rules for implicit coercion:
       {name: 'He, Hello', args: ["He", "Hello"], expected: true},
       {name: 'How are you, How are you', args: ['How are you', 'How are you'], expected: false},
       {name: 'hii, hi', args: ['hii', 'hi'], expected: false},
-      /* write 6 more passing test cases without NaN values */
       {name: '0, 10', args: [0, 10], expected: true},
       {name: '1, 1', args: [1, 1], expected: false},
       {name: 'Infinity, 100', args: [Infinity, 100], expected: false},
       {name: '10, 50', args: [10, 50], expected: true},
-      /* write 4 more passing test cases with NaN values */
       {name: '2, NaN', args: [2, NaN], expected: false},
       {name: 'false, true', args: [false, true], expected: true},
       {name: 'null, undefined', args: [null, undefined], expected: false},
