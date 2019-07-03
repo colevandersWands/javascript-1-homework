@@ -315,7 +315,7 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: 'false, true', args: [false, true], expected: true},
       {name: 'true, false', args: [true, false], expected: true},
       {name: 'false, false', args: [false, false], expected: false},
-      {name: 'false, false', args: [false, false], expected: false},
+      {name: 'undefined, false', args: [undefined, false], expected: false},
       {name: 'null, Infinity', args: [null, Infinity], expected: Infinity},
       {name: 'null, undefined', args: [null, undefined], expected: undefined},
       {name: 'null, 1', args: [null, 1], expected: 1},
@@ -342,6 +342,16 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: '1, 0', args: [1, 0], expected: 0},
       {name: '0, 0', args: [0, 0], expected: 0},
       /* write 10 more passing test cases */
+      {name: 'true, true', args: [true, true], expected: true},
+      {name: 'false, true', args: [false, true], expected: false},
+      {name: 'true, false', args: [true, false], expected: false},
+      {name: 'false, false', args: [false, false], expected: false},
+      {name: 'undefined, false', args: [undefined, false], expected: undefined},
+      {name: 'null, Infinity', args: [null, Infinity], expected: null},
+      {name: 'null, undefined', args: [null, undefined], expected: null},
+      {name: 'null, 1', args: [null, 1], expected: null},
+      {name: 'null, null', args: [null, null], expected: null},
+      {name: 'Nan, 0', args: [NaN, 0], expected: NaN},
     ];
   function and(a, b) {
     return a && b;
@@ -361,6 +371,15 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: '1', args: [1], expected: false},
       {name: '0', args: [0], expected: true},
       /* write 10 more passing test cases */
+      {name: 'true', args: [true], expected: false},
+      {name: 'false', args: [false], expected: true}, 
+      {name: 'Infinity', args: [Infinity], expected: false},
+      {name: '3', args: [3], expected: false},
+      {name: '"3"', args: ["3"], expected: false},
+      {name: '"hi"', args: ["hi"], expected: false},    
+      {name: 'NaN', args: [NaN], expected: true},
+      {name: 'undefined', args: [undefined], expected: true},
+      {name: '""', args: [""], expected: true},
     ];
   function not(a) {
     return !a;
@@ -380,6 +399,15 @@ Writing test cases just happens to be the other best way to understand how code 
       {name: '1, "x", "y"', args: [1, 'x', 'y'], expected: 'x'},
       {name: '0, "x", "y"', args: [0, 'x', 'y'], expected: 'y'},
       /* write 10 more passing test cases */
+        /* write 10 more passing test cases */
+      {name: 'true, "x", "y"', args: [true, 'x', 'y'], expected: 'x'},
+      {name: 'false, "x", "y"', args: [false, 'x', 'y'], expected: 'y'},
+      {name: 'null, "x", "y"', args: [null, 'x', 'y'], expected: 'y'},
+      {name: 'undefined, "x", "y"', args: [undefined, 'x', 'y'], expected: 'y'},
+      {name: 'NaN, "x", "y"', args: [NaN, 'x', 'y'], expected: 'y'},
+      {name: 'Infinity, "x", "y"', args: [1, 'x', 'y'], expected: 'x'},
+      {name: '"", "x", "y"', args: ["", 'x', 'y'], expected: 'y'},
+      {name: '"hi", "x", "y"', args: ["hi", 'x', 'y'], expected: 'x'},      
     ];
   function ternary(a, b, c) {
     return a ? b : c ;
@@ -405,9 +433,21 @@ rules for implicit coercion:
       {name: 'true, 1', args: [true, 1], expected: false},
       {name: 'false, 0', args: [false, 0], expected: false},
       {name: 'false, 1', args: [false, 1], expected: false},
-      /* write 4 more passing test cases with only strings */
+     {name: 'Hi, hi', args: ["Hi", "hi"], expected: false},
+      {name: 'Hello, He', args: ["Hello", "He"], expected: true},
+      {name: 'How are you, How are you', args: ['How are you', 'How are you'], expected: false},
+      {name: 'hii, hi', args: ['hii', 'hi'], expected: true},
       /* write 6 more passing test cases without NaN values */
+      {name: '10, 0', args: [10, 0], expected: true},
+      {name: '1, 1', args: [1, 1], expected: false},
+      {name: '5, true', args: [5, true], expected: true},
+      {name: '10, 50', args: [10, 50], expected: false},
       /* write 4 more passing test cases with NaN values */
+      {name: '0, NaN', args: [2, NaN], expected: false},
+      {name: 'Infinity, 100', args: [Infinity, 100], expected: true},
+      {name: 'null, undefined', args: [null, undefined], expected: false},
+      {name: 'Infinity, undefined', args: [Infinity, undefined], expected: false},
+
     ];
   function greater_than(a, b) {
     return a > b;
@@ -433,9 +473,21 @@ rules for implicit coercion:
       {name: 'true, 1', args: [true, 1], expected: false},
       {name: 'false, 0', args: [false, 0], expected: false},
       {name: 'false, 1', args: [false, 1], expected: true},
-      /* write 4 more passing test cases with only strings */
-      /* write 6 more passing test cases without NaN values*/
-      /* write 4 more passing test cases with NaN values*/
+    /* write 4 more passing test cases with only strings */
+      {name: 'Hi, hi', args: ["Hi", "hi"], expected: true},
+      {name: 'He, Hello', args: ["He", "Hello"], expected: true},
+      {name: 'How are you, How are you', args: ['How are you', 'How are you'], expected: false},
+      {name: 'hii, hi', args: ['hii', 'hi'], expected: false},
+      /* write 6 more passing test cases without NaN values */
+      {name: '0, 10', args: [0, 10], expected: true},
+      {name: '1, 1', args: [1, 1], expected: false},
+      {name: 'Infinity, 100', args: [Infinity, 100], expected: false},
+      {name: '10, 50', args: [10, 50], expected: true},
+      /* write 4 more passing test cases with NaN values */
+      {name: '2, NaN', args: [2, NaN], expected: false},
+      {name: 'false, true', args: [false, true], expected: true},
+      {name: 'null, undefined', args: [null, undefined], expected: false},
+      {name: 'Infinity, undefined', args: [Infinity, undefined], expected: false}
     ];
   function less_than(a, b) {
     return a < b;
