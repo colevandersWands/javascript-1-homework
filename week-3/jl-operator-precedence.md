@@ -204,24 +204,24 @@ __learning objectives__
 [on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20typeof%20a%20%3D%3D%3D%20typeof%20b%3B%0A%0Aconst%20op_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20op_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20op_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 ```js
 {
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+/* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = true , b = false ;
 
-  const expected = typeof a === typeof b;
+const expected = typeof a === typeof b;
 
-  let op_1;
-  let step_1;
-  console.assert(step_1 === expected, "step_1");
+const op_1 = typeof a;
+const step_1 = op_1 === typeof b;
+console.assert(step_1 === expected, "step_1");
 
-  let op_2;
-  let step_2;
-  console.assert(step_2 === expected, "step_2");
+const op_2 = typeof b;
+const step_2 = op_1 === op_2;
+console.assert(step_2 === expected, "step_2");
 
-  let op_3;
-  let step_3;
-  console.assert(step_3 === expected, "step_3");
+const op_3 = op_1 === op_2;
+const step_3 = op_3;
+console.assert(step_3 === expected, "step_3");
 }
 ```
 
@@ -232,25 +232,24 @@ __learning objectives__
 [on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20Boolean%28a%29%20!%3D%3D%20Boolean%28b%29%3B%0A%0Aconst%20op_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20op_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20op_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B%20&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 ```js
 {
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+/* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 0 , b = 1;
 
-  const expected = Boolean(a) !== Boolean(b);
+const expected = Boolean(a) !== Boolean(b);
 
-  let op_1;
-  let step_1;
-  console.assert(step_1 === expected, "step_1");
+const op_1 = Boolean(a) ;
+const step_1 = op_1 !== Boolean(b);
+console.assert(step_1 === expected, "step_1");
 
-  let op_2;
-  let step_2;
-  console.assert(step_2 === expected, "step_2");
+const op_2 = Boolean(b) ;
+const step_2 = op_1 !== op_2;
+console.assert(step_2 === expected, "step_2");
 
-  let op_3;
-  let step_3;
-  console.assert(step_3 === expected, "step_3"); 
-}
+const op_3 = op_1 !== op_2;
+const step_3 = op_3;
+console.assert(step_3 === expected, "step_3");
 ```
 
 ## types & casting 3
@@ -259,29 +258,28 @@ __learning objectives__
 [parsonized](https://janke-learning.github.io/parsonizer/?snippet=Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%0ABoolean%28b%29%0ANumber%28a%29%0ABoolean%28_%29%0A_%20%3D%3D%3D%20_)   
 [on pytut](http://www.pythontutor.com/live.html#code=/*%20values%20to%20try%0A%20%20%22%22,%20%22%20%22,%20true,%20false,%20undefined,%20null,%200,%201,%20-1,%20NaN,%20Infinity%0A*/%0Aconst%20a%20%3D%20,%20b%20%3D%20%3B%0A%0Aconst%20expected%20%3D%20Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%3B%0A%0Aconst%20op_1%20%3D%20%3B%0Aconst%20step_1%20%3D%20%3B%0Aconsole.assert%28step_1%20%3D%3D%3D%20expected,%20%22step_1%22%29%3B%0A%0Aconst%20op_2%20%3D%20%3B%0Aconst%20step_2%20%3D%20%3B%0Aconsole.assert%28step_2%20%3D%3D%3D%20expected,%20%22step_2%22%29%3B%0A%0Aconst%20op_3%20%3D%20%3B%0Aconst%20step_3%20%3D%20%3B%0Aconsole.assert%28step_3%20%3D%3D%3D%20expected,%20%22step_3%22%29%3B%0A%0Aconst%20op_4%20%3D%20%3B%0Aconst%20step_4%20%3D%20%3B%0Aconsole.assert%28step_4%20%3D%3D%3D%20expected,%20%22step_4%22%29%3B&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 ```js
-{
-  /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+{/* values to try
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = -1, b = 1;
 
-  const expected = Boolean(b) === Boolean(Number(a));
+const expected = Boolean(b) === Boolean(Number(a));
 
-  let op_1;
-  let step_1;
-  console.assert(step_1 === expected, "step_1");
+const op_1 = Boolean(b);
+const step_1 = op_1 === Boolean(Number(a));
+console.assert(step_1 === expected, "step_1");
 
-  let op_2;
-  let step_2;
-  console.assert(step_2 === expected, "step_2");
+const op_2 = Number(a);
+const step_2 = op_1 === Boolean(op_2);
+console.assert(step_2 === expected, "step_2");
 
-  let op_3;
-  let step_3;
-  console.assert(step_3 === expected, "step_3");
+const op_3 = Boolean(op_2);
+const step_3 = op_1 === op_3;
+console.assert(step_3 === expected, "step_3");
 
-  let op_4;
-  let step_4;
-  console.assert(step_4 === expected, "step_4");
+const op_4 = op_1 === op_3;
+const step_4 = op_4;
+console.assert(step_4 === expected, "step_4");
 }
 ```
 
@@ -299,23 +297,23 @@ __learning objectives__
 ```js
 {
   /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1, b = 0 ;
 
-  const expected = !(a && !b);
+const expected = !(a && !b);
 
-  let op_1;
-  let step_1;
-  console.assert(step_1 === expected, "step_1");
+const op_1 = !b ;
+const step_1 = !(a && op_1) ;
+console.assert(step_1 === expected, "step_1");
 
-  let op_2;
-  let step_2;
-  console.assert(step_2 === expected, "step_2");
+const op_2 = a && op_1;
+const step_2 = !op_2;
+console.assert(step_2 === expected, "step_2");
 
-  let op_3;
-  let step_3;
-  console.assert(step_3 === expected, "step_3"); 
+const op_3 = !op_2;
+const step_3 =op_3 ;
+console.assert(step_3 === expected, "step_3");
 }
 ```
 
@@ -327,31 +325,31 @@ __learning objectives__
 ```js
 {
   /* values to try
-    "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
-  */
-  const a = , b = ;
+  "", " ", true, false, undefined, null, 0, 1, -1, NaN, Infinity
+*/
+const a = 1, b = false ;
 
-  const expected = !!a || !!b;
+const expected = !!a || !!b;
 
-  let op_1;
-  let step_1;
-  console.assert(step_1 === expected, "step_1");
+const op_1 = !a ;
+const step_1 = !op_1 || !!b ;
+console.assert(step_1 === expected, "step_1");
 
-  let op_2;
-  let step_2;
-  console.assert(step_2 === expected, "step_2");
+const op_2 = !op_1 ;
+const step_2 = op_2 || !!b; 
+console.assert(step_2 === expected, "step_2");
 
-  let op_3;
-  let step_3;
-  console.assert(step_3 === expected, "step_3"); 
+const op_3 = !b; 
+const step_3 = op_2 || !op_3;
+console.assert(step_3 === expected, "step_3"); 
 
-  let op_4;
-  let step_4;
-  console.assert(step_4 === expected, "step_4");
+const op_4 = !op_3;
+const step_4 = op_2 || op_4 ;
+console.assert(step_4 === expected, "step_4");
 
-  let op_5;
-  let step_5;
-  console.assert(step_5 === expected, "step_5"); 
+const op_5 = op_2 || op_4;
+const step_5 = op_5;
+console.assert(step_5 === expected, "step_5");
 }
 ```
 
