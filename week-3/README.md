@@ -6,8 +6,8 @@
 | :seedling: finish FCC data structures | | | | |
 | :dash: [javascript.info: logical operators](./jsinfo-logical-operators.md) | :white_check_mark:| | | |
 | :dash: [javascript.info: conditionals](./jsinfo-conditionals.md) |:white_check_mark: | | | |
-| :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: |:white_check_mark: | | |
-| :fire: [janke: operator precedence](./jl-operator-precedence.md) | | | | |
+| :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: | | | |
+| :fire: [janke: operator precedence](./jl-operator-precedence.md) |:white_check_mark: | | | |
 | :fire: [FCC: basic algorithms](./fcc-algorithms-1.md) | | | | |
 | :fire: [janke: expanding expressions](./jl-expanding-expressions.md) | | | | |
 | :fire: [janke: replicate ```==```](./jl-replicate-loose-equality.md) | | | | |
