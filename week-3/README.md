@@ -2,13 +2,13 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: finish FCC basics | | | | |
-| :seedling: finish FCC data structures | | | | |
+| :seedling: finish FCC basics |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-basic-js-pt-2.md) | | |
+| :seedling: finish FCC data structures |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-data-structures.md) | | |
 | :dash: [javascript.info: logical operators](./jsinfo-logical-operators.md) | :white_check_mark:| | | |
 | :dash: [javascript.info: conditionals](./jsinfo-conditionals.md) |:white_check_mark: | | | |
 | :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: | | | |
 | :fire: [janke: operator precedence](./jl-operator-precedence.md) |:white_check_mark: | | | |
-| :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | | | | |
+| :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | :white_check_mark:| | | |
 | :fire: [janke: expanding expressions](./jl-expanding-expressions.md) | | | | |
 | :fire: [janke: replicate ```==```](./jl-replicate-loose-equality.md) | | | | |
 | :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) | | | | |
