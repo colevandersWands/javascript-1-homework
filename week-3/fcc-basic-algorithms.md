@@ -12,4 +12,43 @@ function convertToF(celsius) {
 
 convertToF(30);
 ```
-## 2. 
+## 2. Reverse a String
+```js
+function reverseString(str) {
+let arr = str.split('');
+let arr2 = [];
+for(let i = str.length-1  ; i >= 0; i--){
+arr2.push(arr[i]);
+}
+let _str = arr2.join("");
+return _str;
+}
+reverseString("hello");
+```
+## 3. Factorialize a Number
+```js
+function factorialize(num) {
+let product = 1;
+for (let i = num; i > 1; i--){
+product = product * i ;
+}
+return product; 
+}
+factorialize(5);
+```
+## 4. Find the Longest Word in a String
+```js 
+function findLongestWordLength(str) {
+  let arr = str.split(' ');
+  let maximum = 0;
+  for (let i = 0; i < arr.length ; i++){
+  if(arr[i].length > maximum){
+  maximum = arr[i].length;
+   }
+  }
+  return maximum;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+```
+## 5. 
