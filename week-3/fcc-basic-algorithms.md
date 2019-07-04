@@ -204,6 +204,23 @@ for(let i = 0; i < secondStr.length; i++){
 }
 mutation(["hello", "hey"]);
 ```
+## 16. Chunky Monkey
+```js 
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  
+  let i=0; // pointer to arr.
+  let newarr=[]; // new array to send back.
+  
+  while (i < arr.length){
+    newarr.push(arr.slice(i,i+size)); // slice me a slice to push to newarr.
+    i=i+size;
+  }
+  return newarr;
+ }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+```
+
 
 
 
