@@ -2,6 +2,11 @@
 > recommended challenges (alphabetically): celcius to farenheit, chunkey monkey, factorialize, falsey bouncer, largest of 4, repeat, reverse a string, title case.  And the rest are also great
 > examples to study: [samanthaming](https://github.com/samanthaming/freecodecamp-my-solutions/tree/master/basic-algorithm), [jadonOrr](https://github.com/jadonOrr/freeCodeCampAlgorithms/tree/master/basic-algorithms), [TheNewStyles](https://github.com/TheNewStyles/freecodecamp-algorithm-solutions/tree/master/BasicAlgorithmScripting)
 
+# Goto
+* [Number 5](##-5)
+* [Number 10](##-10)
+* [Number 15](##-15)
+
 ## 1. Convert Celsius to Fahrenheit
 ```js
 function convertToF(celsius) {
