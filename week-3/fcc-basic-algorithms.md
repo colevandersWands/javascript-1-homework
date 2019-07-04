@@ -164,6 +164,46 @@ let a = frankenSplice([1, 2, 3], [4, 5, 6], 1);
 ```
 ## 13. Falsy Bouncer
 ```js
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  arr = arr.filter(truthValue);
+  return arr;
+}
+function truthValue(arg){
+  return (Boolean(arg) === true);
+}
+bouncer([7, "ate", "", false, 9]);
+```
+## 14. Where do I Belong
+```js
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  arr = arr.sort(sortfunc);
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] >= num){
+      return i;
+      }    
+    }  
+    return arr.length;
+}
+function sortfunc(a,b){
+  return a - b;
+  };
+let a = getIndexToIns([40, 60,5], 50);
+```
+## 15.  Mutations
+```js
+function mutation(arr) {
+let  firstStr = arr[0].toLowerCase();
+let  secondStr = arr[1].toLowerCase();
+for(let i = 0; i < secondStr.length; i++){
+  if(firstStr.indexOf(secondStr[i]) < 0){
+    return false;
+    }
+  } return true;
+}
+mutation(["hello", "hey"]);
+```
 
 
 
