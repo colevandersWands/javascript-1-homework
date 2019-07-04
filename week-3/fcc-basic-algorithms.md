@@ -3,9 +3,9 @@
 > examples to study: [samanthaming](https://github.com/samanthaming/freecodecamp-my-solutions/tree/master/basic-algorithm), [jadonOrr](https://github.com/jadonOrr/freeCodeCampAlgorithms/tree/master/basic-algorithms), [TheNewStyles](https://github.com/TheNewStyles/freecodecamp-algorithm-solutions/tree/master/BasicAlgorithmScripting)
 
 # Goto
-* [Number 5](##-5-return-largest-numbers-in-arrays)
-* [Number 10](##-10-boo-who)
-* [Number 15](##-15-mutations)
+* [Number 5](5-return-largest-numbers-in-arrays)
+* [Number 10](10-boo-who)
+* [Number 15](15-mutations)
 
 ## 1. Convert Celsius to Fahrenheit
 ```js
