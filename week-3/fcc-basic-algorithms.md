@@ -225,7 +225,7 @@ function chunkArrayInGroups(arr, size) {
  }
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
-[Go Top](go-to)
+[Go Top](#go-to)
 
 
 
