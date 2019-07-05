@@ -9,7 +9,7 @@
 | :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: | | :green_heart: | |
 | :fire: [janke: operator precedence](./jl-operator-precedence.md) |:white_check_mark: | | :green_heart: | |
 | :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | :white_check_mark:| | :green_heart: | |
-| :fire: [janke: expanding expressions](./jl-expanding-expressions.md) |:white_check_mark: | | :warning: | your code does look correct, but that's hard to know with only one test case.  |
+| :fire: [janke: expanding expressions](./jl-expanding-expressions.md) |:white_check_mark: |more test cased added | :warning: | your code does look correct, but that's hard to know with only one test case.  |
 | :fire: [janke: replicate ```==```](./jl-replicate-loose-equality.md) | | | | |
 | :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/jl-functions-ref-type-args.md) | :green_heart: | |
 | :fire: [janke: functions as arguments](./jl-functions-as-arguments.md) |:white_check_mark:  | | :green_heart: | |
