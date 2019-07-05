@@ -361,6 +361,20 @@ function expression(a, b) {
   return typeof a === typeof b;
 }
 run_tests(expression, test_cases);
+//After refactor
+test_cases = [
+  {name: 'null, null', args: [null, null], expected: true},
+  {name: '1, 0', args: [1, 0], expected: true},
+  {name: '1, true', args: [1, true], expected: false},
+];
+function expression(a, b) {
+  const op_1 = typeof a;
+  const op_2 = typeof b;
+  const op_3 = op_1 === op_2;
+  return op_3;
+}
+run_tests(expression, test_cases);
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -374,6 +388,20 @@ test_cases = [
 ];
 function expression(a, b) {
   return Boolean(a) !== Boolean(b);
+}
+run_tests(expression, test_cases);
+// after refactored
+test_cases = [
+  {name: 'null, null', args: [null, null], expected: false},
+  {name: '1, 0', args: [1, 0], expected: true},
+  {name: '1, true', args: [1, true], expected: false},
+];
+function expression(a, b) {
+  const op_1 = Boolean(a);
+  const op_2 = Boolean(b);
+  const op_3 = op_1 !== op_2;
+  return op_3;
+
 }
 run_tests(expression, test_cases);
 ```
@@ -391,6 +419,22 @@ function expression(a, b) {
   return Boolean(b) === Boolean(Number(a));
 }
 run_tests(expression, test_cases);
+// After Refactor
+test_cases = [
+  {name: 'null, null', args: [null, null], expected: true},
+  {name: '1, 0', args: [1, 0], expected: false},
+  {name: '1, true', args: [1, true], expected: true},
+];
+function expression(a, b) {
+  const op_1 = Boolean(b);
+  const op_2 = Number(a);
+  const op_3 = Boolean(op_2);
+  const op_4 = op_1 === op_3
+  return op_4;
+
+}
+run_tests(expression, test_cases);
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -412,6 +456,13 @@ function expression(a, b) {
   return !(a && !b);
 }
 run_tests(expression, test_cases);
+// fully expanded
+function expression(a, b) {
+  const op_1 =!b;
+  const op_2 = a && op_1;
+  const op_3 = !op_2;
+  return op_3;
+}
 ```
 
 [TOP](#operator-only-exercises)
@@ -428,6 +479,16 @@ function expression(a, b) {
   return !!a || !!b;
 }
 run_tests(expression, test_cases);
+//fully expanded
+function expression(a, b) {
+  const op_1 =!a;
+  const op_2 = !op_1;
+  const op_3 = !b;
+  const op_4 = !op_3;
+  const op_5 = op_2 || op_4 ;
+  return op_5;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -444,6 +505,14 @@ function expression(a, b, c) {
   return a || b && c || a;
 }
 run_tests(expression, test_cases);
+
+// after fully expanded
+function expression(a, b) {
+  const op_1 = b && c;
+  const op_2 = a || op_1;
+  const op_3 = op_2 || a;
+  return op_3;
+}
 ```
 
 
@@ -464,6 +533,14 @@ function expression(a, b, c) {
   return -(a + b) * c;
 }
 run_tests(expression, test_cases);
+// After fully expanded
+function expression(a, b) {
+  const op_1 = a + b;
+  const op_2 = -op_1;
+  const op_3 = op_2 * c;
+  return op_3;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -480,6 +557,14 @@ function expression(a, b, c) {
   return a ** b / +c;
 }
 run_tests(expression, test_cases);
+// after fully expanded
+function expression(a, b) {
+  const op_1 = +c;
+  const op_2 = a ** b;
+  const op_3 = op_2 / op_1;
+  return op_3;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -497,6 +582,15 @@ function expression(a, b, c) {
   return b % c - a ** c / b;
 }
 run_tests(expression, test_cases);
+// fully expanded
+function expression(a, b) {
+  const op_1 = a ** c;
+  const op_2 = b % c;
+  const op_3 = op_1 / b;
+  const op_4 = op_2 - op_3;
+  return op_4;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -517,6 +611,15 @@ function expression(a, b) {
   return a % b || !!a;
 }
 run_tests(expression, test_cases);
+// after fully expanded
+function expression(a, b) {
+  const op_1 = !a;
+  const op_2 = !op_1;
+  const op_3 = b || op_2;
+  const op_4 = a % op_3;
+  return op_4;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -534,6 +637,14 @@ function expression(a, b) {
   return typeof a === 'number' + a;
 }
 run_tests(expression, test_cases);
+// After fully expanded
+function expression(a, b) {
+  const op_1 = typeof a;
+  const op_2 = 'number' + a;
+  const op_3 = op_1 === op_2;
+  return op_3;
+}
+
 ```
 
 [TOP](#operator-only-exercises)
@@ -549,6 +660,15 @@ function expression(a) {
   return !!+a === Boolean(a);
 }
 run_tests(expression, test_cases);
+// after fully expanded
+function expression(a, b) {
+  const op_1 = +a;
+  const op_2 = !op_1;
+  const op_3 = !op_2;
+  const op_4 = Boolean(a);
+  const op_5 = op_3 === op_4;
+  return op_5;
+}
 ```
 
 [TOP](#operator-only-exercises)
