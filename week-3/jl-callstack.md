@@ -89,8 +89,7 @@ It sounds complicated at first, but after some practice you'll find it's not so 
     function tour(_a, _b, _c, _d) {
       return _b + _a + _c + _d;
     }
-    var word = tour(/* fill this in */);
-
+    var word = tour(_1, _2,_3,_4);
     var result = word;
     return result;
   }
