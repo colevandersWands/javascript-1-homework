@@ -11,7 +11,7 @@
 | :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | :white_check_mark:| | | |
 | :fire: [janke: expanding expressions](./jl-expanding-expressions.md) |:white_check_mark: | | | |
 | :fire: [janke: replicate ```==```](./jl-replicate-loose-equality.md) | | | | |
-| :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) | | | | |
+| :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/jl-functions-ref-type-args.md) | | |
 | :fire: [janke: functions as arguments](./jl-functions-as-arguments.md) | | | | |
 | :fire: [janke: callstack](./jl-callstack.md) | | | | |
 
