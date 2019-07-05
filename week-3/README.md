@@ -2,17 +2,17 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: finish FCC basics |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-basic-js-pt-2.md) | | |
-| :seedling: finish FCC data structures |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-data-structures.md) | | |
-| :dash: [javascript.info: logical operators](./jsinfo-logical-operators.md) | :white_check_mark:| | | |
-| :dash: [javascript.info: conditionals](./jsinfo-conditionals.md) |:white_check_mark: | | | |
-| :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: | | | |
-| :fire: [janke: operator precedence](./jl-operator-precedence.md) |:white_check_mark: | | | |
-| :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | :white_check_mark:| | | |
-| :fire: [janke: expanding expressions](./jl-expanding-expressions.md) |:white_check_mark: | | | |
+| :seedling: finish FCC basics |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-basic-js-pt-2.md) | :green_heart: | |
+| :seedling: finish FCC data structures |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/fcc-data-structures.md) | :green_heart: | |
+| :dash: [javascript.info: logical operators](./jsinfo-logical-operators.md) | :white_check_mark:| | :green_heart: | |
+| :dash: [javascript.info: conditionals](./jsinfo-conditionals.md) |:white_check_mark: | | :green_heart: | |
+| :fire: [janke: test cases](./jl-test-cases.md) |:white_check_mark: | | :green_heart: | |
+| :fire: [janke: operator precedence](./jl-operator-precedence.md) |:white_check_mark: | | :green_heart: | |
+| :fire: [FCC: basic algorithms](./fcc-basic-algorithms.md) | :white_check_mark:| | :green_heart: | |
+| :fire: [janke: expanding expressions](./jl-expanding-expressions.md) |:white_check_mark: | | :warning: | your code does look correct, but that's hard to know with only one test case.  |
 | :fire: [janke: replicate ```==```](./jl-replicate-loose-equality.md) | | | | |
-| :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/jl-functions-ref-type-args.md) | | |
-| :fire: [janke: functions as arguments](./jl-functions-as-arguments.md) |:white_check_mark:  | | | |
+| :fire: [janke: ref-type arguments](./jl-reference-type-arguments.md) |:white_check_mark: |[Here](https://github.com/Berihugebre/javascript-1-homework/blob/master/week-2/jl-functions-ref-type-args.md) | :green_heart: | |
+| :fire: [janke: functions as arguments](./jl-functions-as-arguments.md) |:white_check_mark:  | | :green_heart: | |
 | :fire: [janke: callstack](./jl-callstack.md) | | | | |
 
 
