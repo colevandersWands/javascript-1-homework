@@ -355,18 +355,20 @@ run_tests(expression, test_cases);
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=typeof%20a%20%3D%3D%3D%20typeof%20b%0Atypeof%20a%0Atypeof%20b%0A_%20%3D%3D%3D%20_)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'null, null', args: [null, null], expected: true},
+  {name: '1, 0', args: [1, 0], expected: true},
+  {name: '1, true', args: [1, true], expected: false},
+  {name: '0, 0', args: [0, 0], expected: true},
+  {name: 'false, true', args: [false, true], expected: true},
+  {name: 'undefined, null', args: [undefined, null], expected: false},
+  {name: 'NaN, Infinity', args: [NaN, Infinity], expected: true},
 ];
 function expression(a, b) {
   return typeof a === typeof b;
 }
 run_tests(expression, test_cases);
 //After refactor
-test_cases = [
-  {name: 'null, null', args: [null, null], expected: true},
-  {name: '1, 0', args: [1, 0], expected: true},
-  {name: '1, true', args: [1, true], expected: false},
-];
+
 function expression(a, b) {
   const op_1 = typeof a;
   const op_2 = typeof b;
@@ -384,18 +386,20 @@ run_tests(expression, test_cases);
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=Boolean%28a%29%20!%3D%3D%20Boolean%28b%29%0ABoolean%28a%29%0ABoolean%28b%29%0A_%20!%3D%3D%20_)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'null, null', args: [null, null], expected: false},
+  {name: '1, 0', args: [1, 0], expected: true},
+  {name: '1, true', args: [1, true], expected: false},
+  {name: '0, 0', args: [0, 0], expected: false},
+  {name: 'false, true', args: [false, true], expected: true},
+  {name: 'undefined, null', args: [undefined, null], expected: false},
+  {name: 'NaN, Infinity', args: [NaN, Infinity], expected: true},
 ];
 function expression(a, b) {
   return Boolean(a) !== Boolean(b);
 }
 run_tests(expression, test_cases);
 // after refactored
-test_cases = [
-  {name: 'null, null', args: [null, null], expected: false},
-  {name: '1, 0', args: [1, 0], expected: true},
-  {name: '1, true', args: [1, true], expected: false},
-];
+
 function expression(a, b) {
   const op_1 = Boolean(a);
   const op_2 = Boolean(b);
@@ -413,18 +417,20 @@ run_tests(expression, test_cases);
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=Boolean%28b%29%20%3D%3D%3D%20Boolean%28Number%28a%29%29%0ABoolean%28b%29%0ANumber%28a%29%0ABoolean%28_%29%0A_%20%3D%3D%3D%20_)   
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'null, null', args: [null, null], expected: true},
+  {name: '1, 0', args: [1, 0], expected: false},
+  {name: '1, true', args: [1, true], expected: true},
+  {name: '0, 0', args: [0, 0], expected: true},
+  {name: 'false, true', args: [false, true], expected: false},
+  {name: 'undefined, null', args: [undefined, null], expected: true},
+  {name: 'NaN, Infinity', args: [NaN, Infinity], expected: false},
 ];
 function expression(a, b) {
   return Boolean(b) === Boolean(Number(a));
 }
 run_tests(expression, test_cases);
 // After Refactor
-test_cases = [
-  {name: 'null, null', args: [null, null], expected: true},
-  {name: '1, 0', args: [1, 0], expected: false},
-  {name: '1, true', args: [1, true], expected: true},
-];
+
 function expression(a, b) {
   const op_1 = Boolean(b);
   const op_2 = Number(a);
@@ -450,7 +456,13 @@ run_tests(expression, test_cases);
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=!%28a%20%26%26%20!b%29%0A!_%0A_%20%26%26%20_%0A!%28_%29%0A%0A)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'null, null', args: [null, null], expected: true},
+  {name: '1, 0', args: [1, 0], expected: false},
+  {name: '1, true', args: [1, true], expected: true},
+  {name: '0, 0', args: [0, 0], expected: true},
+  {name: 'false, true', args: [false, true], expected: true},
+  {name: 'undefined, null', args: [undefined, null], expected: true},
+  {name: 'Infinity, NaN', args: [Infinity, NaN], expected: false},
 ];
 function expression(a, b) {
   return !(a && !b);
@@ -473,7 +485,13 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=!!a%20%7C%7C%20!!b%0A!a%0A!_%0A!b%0A!_%0A_%20%7C%7C%20_)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'null, null', args: [null, null], expected: false},
+  {name: '1, 0', args: [1, 0], expected: true},
+  {name: '1, true', args: [1, true], expected: true},
+  {name: '0, 0', args: [0, 0], expected: false},
+  {name: 'false, true', args: [false, true], expected: true},
+  {name: 'undefined, null', args: [undefined, null], expected: false},
+  {name: 'Infinity, NaN', args: [Infinity, NaN], expected: true},
 ];
 function expression(a, b) {
   return !!a || !!b;
@@ -499,7 +517,10 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=!!a%20%7C%7C%20!!b%0A!a%0A!_%0A!b%0A!_%0A_%20%7C%7C%20_)  
 ```js
 test_cases = [
-  {name: 'null, null, null', args: [null, null, null], expected: null},
+  {name: 'null, null, 1', args: [null, null, 1], expected: null},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: 1},
+  {name: '1, true,false', args: [1, true, false], expected: 1},
+  {name: '0, 0 , true' , args: [0, 0,true], expected: 0},
 ];
 function expression(a, b, c) {
   return a || b && c || a;
@@ -507,7 +528,7 @@ function expression(a, b, c) {
 run_tests(expression, test_cases);
 
 // after fully expanded
-function expression(a, b) {
+function expression(a, b, c) {
   const op_1 = b && c;
   const op_2 = a || op_1;
   const op_3 = op_2 || a;
@@ -527,14 +548,17 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=-%28a%20%2B%20b%29%20*%20c%0A_%20%2B%20_%0A-%28_%29%0A_%20*%20_)  
 ```js
 test_cases = [
-  {name: 'null, null, null', args: [null, null, null], expected: null},
+  {name: 'null, null, 1', args: [null, null, 1], expected: 0},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: 0},
+  {name: '1, 5, 10', args: [1, 5, 10], expected: -60},
+  {name: '2, -3 , 1' , args: [2, -3 , 1], expected: 1},
 ];
 function expression(a, b, c) {
   return -(a + b) * c;
 }
 run_tests(expression, test_cases);
 // After fully expanded
-function expression(a, b) {
+function expression(a, b, c) {
   const op_1 = a + b;
   const op_2 = -op_1;
   const op_3 = op_2 * c;
@@ -551,14 +575,17 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=a%20**%20b%20%2F%20%2Bc%0A%2B_%0A_%20**%20_%0A_%20%2F%20_)  
 ```js
 test_cases = [
-  {name: 'null, null, null', args: [null, null, null], expected: null},
+  {name: '10, 10, 10', args: [10, 10, 10], expected: 1000000000},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: Infinity},
+  {name: '1, 5, 10', args: [1, 5, 10], expected: 0.1},
+  {name: '2, -3 , 1' , args: [2, -3 , 1], expected: 0.125},
 ];
 function expression(a, b, c) {
   return a ** b / +c;
 }
 run_tests(expression, test_cases);
 // after fully expanded
-function expression(a, b) {
+function expression(a, b, c) {
   const op_1 = +c;
   const op_2 = a ** b;
   const op_3 = op_2 / op_1;
@@ -576,14 +603,17 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=b%20%25%20c%20-%20a%20**%20c%20%2F%20b%0A_%20**%20_%0A_%20%2F%20_%0A_%20%25%20_%0A_%20-%20_)  
 ```js
 test_cases = [
-  {name: 'null, null, null', args: [null, null, null], expected: null},
+  {name: '10, 10, 10', args: [10, 10, 10], expected: -1000000000},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: NaN},
+  {name: '1, 5, 10', args: [1, 5, 10], expected: 4.8},
+  {name: '2, -3 , 1' , args: [2, -3 , 1], expected: 0.6666666666666666},
 ];
 function expression(a, b, c) {
   return b % c - a ** c / b;
 }
 run_tests(expression, test_cases);
 // fully expanded
-function expression(a, b) {
+function expression(a, b, c) {
   const op_1 = a ** c;
   const op_2 = b % c;
   const op_3 = op_1 / b;
@@ -605,13 +635,16 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=a%20%25%20b%20%7C%7C%20!!a%0A_%20%25%20_%0A!a%0A!_%0A_%20%7C%7C%20_)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: '10, 10, 10', args: [10, 10, 10], expected: 0},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: 0},
+  {name: '1, 5, 10', args: [1, 5, 10], expected: 1},
+  {name: '2, -3 , 1' , args: [2, -3 , 1], expected: 2},
 ];
 function expression(a, b) {
   return a % b || !!a;
 }
 run_tests(expression, test_cases);
-// after fully expanded
+// fully expanded
 function expression(a, b) {
   const op_1 = !a;
   const op_2 = !op_1;
@@ -631,14 +664,17 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=typeof%20a%20%3D%3D%3D%20'number'%20%2B%20a%0Atypeof%20_%0A_%20%3D%3D%3D%20_%0A_%20%2B%20_)  
 ```js
 test_cases = [
-  {name: 'null, null', args: [null, null], expected: null},
+  {name: 'false', args: [false], expected: false},
+  {name: 'NaN', args: [NaN], expected: false},
+  {name: '""', args: [""], expected: false},
+  {name: 'null', args: [null], expected: false},
 ];
 function expression(a, b) {
   return typeof a === 'number' + a;
 }
 run_tests(expression, test_cases);
 // After fully expanded
-function expression(a, b) {
+function expression(a) {
   const op_1 = typeof a;
   const op_2 = 'number' + a;
   const op_3 = op_1 === op_2;
@@ -654,7 +690,10 @@ function expression(a, b) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=!!%2Ba%20%3D%3D%3D%20Boolean%28a%29%0A%2B_%0A!_%0A!_%0ABoolean%28_%29%0A_%20%3D%3D%3D%20_)  
 ```js
 test_cases = [
-  {name: 'null', args: [null], expected: null},
+  {name: 'false', args: [false], expected: true},
+  {name: 'NaN', args: [NaN], expected: true},
+  {name: '""', args: [""], expected: true},
+  {name: 'null', args: [null], expected: true},
 ];
 function expression(a) {
   return !!+a === Boolean(a);
