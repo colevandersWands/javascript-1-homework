@@ -635,10 +635,11 @@ function expression(a, b, c) {
 [parsonized operators](https://janke-learning.github.io/parsonizer/?snippet=a%20%25%20b%20%7C%7C%20!!a%0A_%20%25%20_%0A!a%0A!_%0A_%20%7C%7C%20_)  
 ```js
 test_cases = [
-  {name: '10, 10, 10', args: [10, 10, 10], expected: 0},
-  {name: '1, 0, 0', args: [1, 0, 0], expected: 0},
+  {name: '10, 10, 10', args: [10, 10, 10], expected: true},
+  {name: '1, 0, 0', args: [1, 0, 0], expected: true},
   {name: '1, 5, 10', args: [1, 5, 10], expected: 1},
   {name: '2, -3 , 1' , args: [2, -3 , 1], expected: 2},
+  {name: '20, true , false' , args: [20, true , false], expected: true}
 ];
 function expression(a, b) {
   return a % b || !!a;
@@ -648,8 +649,8 @@ run_tests(expression, test_cases);
 function expression(a, b) {
   const op_1 = !a;
   const op_2 = !op_1;
-  const op_3 = b || op_2;
-  const op_4 = a % op_3;
+  const op_3 = a % b;
+  const op_4 = op_3 || op_2;
   return op_4;
 }
 
